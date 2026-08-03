@@ -1,0 +1,2289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Cookie Consent and Google Tags initialzation -->
+    <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script
+  type="text/javascript"
+  src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js"
+  charset="UTF-8"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied'
+  })
+</script>
+<!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-2RTKZX15VD"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+
+  gtag('config', 'G-2RTKZX15VD')
+</script>
+<script type="text/javascript" charset="UTF-8">
+  document.addEventListener('DOMContentLoaded', function () {
+    cookieconsent.run({
+      notice_banner_type: 'simple',
+      consent_type: 'express',
+      palette: 'light',
+      language: 'en',
+      page_load_consent_levels: ['strictly-necessary'],
+      notice_banner_reject_button_hide: false,
+      preferences_center_close_button_hide: false,
+      page_refresh_confirmation_buttons: true,
+      website_name: 'Appian Documentation',
+      website_privacy_policy_url: 'https://www.appian.com/privacy/',
+
+      callbacks: {
+        scripts_specific_loaded: level => {
+          switch (level) {
+            case 'targeting':
+              gtag('consent', 'update', {
+                ad_storage: 'granted',
+                ad_user_data: 'granted',
+                ad_personalization: 'granted',
+                analytics_storage: 'granted'
+              })
+              break
+          }
+        }
+      },
+      callbacks_force: true
+    })
+  })
+</script>
+<link href="/suite/help/26.7/css/cookie_consent.css" rel="stylesheet" />
+<noscript
+  >Free cookie consent management tool by
+  <a href="https://www.termsfeed.com/">TermsFeed</a>
+</noscript>
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+<!-- Google Tag Manager -->
+<script type="text/plain" data-cookie-consent="tracking">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M2LCFFW');
+</script>
+<!-- End Google Tag Manager -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    
+    
+
+
+    <title>
+      Accessibility [SAIL Design System: Guidelines]
+    </title>
+    <link rel="shortcut icon" href="/suite/help/26.7/images/appian_48x48.ico" />
+    <link href="/suite/help/26.7/css/design-sys/tocbot.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/bootstrap.min.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/lightbox.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/appian-base-styles.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/appian-sail.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/appian-sail-responsive.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/balloon_notes.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/syntax.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/ds-typeahead.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/ds-syntax.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700" rel="stylesheet" />
+
+      <!-- TODO: for the icons. Dunno what Charles wants to do. -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <script src="/suite/help/26.7/js/design-sys/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="/suite/help/26.7/js/design-sys/bootstrap.bundle.min.js"></script>
+    <script src="/suite/help/26.7/js/design-sys/sidebars.js"></script>
+    <script src="/suite/help/26.7/js/design-sys/lightbox.js"></script>
+
+    <script src="/suite/help/26.7/js/serverless-sail.js"></script>
+    <link href="/suite/help/26.7/css/iframe.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/serverless-sail.css" rel="stylesheet" />
+
+    <meta property="og:title" content="Accessibility">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://docs.appian.com/suite/help/26.7/sail/ux-accessibility.html" />
+<meta property="og:url" content="https://docs.appian.com/suite/help/26.7/sail/ux-accessibility.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://docs.appian.com/suite/help/26.7/images/open_graph_preview.png" />
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Accessibility">
+
+  <script
+    async
+    src="https://widget.kapa.ai/kapa-widget.bundle.js"
+    data-website-id="cb54ded1-4d63-4b15-97bf-5c77eda3fbcb"
+    data-source-group-ids-include="6ce0e4f1-f64b-4623-a739-90dce4278292"
+    data-button-hide="true"
+    data-kapa-branding-hide='true'
+    data-modal-title='​Appian Docs AI'
+    data-modal-disclaimer="Welcome to the Appian Docs AI Chat! Ask questions about the Appian Docs and Community Knowledge Base."
+    data-modal-disclaimer-bg-color="none"
+    data-modal-disclaimer-font-size="14px"
+    data-modal-disclaimer-text-color="#000000"
+    data-project-logo="/suite/help/26.7/images/appian_48x48.ico"
+    data-modal-image-height="40px"
+    data-modal-image-width="40px"
+    data-modal-border-radius='none'
+    data-modal-z-index='9999'
+    data-user-analytics-cookie-enabled="true"
+    data-consent-required="true"
+    data-consent-screen-title="Help us improve our AI assistant"
+    data-consent-screen-disclaimer="This feature is not available unless you consent to anonymous user tracking which helps us improve our service. We don't collect any personally identifiable information beyond what you explicitly provide."
+    data-consent-screen-accept-button-text="Allow tracking"
+    data-consent-screen-reject-button-text="No thanks"
+    data-modal-ask-ai-input-placeholder="Ask me a question..."
+    data-modal-example-questions="What is data fabric?,What are AI agents?,How do I create a record type?"
+    data-example-question-button-bg-color="#e7f1ffff"
+    data-example-question-button-border="1px solid #E8E8E8"
+    data-example-question-button-border-radius="8px"
+    data-example-question-button-font-size="14px"
+    data-example-question-button-width="min-content"
+    data-modal-example-questions-col-span="none"
+    data-hyperlink-color="#2322f0ff"
+    data-modal-full-screen-on-mobile='true'
+    data-modal-x-offset="0"
+    data-modal-y-offset="0"
+    data-modal-with-overlay="false"
+    data-modal-inner-flex-direction="column"
+    data-modal-inner-justify-content="end"
+    data-modal-inner-max-width="500px"
+    data-modal-inner-position-left="auto"
+    data-modal-inner-position-right="0"
+    data-modal-inner-position-bottom="0"
+    data-modal-inner-position-top="0"
+    data-modal-size="100vh"
+    data-modal-lock-scroll="false"></script>
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "WebPage", 
+    "name": "Accessibility",
+    "headline": "Accessibility",
+    "image": "https://docs.appian.com/suite/help/26.7/images/open_graph_preview.png", 
+    "url": "https://docs.appian.com/suite/help/26.7/sail/ux-accessibility.html",
+    "about": "SAIL Design System: Guidelines"
+  }
+
+</script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript type="text/plain" data-cookie-consent="tracking">
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2LCFFW" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+</noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main>
+      <header class="py-2 docs-header border-bottom" data-ignore="true">
+        <div class="container-xxxl d-flex flex-wrap">
+          <div class="flex-grow-1 align-self-center mt-2 mb-3 mt-lg-0 mb-lg-0">
+            <a href="/suite/help/26.7/"><img
+                src="../images/design-sys/appian-docs-logo.png"
+                class="nav-company-logo"
+                alt="Appian logo" />
+            </a>
+            
+
+
+
+
+
+
+ 
+
+<select aria-label="Version" onchange="redirectAppianVer(this.value)" class="docs-header-version-select">
+  
+    
+    
+    
+    
+      <option value="26.7" selected>
+        26.7
+      </option>
+  
+    
+    
+    
+    
+      <option value="26.6" >
+        26.6
+      </option>
+  
+    
+    
+    
+    
+      <option value="26.3" >
+        26.3
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.4" >
+        25.4
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.3" >
+        25.3
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.2" >
+        25.2
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.1" >
+        25.1
+      </option>
+  
+    
+    
+    
+    
+      <option value="24.4" >
+        24.4
+      </option>
+  
+    
+    
+    
+    
+      <option value="24.3" >
+        24.3
+      </option>
+  
+</select><script>
+var appianvers = ["26.7","26.6","26.3","25.4","25.3","25.2","25.1","24.4","24.3"];
+
+async function redirectAppianVer(intendedVer) {
+  try {
+    URL = "/suite/help/" + intendedVer + "/sail/ux-accessibility.html"; 
+    const res = await fetch(URL);
+    if (res.ok) {
+      window.location.href = URL; 
+    } else {
+      if (sessionStorage) {
+        sessionStorage.setItem('pageTitle', "Accessibility");
+        sessionStorage.setItem('pageURL', "/sail/ux-accessibility.html");
+        sessionStorage.setItem('intendedVer', intendedVer);
+        sessionStorage.setItem('appianvers', JSON.stringify(appianvers));
+      }
+      window.location.href = '/suite/help/26.7' + '/page-not-found-verjump.html';
+    }
+  } catch (err) {
+    if (sessionStorage) {
+      sessionStorage.setItem('pageTitle', '');
+      sessionStorage.setItem('pageURL', '');
+      sessionStorage.setItem('intendedVer', '');
+      sessionStorage.setItem('appianvers', '');
+    }
+    window.location.href = '/suite/help/26.7' + '/page-not-found-verjump.html';
+    console.log("Error in redirectAppianVer function"); 
+  }
+}
+
+</script>
+          </div>
+          <!-- search box -->
+          <form
+            id="search"
+            class="col-12 col-lg-auto mb-3 mb-lg-0"
+            role="search"
+            action="/suite/help/26.7/Search_Results.php"
+            method="get"
+            style="visibility: hidden">
+            <input
+              type="text"
+              id="search-query-ds"
+              class="form-control"
+              name="q"
+              autocomplete="off"
+              placeholder="Search..."
+              aria-label="Search"
+              style="min-width: 319px"
+              autofocus />
+            <div class="info-container">
+  <div class="info-icon"></div>
+  <div class="info-tooltip">
+    <p>
+      <strong class="info-tooltip-text">How search works:</strong> 
+      <ul>
+        <li class="info-tooltip-text">Capitalization, punctuation, and special characters are ignored</li>
+        <li class="info-tooltip-text">Matches in a title, heading, or function name rank higher</li>
+        <li class="info-tooltip-text">Synonyms are applied</li>
+        <li class="info-tooltip-text">Wildcards are not supported</li>
+      </ul>
+    </p>
+  </div>
+</div>
+            <input
+              type="hidden"
+              name="searchcategories[]"
+              value="saildesignsystem" />
+            <input
+              type="submit"
+              value=""
+              style="display: none" />
+          </form>
+        </div>
+      </header>
+        
+        
+        
+          <div class="page-version-preview ovw-upgrade" hidden data-ignore="true">
+  <a href="#">View this page in the latest version of Appian</a>.
+</div>
+
+<script>
+  const showUpgrade = (upgradeURL, linktext) => {
+    // Render upgrade link
+    const container = document.querySelector('.ovw-upgrade');
+    container.hidden = false;
+    const link = container.querySelector('a');
+    link.href = upgradeURL;
+    link.textContent = linktext; 
+  };
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    let displayName = '';
+    
+    let isOlderVersionOfAppian = false; 
+    
+    let currentsubprod_ver;
+    let prod;
+    let latestsubprod_ver;
+    let isLatestSubProdVer;
+    
+    // if there is a displayName then we know it's a subproduct
+    if (displayName) {
+        
+        prod = 'ds'
+        latestsubprod_ver = 'ds-1';
+        currentsubprod_ver = 'ds-guidelines';
+        if (currentsubprod_ver != latestsubprod_ver) {
+          isLatestSubProdVer = "false"
+        }
+    }
+    
+    // We want this to run on pages where either it's a subproduct that is an older version, or the page is in an older version of Appian docs
+    if (isLatestSubProdVer == "false" || isOlderVersionOfAppian ) {
+      // set variable defaults for cases where it is an older version of Appian docs
+      let regex = new RegExp(`^\/suite\/help\/${'26.7'.replaceAll('.', '\\.')}\/`);
+      let matchstring = '/suite/help/26.7/';
+      let linktext = "View this page in the latest version of Appian"
+      
+      // if subproduct page in older version, update variables
+      if ( isLatestSubProdVer == "false" ) {
+        regex = new RegExp(`^\/suite\/help\/${'26.7'.replaceAll('.', '\\.')}\/${currentsubprod_ver.replaceAll('.', '\\.')}\/`); 
+        matchstring = `/suite/help/26.7/${latestsubprod_ver}/`;
+        linktext = `View this page in the latest version of ${displayName}`
+      } 
+
+      (async () => {
+        try {
+          // Match an upgradeable path which starts with /suite/help/<current version>/
+          if (!window.location.pathname.match(regex)) {
+            throw new Error("Can't upgrade path!");
+          }
+          // Attempt an upgrade - replace matched path with newer version
+          const upgradeURL = window.location.pathname.replace(regex, matchstring);
+          // Check that an upgraded version of this page exists
+          if (!(await fetch(upgradeURL, { method: 'HEAD' })).ok) {
+            throw new Error('Response was not OK');
+          }
+          // Render upgrade link
+          showUpgrade(upgradeURL, linktext);
+        } catch {
+          // Cannot upgrade; leave the page as it is.
+        }
+      })();
+    } 
+  });
+</script>
+
+        
+      <nav class="sticky-top" data-ignore="true">
+        <div class="container-xxxl bg-white d-flex flex-wrap align-items-center py-2 border-bottom">
+          <div>
+            <a
+              href="/suite/help/26.7/sail/home.html"
+              aria-label="Go to SAIL Design System Home Page"
+              class="sail-home-link"><img
+                src="../images/design-sys/appian-icon-sail.png"
+                class="sail-icon"
+                alt="Appian SAIL logo" />
+              SAIL Design System
+            </a>
+          </div>
+          <div class="flex-grow-1"></div>
+          <!-- Nav bar -->
+          <nav>
+            <ul class="nav me-auto topnav">
+              
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/sail-design-system-overview.html" class="nav-link link-dark px-3">
+                      Getting Started
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/inspiration.html" class="nav-link link-dark px-3">
+                      Inspiration
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/components.html" class="nav-link link-dark px-3">
+                      Components
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/introduction.html" class="nav-link link-dark px-3">
+                      Patterns
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a
+                      href="/suite/help/26.7/sail/guidance.html"
+                      class="nav-link link-dark px-3 selected"
+                      aria-current="page">
+                      Guidelines
+                    </a>
+                  </li>
+                
+              
+            </ul>
+          </nav>
+        </div>
+      </nav>
+
+      
+    
+      <!-- set any of the following to "1" to force build when speedybuild -->
+      
+      
+      
+      
+    
+      <!-- show page properties button top of all pages -->
+      
+      
+      <div class="container-xxxl">
+  <div class="row">
+    
+    
+    
+    
+    
+
+    <!-- add in content browser left nav -->
+    <div
+      class="flex-column leftnav flex-shrink-0 py-3"
+      data-ignore="true"
+      sup>
+      <ul class="navigator sticky-top">
+        <!-- TODO: I added sticky-top so it wouldn't scroll. Also updated the CSS. -->
+        
+          
+            <link href="/suite/help/26.7/css/design-sys/ds-content_browser.css" rel="stylesheet" />
+            <!-- topic info  --> 
+
+
+
+
+
+
+<!-- hide browser if page.topic isn't defined -->
+
+
+
+
+
+
+
+
+
+<!-- pages in topic -->
+
+
+
+
+
+
+
+<!-- sub-product versioning stuff -->
+
+  
+  
+
+
+<!-- get proxy pages -->
+
+
+
+<!-- For cases where a docs page topic browser includes a proxy-topic in a subproduct repo, this code will ensure no duplicates links appear for each subproduct version -->
+<!-- Check if the current page is a docs page and not subproduct. -->
+
+   <!-- Group by page.title to see which have dups -->
+   
+   
+   
+
+
+
+
+<!-- parent backlink -->
+
+
+<!-- set list of groups / get top-level items -->
+
+
+
+<!-- this variable stores all the pages that successfuly get
+  placed in the browser (pushed in cb_item.html) to be later
+  compared against all pages in the topic to see who didn't
+  make it -->
+
+
+<!-- set home if exist -->
+
+  
+    <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class="nochildren ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/guidance.html"><span>
+       Guidelines
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+  
+
+
+<!-- root-level items -->
+
+  
+
+<!-- groups and items -->
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Welcome</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-designing-for-your-users.html"><span>
+       Designing for Your Users
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-presenting-information-clearly.html"><span>
+       Presenting Information Clearly
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Layout Best Practices</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-example-walkthrough.html"><span>
+       Example Walk-Through
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-page-width.html"><span>
+       Page Width
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-columns-and-side-by-side.html"><span>
+       Columns vs. Side by Side
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Component Best Practices</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-labels.html"><span>
+       Labels
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-inputs.html"><span>
+       Inputs, Selection, and Pickers
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-buttons-vs-links.html"><span>
+       Buttons vs. Links
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Site & Portal Best Practices</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-portals.html"><span>
+       Portal Design Guidelines
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-site-branding.html"><span>
+       Designing Sites and Portals
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>General Guidelines</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <li class=" current"><a class="navigator-clickable-area" aria-current="page" href="#"><span>Accessibility <span class="ricon_group"></span></span></a></li>
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-avoiding-clutter.html"><span>
+       Avoiding Clutter
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-formatting-and-punctuation.html"><span>
+       Formatting and Punctuation
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-mobile-considerations.html"><span>
+       Mobile Considerations
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-progressive-disclosure.html"><span>
+       Progressive Disclosure
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-color-overview.html"><span>
+       Using Colors
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+
+<!-- OTHER category for pages that were orphaned because the topic-group or type wasn't set properly. -->
+
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+
+          
+        
+      </ul>
+    </div>
+
+    <div class="col py-3 px-3">
+      
+
+
+
+        <div hidden class="page_phone_nav_content" data-ignore="true">
+          <select onchange="location = this.value;" class="page_phone_nav">
+            
+              
+              <option value="/suite/help/26.7/sail/guidance.html" >
+                Guidelines Overview
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-designing-for-your-users.html" >
+                Designing for Your Users
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-presenting-information-clearly.html" >
+                Presenting Information Clearly
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-example-walkthrough.html" >
+                Example Walk-Through
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-page-width.html" >
+                Page Width
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-columns-and-side-by-side.html" >
+                Columns vs. Side by Side
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-labels.html" >
+                Labels
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-inputs.html" >
+                Inputs, Selection, and Pickers
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-buttons-vs-links.html" >
+                Buttons vs. Links
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-portals.html" >
+                Portal Design Guidelines
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-site-branding.html" >
+                Designing Sites and Portals
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-accessibility.html" selected>
+                Accessibility
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-avoiding-clutter.html" >
+                Avoiding Clutter
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-formatting-and-punctuation.html" >
+                Formatting and Punctuation
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-mobile-considerations.html" >
+                Mobile Considerations
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-progressive-disclosure.html" >
+                Progressive Disclosure
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-color-overview.html" >
+                Using Colors
+              </option>
+              
+            
+          </select>
+        </div>
+        <script>
+          const wrapper = document.querySelector(".page_phone_nav_content");
+          wrapper.remove();
+          wrapper.hidden = false;
+          document.querySelector("main > nav").append(wrapper);
+        </script>
+      
+      
+      <!-- content, including page.description as a subtitle -->
+      <div class="d-flex align-items-center justify-content-sm-between">
+        <h1 class="d-sm-inline-block">Accessibility</h1>
+        
+          <div class="d-sm-inline-block" style="z-index: 1001;"><style>
+  .share-container {
+    position: relative;
+  }
+
+  .share-container p {
+    margin: 0;
+  }
+
+  .share-button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .share-button:hover {
+    cursor: pointer;
+  }
+
+  .share-box {
+    display: none;
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    right: 3px;
+    background-color: white;
+    padding: 10px 10px 0;
+    border-radius: 0.2rem;
+    border: solid #cfcfcf 1px;
+    border-width: 1px;
+  }
+
+  .share-menu-item {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: black;
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0 10px;
+    height: 35px;
+  }
+
+  .share-icon {
+    margin-right: 8px;
+  }
+
+  .share-box div:hover {
+    cursor: pointer;
+    color: var(--light-blue);
+  }
+
+  #share-button-icon {
+    font-size: 24px;
+    color: var(--dark-blue);
+  }
+
+  hr.solid {
+    border-top: 1px solid #bbb;
+    margin: 0;
+  }
+</style>
+
+<script>
+
+  document.addEventListener("click", function (event) {
+    var shareContainer = document.querySelector(".share-container");
+    var isClickInside = shareContainer.contains(event.target);
+    var shareBox = document.querySelector(".share-box");
+    var printButton = document.querySelector("#print-button");
+    var shareButton = document.querySelector(".share-button");
+    var isPrint = event.target === printButton || printButton.contains(event.target);
+    var isShareButton = event.target.matches(".share-button") || event.target.matches("#share-button-icon");
+    var copyButton = document.querySelector("#copy-button");
+    var isCopy = event.target === copyButton || copyButton.contains(event.target);
+
+
+    const toggleCopy = (copied) => {
+    const copyIcon = document.querySelector("#copy-icon");
+    const copyLabel = copyButton.childNodes[3];
+    if (copied) {
+      copyIcon.setAttribute('class', 'bi bi-check-lg');
+      copyLabel.innerHTML = "Copied!";
+    } else {
+      copyIcon.setAttribute('class', 'bi bi-link-45deg');
+      copyLabel.innerHTML = "Copy Link";
+    }
+    
+    }
+
+    const toggleShare = (open) => {
+      var shareBox = document.querySelector(".share-box");
+      if (!open) {
+        shareBox.style.display = "none";
+        shareBox.setAttribute("aria-hidden", "true");
+        shareButton.setAttribute("aria-expanded", "false");
+      } else {
+        shareBox.style.display = "block";
+        shareBox.setAttribute("aria-hidden", "false");
+        shareButton.setAttribute("aria-expanded", "true");
+      }
+    }
+
+    if (!isClickInside) {
+      toggleShare(false);
+      toggleCopy(false);
+    } else if (isPrint) {
+      toggleShare(false);
+      window.print();
+    } else if (isCopy) {
+      toggleCopy(true);
+    } else if (isShareButton) {
+      if (shareBox.style.display === "block") {
+        toggleShare(false);
+        toggleCopy(false);
+      } else {
+        toggleShare(true);
+      }
+    }
+  });
+</script>
+
+<div class="share-container" aria-haspopup="true" data-ignore="true">
+  <button class="share-button" aria-label="Share button" aria-expanded="false" aria-controls="share-menu" style="z-index: 1;">
+    <i class="bi bi-share-fill" id="share-button-icon" aria-hidden="true"></i>
+    <span class="sr-only">Share</span>
+  </button>
+  <div class="share-box" id="share-menu" aria-label="Share button menu" role="menu" aria-hidden="true">
+    <p>Share via</p>
+    <div class="share-menu-item" data-share-type="LinkedIn" aria-label="Share on LinkedIn menuitem" role="menuitem" onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`);">
+      <div class="share-icon">
+        <i class="bi bi-linkedin" aria-hidden="true"></i>
+      </div>
+      <p>LinkedIn</p>
+    </div>
+    <div class="share-menu-item" data-share-type="Reddit" aria-label="Share on Reddot menuitem" role="menuitem" onclick="window.open(`https://www.reddit.com/r/appian/submit?selftext=true&title=${window.location.href}`);">
+      <div class="share-icon">
+        <i class="bi bi-reddit" aria-hidden="true"></i>
+      </div>
+      <p>Reddit</p>
+    </div>
+    <div class="share-menu-item" data-share-type="Email" aria-label="Email current page menuitem" role="menuitem" onclick="window.open(`mailto:?&body=${window.location.href}`);">
+      <div class="share-icon">
+        <i class="bi bi-envelope-open-fill" aria-hidden="true"></i>
+      </div>
+      <p>Email</p>
+    </div>
+    <div class="share-menu-item" id="copy-button" data-share-type="Copy" aria-label="Copy url to clipboard menuitem" role="menuitem" onclick="navigator.clipboard.writeText(`${window.location.href}`)">
+      <div class="share-icon">
+        <i class="bi bi-link-45deg" id="copy-icon" aria-hidden="true"></i>
+      </div>
+      <p>Copy Link</p>
+    </div>
+    <hr class="solid" />
+    <div class="share-menu-item" id="print-button" data-share-type="Print" aria-label="Print current page menuitem" role="menuitem">
+      <div class="share-icon">
+        <i class="bi bi-printer-fill" aria-hidden="true"></i>
+      </div>
+      <p>Print</p>
+    </div>
+  </div>
+</div></div>
+        
+        
+      </div>
+      
+      <hr class="mb-4" />
+      <div class="row">
+        <div class="col page_content">
+            <link href="/suite/help/26.7/css/design-sys/ds-video_layout.css" rel="stylesheet">
+
+
+
+
+<div class ="video_banner" id="video_banner" data-ignore="true">
+        <a><div class= "exiticon exit" id="exiticon">
+          <i class="fa fa-compress" aria-hidden="true"></i>
+        </div></a>
+        <div class="video" id="video">
+          <div class ="banner-vid" id="banner-vid">
+            <iframe id="tutorial-vid" src="https://www.youtube.com/embed/rJLWbG-K0Z8?enablejsapi=1&rel=0" title="Accessibility Design Best Practices" frameborder="0">
+            </iframe>
+          </div>
+          <div class="banner-content" id="banner-content">
+            <p class="header">Accessibility Design Best Practices</p>
+            <p><p><a name="prodlink-training-video"></a>This video from <a href="https://academy.appian.com/" target="_blank">Academy Online</a> introduces you to accessibility design best practices.</p>
+</p>
+          </div>
+        </div>
+    </div>
+    <div class = "phonevid" data-ignore="true">
+    <iframe class= "phoneiframe" src="https://www.youtube.com/embed/rJLWbG-K0Z8?enablejsapi=1&rel=0" title="Accessibility Design Best Practices" frameborder="0">
+    </iframe>
+    </div>
+<div id="content-margin"></div>
+
+<script type="text/javascript">
+  // This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+    tag.id = 'iframe-demo';
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+  // This function creates an <iframe> (and YouTube player) after the API code downloads.
+    var player;
+    var iframe = document.getElementById('tutorial-vid');
+    var collapse = document.getElementById('exiticon');
+    const iframeh = '200px';
+    const iframew = '350px';
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('tutorial-vid', {
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+      });
+      // This function collapses banner and pauses video when clicking on minimize icon.
+      collapse.onclick = function(event) { 
+      player.pauseVideo();
+      iframe.style.height = iframeh;
+      iframe.style.width = iframew;
+      collapse.classList.add("exiticon");
+      document.getElementsByClassName('bs-docs-sidebar')[0].style.top = "90px";
+      document.getElementsByClassName('navigator')[0].style.top = "90px";
+      document.getElementById('video_banner').classList.remove("banner-expand");
+      document.getElementById('content-margin').removeAttribute("style");
+      $('div[name]').removeClass('divname'); //removes margintop and height for toc divs
+      
+      };
+  
+    }
+    // The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+      iframe.style.height = iframeh
+      iframe.style.width = iframew;
+    }
+    // This function changes the styles of the video banner and iframe when the video is playing (state=1).
+    function changeStyles(playerStatus) {
+      var height = "506px"; 
+      var width = "900px";
+          var min = "exiticon";
+      var bannerexpand = "banner-expand";
+      var contentmargin = "366px";
+      var toctop = "576px";
+      var divname = document.querySelectorAll('div[name]');
+  
+      if (playerStatus == 1) {
+        iframe.style.height = height;
+        iframe.style.width = width;
+        collapse.classList.remove(min);
+        document.getElementById('video_banner').classList.add(bannerexpand);
+        document.getElementById('content-margin').style.marginTop = contentmargin;
+        document.getElementsByClassName('bs-docs-sidebar')[0].style.top = toctop;
+        document.getElementsByClassName('navigator')[0].style.top = toctop;
+      // the for loop is to add a class to all toc header divs  
+        var i;
+        for(i=0; i<divname.length; i++) {
+          divname[i].classList.add('divname')
+        }
+  
+      }
+    }
+    // The API calls this function when the player's state changes.
+    function onPlayerStateChange(event) {
+      changeStyles(event.data);
+    }
+    
+  </script>
+          
+          <!-- path: collection_docs/_ds-guidelines/groupE/ux-accessibility.md -->
+
+<h2 id="designing-user-interfaces-for-accessibility">Designing user interfaces for accessibility</h2>
+
+<p>Appian is committed to providing user interface features that allow the widest audience to benefit from applications built on the platform. The <a href="../SAIL_Design.html">SAIL framework</a> was designed with accessibility as a primary concern, with a goal of functional equivalence for users with low vision, limited dexterity, and other disabilities.</p>
+
+<p>Check out some of our other documentation on accessibility to learn more about:</p>
+<ul>
+  <li>The industry standards that guide our <a href="../building_accessible_applications.html">accessibility</a> approach.</li>
+  <li><a href="../testing-applications.html">Testing applications for accessibility</a>.</li>
+</ul>
+
+<p>While many of SAIL's accessibility features are transparent—designers do not have to do anything special to benefit from them—a number of UI design choices do dictate the quality of experience for people with disabilities. The reference documentation for each interface component highlights relevant accessibility considerations. Also keep in mind the following best practices when designing for all users.</p>
+
+<h2 id="always-provide-a-text-equivalent">Always provide a text equivalent</h2>
+
+<p>Non-sighted or low-vision users rely on assistive technologies to translate visible UI content into text that is either read aloud or presented as Braille. Information in UI elements that without plain text representation is not automatically conveyed to these users. For example, an image that includes text will only be accessible to sighted users who can see the rendered screen.</p>
+
+<p>Use the alternative text configuration to specify a text equivalent for images and icons; this text will not appear on-screen, but can be read by screen readers. While decorative images without a text equivalent are permissible, crucial data and controls should be expressed with text.</p>
+
+<p>Include accessibility text for read-only grids with <a href="../Grid_Column_Component.html#using-the-backgroundcolor-parameter">conditionally-formatted background colors</a> to explain the significance of each background color.</p>
+
+<h2 id="avoid-relying-on-color-to-communicate-information">Avoid relying on color to communicate information</h2>
+
+<p>Color is a useful supplemental technique to help some users comprehend information. For instance, the positive rich text style shows data in green to suggest a gain or success. However, users with limited vision or those with certain types of color blindness would not benefit from this differentiation. Never assume the ability to identify colors in order to complete a task. For example, instructions to "Click the red button to continue" would not be accessible.</p>
+
+<p>For users with low vision, there is an Accessibility option in <a href="../Settings_Page.html#accessibility">User Settings</a> where they can enable fill patterns on column, bar, and pie charts.</p>
+
+<h2 id="explicitly-describe-form-inputs">Explicitly describe form inputs</h2>
+
+<p>Accessibility is automatically optimized when using the label, instructions, and validation message configurations of interface inputs. The framework takes care of letting screen reader users know the relevant description of the currently-focused field. However, accessibility may suffer when a designer relies solely on the visual representation of a rendered screen to make a form comprehensible. For example, close proximity of instructions to an input on-screen may help a sighted user fill out the form correctly, but a visually-impaired user would not benefit from that context unless the information is explicitly associated with the field.</p>
+
+<p>Even when choosing not to show a visible field label on-screen, designers can use the "Hidden" label position to make label text available only to screen reader users.</p>
+
+<h2 id="use-accessible-headers">Use accessible headers</h2>
+
+<p>Box labels, section labels, and headers help users understand the structure of information on a page. Although colors, styles, and sizes for rich text items may be used to mimic the appearance of a header, screen readers will not interpret this formatted text as section headers. Instead, use section headers and heading fields to accurately represent the structure of page content.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/accessible_headers_do.png" data-lightbox="image-100"><img src="ds-images/accessible_headers_do.png" alt="alttext" standalone="" /></a></div>
+  <p>Use sections, boxes, and the headings to clearly outline page structure</p></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/accessible_headers_dont.png" data-lightbox="image-101"><img src="ds-images/accessible_headers_dont.png" alt="alttext" standalone="" /></a></div>
+  <p>Don't use rich text items to mimic the appearance of a header. You can use the heading component to configure the colors, size, and font weight for a header.</p></div>
+
+<p>Use the "Accessibility Heading Tag" parameter in heading fields and section headers to ensure screen readers properly announce page structure. The accessibility heading tag allows screen reader users to understand how content is organized on a page and to easily navigate between different sections.</p>
+
+<p>By default, section labels map to the following:</p>
+
+<table class="appianTable table table-striped">
+  <thead>
+    <tr>
+      <th>Section Label Size</th>
+      <th>Accessibility Heading Tag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Extra Large</td>
+      <td>H1</td>
+    </tr>
+    <tr>
+      <td>Large Plus</td>
+      <td>H1</td>
+    </tr>
+    <tr>
+      <td>Large</td>
+      <td>H1</td>
+    </tr>
+    <tr>
+      <td>Medium Plus</td>
+      <td>H2</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td>H2</td>
+    </tr>
+    <tr>
+      <td>Small</td>
+      <td>H3</td>
+    </tr>
+    <tr>
+      <td>Extra Small</td>
+      <td>H4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Depending on the hierarchy of sections on the page, the section label sizes and default heading tags may not be representative of your page organization. For example, if you have a section using an "Extra Large" label and a nested section using a "Large" label, the accessibility heading tag for the "Large" label should be changed from H1 to H2. Make sure that your section label heading tags accurately represent page structure using the proper H1 through H6 values.</p>
+
+<p>By default, heading fields map to the following:</p>
+
+<table class="appianTable table table-striped">
+  <thead>
+    <tr>
+      <th>Section Label Size</th>
+      <th>Accessibility Heading Tag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Large Plus</td>
+      <td>H1</td>
+    </tr>
+    <tr>
+      <td>Large</td>
+      <td>H2</td>
+    </tr>
+    <tr>
+      <td>Medium Plus</td>
+      <td>H3</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td>H4</td>
+    </tr>
+    <tr>
+      <td>Small</td>
+      <td>H5</td>
+    </tr>
+    <tr>
+      <td>Extra Small</td>
+      <td>H6</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Depending on the hierarchy of headings on the page, the heading sizes and default heading tags may not be representative of your page organization.</p>
+
+<h2 id="use-accessibility-text-to-provide-supplemental-information">Use accessibility text to provide supplemental information</h2>
+
+<p>The "Accessibility Text" parameter allows designers to specify text on a field or layout that will be read by screen readers in addition to the label and instruction text.</p>
+
+<p>For example, consider a form with "Mailing Address" and "Shipping Address" sections. A sighted user will have the benefit of seeing the corresponding section label in close proximity while filling out each field. But, a screen reader user may benefit from a more direct reminder of the current section.</p>
+
+<p>By specifying "For mailing address" as the accessibility text for the "Street Address 2" field, a screen reader will read out, "Street Address 2, For mailing address" (the label followed by the accessibility text).</p>
+
+<p><img src="ds-images/accessibility_text.png" alt="ds-images/accessibility_text.png" /></p>
+
+<h2 id="prodlink-message-banner">Announce status messages with the message banner component</h2>
+
+<p>Use the <a href="../Message_Banner.html">message banner component</a> to announce important information to users of assistive technologies.</p>
+
+<p>Use the <em>announceBehavior</em> parameter to control how assistive technologies, like screen readers, announce the message banner's text.</p>
+
+<p>The following table explains each option and when to use it.</p>
+
+<table class="appianTable table table-striped">
+  <thead>
+    <tr>
+      <th style="text-align: left">Option</th>
+      <th style="text-align: left">Behavior</th>
+      <th style="text-align: left">Use When</th>
+      <th style="text-align: left">Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">"DISPLAY_AND_ANNOUNCE"</code></td>
+      <td style="text-align: left">Shows the banner and announces the message when the component is evaluated.</td>
+      <td style="text-align: left">To display a banner for <a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html">status messages</a> that convey important and timely information regarding a change in page content.</td>
+      <td style="text-align: left">A success message that confirms that a form was submitted.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">"DISPLAY_ONLY"</code></td>
+      <td style="text-align: left">Shows the banner but does not announce the message when it appears. The message is only announced if a user navigates to it.</td>
+      <td style="text-align: left">For information that is static and doesn't appear based on a change in the interface.</td>
+      <td style="text-align: left">A banner at the top of a form that provides instructions.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">"ANNOUNCE_ONLY"</code></td>
+      <td style="text-align: left">Hides the banner but announces the message when the component is evaluated.</td>
+      <td style="text-align: left">To announce a visual change that a screen reader user would otherwise miss, or to pair an announcement with your own custom-built banner.</td>
+      <td style="text-align: left">Adding or deleting a row in a grid.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="avoid-overusing-announcements">Avoid overusing announcements</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">"DISPLAY_AND_ANNOUNCE"</code> and <code class="language-plaintext highlighter-rouge">"ANNOUNCE_ONLY"</code> options create a "live region" that instructs screen readers to politely announce updates without interrupting the user's current task or shifting the user's focus. Because these live announcements can be disruptive if overused, you should reserve them for important and dynamic changes that are essential for the user to understand what's happening on the interface. For any static or non-critical messages, use <code class="language-plaintext highlighter-rouge">"DISPLAY_ONLY"</code>.</p>
+
+<h2 id="provide-consistent-help-and-assistance">Provide consistent help and assistance</h2>
+
+<p>If you provide a help mechanism that is repeated on multiple screens in your application, position the help mechanism in the same relative location on each page. This assists all users in looking for help to complete tasks, including those who may have a cognitive or learning disability.</p>
+
+<p>Typical help mechanisms include:</p>
+
+<ul>
+  <li>Human contact details like a phone number, email address, or hours of operation.</li>
+  <li>Human mechanisms like a messaging system or contact form.</li>
+  <li>Self-help options like an FAQ, "How do I…", or Support page.</li>
+</ul>
+
+<h2 id="make-it-easy-to-re-enter-previously-entered-information">Make it easy to re-enter previously entered information</h2>
+
+<p>When a user is asked to complete a multi-step process with inputs, some information entered in one step may be needed again in the same process. In those cases, the information should either be auto-populated or available for the user to select. This assists users who have cognitive or mobility disabilities in completing a multi-step process.</p>
+
+<p>For example, it is common for a user's billing address and shipping address to match. You could add a checkbox that auto-populates the billing address details in the shipping address fields and prevent unnecessary work for the user.</p>
+
+<p>Note that this does not mean you must store information between sessions.</p>
+
+        </div>
+        <!-- add in tocbot page nav -->
+        <div
+          class="col-3 d-none d-xl-block"
+          data-ignore="true"
+          sup>
+          <div id="toc" class="sticky-top bs-docs-sidebar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- if coming to the page from a search result, this script will cause the page to jump to that result -->
+      <script src="/suite/help/26.7/js/jumptosearchresult.js"></script>
+
+      
+
+
+
+
+
+<div id="frontmatter" hidden data-title='Accessibility' data-topic='ds-guidelines' data-searchCategory='saildesignsystem'></div>
+
+      <script>
+        // TODO: Couldn't get Ryan's to work, so using different one until he can fix.
+        const codeBlocks = document.querySelectorAll(
+          ".code-box-toolbar + div.highlighter-rouge td.rouge-code, table.rouge-table td.code"
+        );
+        const copyCodeButtons = document.querySelectorAll(".copy-code-button");
+
+        copyCodeButtons.forEach((copyCodeButton, index) => {
+          const code = codeBlocks[index].innerText;
+
+          copyCodeButton.addEventListener("click", () => {
+            // Copy the code to the user's clipboard
+            window.navigator.clipboard.writeText(code);
+
+            // Update the button text visually
+            const { innerText: originalText } = copyCodeButton;
+            copyCodeButton.innerText = "Copied!";
+
+            // (Optional) Toggle a class for styling the button
+            copyCodeButton.classList.add("copied");
+
+            // After 2 seconds, reset the button to its initial UI
+            setTimeout(() => {
+              copyCodeButton.innerText = originalText;
+              copyCodeButton.classList.remove("copied");
+            }, 2000);
+          });
+        });
+      </script>
+
+      <div
+        class="container-fluid py-5"
+        id="footer"
+        data-ignore="true">
+        <div class="container-xxxl px-4">
+          <div class="row mb-4">
+            <img
+              src="../images/design-sys/logo-appian-white-rebrand.svg"
+              alt="Appian logo"
+              class="footer-logo" />
+          </div>
+          <div class="row mb-4">
+            <a href="https://www.appian.com/" target="_blank">Appian.com
+            </a>
+            <a href="/suite/help/26.7/" target="_blank">Appian Documentation
+            </a>
+            <a href="https://community.appian.com" target="_blank">Appian Community
+            </a>
+            <a href="https://appian.com/legal/privacy-information.html">Privacy
+            </a>
+            <a href="#" id="open_preferences_center">Update Cookie Preferences
+            </a>
+            <br/>
+            &nbsp;
+            <br/>
+          </div>
+          &copy;2026 Appian. All rights reserved.
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- page toc on right side using tocbot -->
+<script src="/suite/help/26.7/js/design-sys/tocbot.min.js"></script>
+<script>
+      tocbot.init({
+    // Where to render the table of contents.
+    tocSelector: "#toc",
+    // Where to grab the headings to build the table of contents.
+    contentSelector: ".page_content",
+    // Which headings to grab inside of the contentSelector element.
+    headingSelector: "h2,h3,h4,h5",
+    // For headings inside relative or absolute positioned containers within content.
+    hasInnerContainers: true,
+    // orderedList can be set to false to generate unordered lists (ul)
+    // instead of ordered lists (ol)
+    orderedList: false,
+    // Smooth scrolling enabled.
+    scrollSmooth: true,
+    // Smooth scroll duration.
+    scrollSmoothDuration: 420,
+    // Smooth scroll offset.
+    scrollSmoothOffset: -17,
+    // Headings offset between the headings and the top of the document (this is meant for minor adjustments).
+    headingsOffset: 17,
+      });
+</script>
+
+<!-- script for left nav to expand or collapse on click -->
+<script type="text/javascript" src="/suite/help/26.7/js/initialize_nav.js"></script>
+
+<!-- typeahead scripts -->
+<script src="/suite/help/26.7/js/typeahead.bundle.min.js"></script>
+
+<script>
+      // hides searchbox until it loads with typeahead
+      $("#search").css("visibility", "visible");
+</script>
+
+<script>
+
+
+  if(Object.keys(localStorage).length > 10) {
+    Object.keys(localStorage).forEach(
+      function(currentValue){
+        if(currentValue.indexOf("search-typeahead-data")>0){
+          localStorage.removeItem(currentValue)
+        }
+      }
+    );
+  }
+  var typeaheadSuggestions = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.obj.nonword('name'),
+    queryTokenizer: Bloodhound.tokenizers.nonword,
+    limit: 20,
+    sorter: function compare(a, b) {
+      var input_regex = new RegExp($('input[type="text"]:focus').val(), "i");
+      var a_indexof = a.name.search(input_regex); 
+      var b_indexof = b.name.search(input_regex); 
+      if (a_indexof > -1  && b_indexof == -1) {
+      return -1;
+      }
+      if (a_indexof == -1  && b_indexof > -1) {
+        return 1;
+      }
+      if (a_indexof < b_indexof) {
+        return -1;
+      }
+      if (a_indexof > b_indexof) {
+        return 1;
+      }
+      return 0;
+    },
+    prefetch: {
+      url: "/suite/help/26.7/search-typeahead-ds-data.json?Appian 26.7-2026-08-02 03:41:03 +0000",
+    }
+  });typeaheadSuggestions.initialize();
+
+  typeaheads = ['input#search-query-splash', 'input#search-query-sp', 'input#search-query-ds', 'input#search-query-mobile', 'input#search-query-nav']
+
+// For the typeaheads in the navmenu and mobile navmenu, they need to be loaded first (see megamenu.js and megamenu-mobile.js) 
+// so we are setting a timeout here just for those so that there are no errors
+  typeaheads.forEach((t, idx) => {
+      if (t === 'input#search-query-nav' || t === 'input#search-query-mobile') {
+          setTimeout(() => {
+            if(document.querySelector(t)) {
+              initializeTypeahead(t, idx);
+            }
+          }, 1000);
+      } else {
+        initializeTypeahead(t, idx);
+      }
+  });
+
+  function initializeTypeahead(t, idx) {
+      $(t).typeahead({ highlight: true, hint: true }, {
+        name: `typeaheadSuggestions-${idx}`,
+        displayKey: 'name',source: typeaheadSuggestions.ttAdapter()
+      });
+
+      $(t).bind(
+        'typeahead:selected',
+        function(obj, datum, name){
+          targetURL = "/suite/help/26.7" + datum.path;
+          if (window.dataLayer) {
+            window.dataLayer.push({
+              'event': 'dsTypeAheadClicked',
+              'link_URL': targetURL, 
+              'link_text': datum.name
+            });
+          }  
+          window.top.location = targetURL;
+        }
+      );
+
+      $(t).on('focus', (e) => {
+        e.stopPropagation();
+        $(this).typeahead('open');
+      })
+  }
+
+
+</script>
+
+<!-- prospect tracking -->
+<script type="text/plain" data-cookie-consent="tracking">
+  piAId = '11342';
+  piCId = '1671';
+
+  (function() {
+  function async_load(){
+    var s = document.createElement('script'); s.type = 'text/javascript';
+    s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+    var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+  }
+  
+  if(window.attachEvent) { window.attachEvent('onload', async_load); }
+  else { window.addEventListener('load', async_load, false); }
+  })();
+</script>
+
+<!-- Scrape page for sail components and adds hyperlinks to all functions -->
+<style>
+    .functions-anchor {
+        text-decoration: none;
+    }
+
+    .functions-anchor:hover {
+        text-decoration: underline;
+    }
+</style>
+<script>
+    const linkFunctions = async () => {
+        let functions = document.querySelectorAll('span.nf');
+
+        if (functions.length > 0) {
+        const response = await fetch("/suite/help/26.7/functions.json");
+            const functionsJson = await response.json();
+
+            functions.forEach((func) => {
+                if (func) {
+                    func.addEventListener("mouseover", () => {
+                    let originalText = func.innerText.trim();
+                    let parts = originalText.split('(');  
+                    
+                    func.innerHTML = '';  
+
+                    parts.forEach((part, index) => {
+                        if (index > 0) {
+                            func.appendChild(document.createTextNode('('));
+                        }
+
+                        let subParts = part.split(/(fn!)/).filter(Boolean);
+                        
+                        subParts.forEach(subPart => {
+                            let cleanedSubPart = subPart.replace('fn!', '').trim().toLowerCase();
+                            const currentPage = "/suite/help/26.7/sail/ux-accessibility.html";
+                            if (functionsJson[cleanedSubPart] && currentPage.toLowerCase() !== functionsJson[cleanedSubPart].toLowerCase()) {
+                                const link = document.createElement('a');
+                                link.href = functionsJson[cleanedSubPart];
+                                link.textContent = subPart;
+                                link.setAttribute('target', '_blank');
+                                link.setAttribute('class', 'nf functions-anchor');
+                                func.appendChild(link);
+                            } else {
+                                func.appendChild(document.createTextNode(subPart));
+                            }
+                        });
+                    });
+                }, {once: true});
+                }
+            });
+        }
+    }
+
+    linkFunctions();
+</script>
+
+<script type="text/javascript">
+  $('a').filter(function() {
+    return this.hostname && this.hostname !== location.hostname;
+  }).attr("target","_blank");
+</script>
+
+<script src="/suite/help/26.7/js/headinganchorlinks.js"></script>

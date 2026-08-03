@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "appian": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "/home/robert/Development/lcp-mcp-server",
+        "python",
+        "-m",
+        "lcp_mcp_server"
+      ],
+      "env": {
+        "LCP_URL": "https://spear-dev.appiancloud.com",
+        "LCP_USERNAME": "rob.munroe",
+        "LCP_PASSWORD": "cHscM4Kw",
+        "LCP_API_PATH": "/suite/plugins/servlet/stateless/lcp-api"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,2588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Cookie Consent and Google Tags initialzation -->
+    <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script
+  type="text/javascript"
+  src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js"
+  charset="UTF-8"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied'
+  })
+</script>
+<!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-2RTKZX15VD"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+
+  gtag('config', 'G-2RTKZX15VD')
+</script>
+<script type="text/javascript" charset="UTF-8">
+  document.addEventListener('DOMContentLoaded', function () {
+    cookieconsent.run({
+      notice_banner_type: 'simple',
+      consent_type: 'express',
+      palette: 'light',
+      language: 'en',
+      page_load_consent_levels: ['strictly-necessary'],
+      notice_banner_reject_button_hide: false,
+      preferences_center_close_button_hide: false,
+      page_refresh_confirmation_buttons: true,
+      website_name: 'Appian Documentation',
+      website_privacy_policy_url: 'https://www.appian.com/privacy/',
+
+      callbacks: {
+        scripts_specific_loaded: level => {
+          switch (level) {
+            case 'targeting':
+              gtag('consent', 'update', {
+                ad_storage: 'granted',
+                ad_user_data: 'granted',
+                ad_personalization: 'granted',
+                analytics_storage: 'granted'
+              })
+              break
+          }
+        }
+      },
+      callbacks_force: true
+    })
+  })
+</script>
+<link href="/suite/help/26.7/css/cookie_consent.css" rel="stylesheet" />
+<noscript
+  >Free cookie consent management tool by
+  <a href="https://www.termsfeed.com/">TermsFeed</a>
+</noscript>
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+<!-- Google Tag Manager -->
+<script type="text/plain" data-cookie-consent="tracking">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M2LCFFW');
+</script>
+<!-- End Google Tag Manager -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    
+    
+
+
+    <title>
+      Grids [SAIL Design System: Components]
+    </title>
+    <link rel="shortcut icon" href="/suite/help/26.7/images/appian_48x48.ico" />
+    <link href="/suite/help/26.7/css/design-sys/tocbot.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/bootstrap.min.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/lightbox.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/appian-base-styles.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/appian-sail.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/appian-sail-responsive.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/balloon_notes.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/syntax.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/ds-typeahead.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/ds-syntax.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700" rel="stylesheet" />
+
+      <!-- TODO: for the icons. Dunno what Charles wants to do. -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <script src="/suite/help/26.7/js/design-sys/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="/suite/help/26.7/js/design-sys/bootstrap.bundle.min.js"></script>
+    <script src="/suite/help/26.7/js/design-sys/sidebars.js"></script>
+    <script src="/suite/help/26.7/js/design-sys/lightbox.js"></script>
+
+    <script src="/suite/help/26.7/js/serverless-sail.js"></script>
+    <link href="/suite/help/26.7/css/iframe.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/serverless-sail.css" rel="stylesheet" />
+
+    <meta property="og:title" content="Grids">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://docs.appian.com/suite/help/26.7/sail/ux-grids.html" />
+<meta property="og:url" content="https://docs.appian.com/suite/help/26.7/sail/ux-grids.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://docs.appian.com/suite/help/26.7/images/open_graph_preview.png" />
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Grids">
+
+  <script
+    async
+    src="https://widget.kapa.ai/kapa-widget.bundle.js"
+    data-website-id="cb54ded1-4d63-4b15-97bf-5c77eda3fbcb"
+    data-source-group-ids-include="6ce0e4f1-f64b-4623-a739-90dce4278292"
+    data-button-hide="true"
+    data-kapa-branding-hide='true'
+    data-modal-title='​Appian Docs AI'
+    data-modal-disclaimer="Welcome to the Appian Docs AI Chat! Ask questions about the Appian Docs and Community Knowledge Base."
+    data-modal-disclaimer-bg-color="none"
+    data-modal-disclaimer-font-size="14px"
+    data-modal-disclaimer-text-color="#000000"
+    data-project-logo="/suite/help/26.7/images/appian_48x48.ico"
+    data-modal-image-height="40px"
+    data-modal-image-width="40px"
+    data-modal-border-radius='none'
+    data-modal-z-index='9999'
+    data-user-analytics-cookie-enabled="true"
+    data-consent-required="true"
+    data-consent-screen-title="Help us improve our AI assistant"
+    data-consent-screen-disclaimer="This feature is not available unless you consent to anonymous user tracking which helps us improve our service. We don't collect any personally identifiable information beyond what you explicitly provide."
+    data-consent-screen-accept-button-text="Allow tracking"
+    data-consent-screen-reject-button-text="No thanks"
+    data-modal-ask-ai-input-placeholder="Ask me a question..."
+    data-modal-example-questions="What is data fabric?,What are AI agents?,How do I create a record type?"
+    data-example-question-button-bg-color="#e7f1ffff"
+    data-example-question-button-border="1px solid #E8E8E8"
+    data-example-question-button-border-radius="8px"
+    data-example-question-button-font-size="14px"
+    data-example-question-button-width="min-content"
+    data-modal-example-questions-col-span="none"
+    data-hyperlink-color="#2322f0ff"
+    data-modal-full-screen-on-mobile='true'
+    data-modal-x-offset="0"
+    data-modal-y-offset="0"
+    data-modal-with-overlay="false"
+    data-modal-inner-flex-direction="column"
+    data-modal-inner-justify-content="end"
+    data-modal-inner-max-width="500px"
+    data-modal-inner-position-left="auto"
+    data-modal-inner-position-right="0"
+    data-modal-inner-position-bottom="0"
+    data-modal-inner-position-top="0"
+    data-modal-size="100vh"
+    data-modal-lock-scroll="false"></script>
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "WebPage", 
+    "name": "Grids",
+    "headline": "Grids",
+    "image": "https://docs.appian.com/suite/help/26.7/images/open_graph_preview.png", 
+    "url": "https://docs.appian.com/suite/help/26.7/sail/ux-grids.html",
+    "about": "SAIL Design System: Components"
+  }
+
+</script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript type="text/plain" data-cookie-consent="tracking">
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2LCFFW" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+</noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main>
+      <header class="py-2 docs-header border-bottom" data-ignore="true">
+        <div class="container-xxxl d-flex flex-wrap">
+          <div class="flex-grow-1 align-self-center mt-2 mb-3 mt-lg-0 mb-lg-0">
+            <a href="/suite/help/26.7/"><img
+                src="../images/design-sys/appian-docs-logo.png"
+                class="nav-company-logo"
+                alt="Appian logo" />
+            </a>
+            
+
+
+
+
+
+
+ 
+
+<select aria-label="Version" onchange="redirectAppianVer(this.value)" class="docs-header-version-select">
+  
+    
+    
+    
+    
+      <option value="26.7" selected>
+        26.7
+      </option>
+  
+    
+    
+    
+    
+      <option value="26.6" >
+        26.6
+      </option>
+  
+    
+    
+    
+    
+      <option value="26.3" >
+        26.3
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.4" >
+        25.4
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.3" >
+        25.3
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.2" >
+        25.2
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.1" >
+        25.1
+      </option>
+  
+    
+    
+    
+    
+      <option value="24.4" >
+        24.4
+      </option>
+  
+    
+    
+    
+    
+      <option value="24.3" >
+        24.3
+      </option>
+  
+</select><script>
+var appianvers = ["26.7","26.6","26.3","25.4","25.3","25.2","25.1","24.4","24.3"];
+
+async function redirectAppianVer(intendedVer) {
+  try {
+    URL = "/suite/help/" + intendedVer + "/sail/ux-grids.html"; 
+    const res = await fetch(URL);
+    if (res.ok) {
+      window.location.href = URL; 
+    } else {
+      if (sessionStorage) {
+        sessionStorage.setItem('pageTitle', "Grids");
+        sessionStorage.setItem('pageURL', "/sail/ux-grids.html");
+        sessionStorage.setItem('intendedVer', intendedVer);
+        sessionStorage.setItem('appianvers', JSON.stringify(appianvers));
+      }
+      window.location.href = '/suite/help/26.7' + '/page-not-found-verjump.html';
+    }
+  } catch (err) {
+    if (sessionStorage) {
+      sessionStorage.setItem('pageTitle', '');
+      sessionStorage.setItem('pageURL', '');
+      sessionStorage.setItem('intendedVer', '');
+      sessionStorage.setItem('appianvers', '');
+    }
+    window.location.href = '/suite/help/26.7' + '/page-not-found-verjump.html';
+    console.log("Error in redirectAppianVer function"); 
+  }
+}
+
+</script>
+          </div>
+          <!-- search box -->
+          <form
+            id="search"
+            class="col-12 col-lg-auto mb-3 mb-lg-0"
+            role="search"
+            action="/suite/help/26.7/Search_Results.php"
+            method="get"
+            style="visibility: hidden">
+            <input
+              type="text"
+              id="search-query-ds"
+              class="form-control"
+              name="q"
+              autocomplete="off"
+              placeholder="Search..."
+              aria-label="Search"
+              style="min-width: 319px"
+              autofocus />
+            <div class="info-container">
+  <div class="info-icon"></div>
+  <div class="info-tooltip">
+    <p>
+      <strong class="info-tooltip-text">How search works:</strong> 
+      <ul>
+        <li class="info-tooltip-text">Capitalization, punctuation, and special characters are ignored</li>
+        <li class="info-tooltip-text">Matches in a title, heading, or function name rank higher</li>
+        <li class="info-tooltip-text">Synonyms are applied</li>
+        <li class="info-tooltip-text">Wildcards are not supported</li>
+      </ul>
+    </p>
+  </div>
+</div>
+            <input
+              type="hidden"
+              name="searchcategories[]"
+              value="saildesignsystem" />
+            <input
+              type="submit"
+              value=""
+              style="display: none" />
+          </form>
+        </div>
+      </header>
+        
+        
+        
+          <div class="page-version-preview ovw-upgrade" hidden data-ignore="true">
+  <a href="#">View this page in the latest version of Appian</a>.
+</div>
+
+<script>
+  const showUpgrade = (upgradeURL, linktext) => {
+    // Render upgrade link
+    const container = document.querySelector('.ovw-upgrade');
+    container.hidden = false;
+    const link = container.querySelector('a');
+    link.href = upgradeURL;
+    link.textContent = linktext; 
+  };
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    let displayName = '';
+    
+    let isOlderVersionOfAppian = false; 
+    
+    let currentsubprod_ver;
+    let prod;
+    let latestsubprod_ver;
+    let isLatestSubProdVer;
+    
+    // if there is a displayName then we know it's a subproduct
+    if (displayName) {
+        
+        prod = 'ds'
+        latestsubprod_ver = 'ds-1';
+        currentsubprod_ver = 'ds-components';
+        if (currentsubprod_ver != latestsubprod_ver) {
+          isLatestSubProdVer = "false"
+        }
+    }
+    
+    // We want this to run on pages where either it's a subproduct that is an older version, or the page is in an older version of Appian docs
+    if (isLatestSubProdVer == "false" || isOlderVersionOfAppian ) {
+      // set variable defaults for cases where it is an older version of Appian docs
+      let regex = new RegExp(`^\/suite\/help\/${'26.7'.replaceAll('.', '\\.')}\/`);
+      let matchstring = '/suite/help/26.7/';
+      let linktext = "View this page in the latest version of Appian"
+      
+      // if subproduct page in older version, update variables
+      if ( isLatestSubProdVer == "false" ) {
+        regex = new RegExp(`^\/suite\/help\/${'26.7'.replaceAll('.', '\\.')}\/${currentsubprod_ver.replaceAll('.', '\\.')}\/`); 
+        matchstring = `/suite/help/26.7/${latestsubprod_ver}/`;
+        linktext = `View this page in the latest version of ${displayName}`
+      } 
+
+      (async () => {
+        try {
+          // Match an upgradeable path which starts with /suite/help/<current version>/
+          if (!window.location.pathname.match(regex)) {
+            throw new Error("Can't upgrade path!");
+          }
+          // Attempt an upgrade - replace matched path with newer version
+          const upgradeURL = window.location.pathname.replace(regex, matchstring);
+          // Check that an upgraded version of this page exists
+          if (!(await fetch(upgradeURL, { method: 'HEAD' })).ok) {
+            throw new Error('Response was not OK');
+          }
+          // Render upgrade link
+          showUpgrade(upgradeURL, linktext);
+        } catch {
+          // Cannot upgrade; leave the page as it is.
+        }
+      })();
+    } 
+  });
+</script>
+
+        
+      <nav class="sticky-top" data-ignore="true">
+        <div class="container-xxxl bg-white d-flex flex-wrap align-items-center py-2 border-bottom">
+          <div>
+            <a
+              href="/suite/help/26.7/sail/home.html"
+              aria-label="Go to SAIL Design System Home Page"
+              class="sail-home-link"><img
+                src="../images/design-sys/appian-icon-sail.png"
+                class="sail-icon"
+                alt="Appian SAIL logo" />
+              SAIL Design System
+            </a>
+          </div>
+          <div class="flex-grow-1"></div>
+          <!-- Nav bar -->
+          <nav>
+            <ul class="nav me-auto topnav">
+              
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/sail-design-system-overview.html" class="nav-link link-dark px-3">
+                      Getting Started
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/inspiration.html" class="nav-link link-dark px-3">
+                      Inspiration
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a
+                      href="/suite/help/26.7/sail/components.html"
+                      class="nav-link link-dark px-3 selected"
+                      aria-current="page">
+                      Components
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/introduction.html" class="nav-link link-dark px-3">
+                      Patterns
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/guidance.html" class="nav-link link-dark px-3">
+                      Guidelines
+                    </a>
+                  </li>
+                
+              
+            </ul>
+          </nav>
+        </div>
+      </nav>
+
+      
+    
+      <!-- set any of the following to "1" to force build when speedybuild -->
+      
+      
+      
+      
+    
+      <!-- show page properties button top of all pages -->
+      
+      
+      <div class="container-xxxl">
+  <div class="row">
+    
+    
+    
+    
+    
+
+    <!-- add in content browser left nav -->
+    <div
+      class="flex-column leftnav flex-shrink-0 py-3"
+      data-ignore="true"
+      sup>
+      <ul class="navigator sticky-top">
+        <!-- TODO: I added sticky-top so it wouldn't scroll. Also updated the CSS. -->
+        
+          
+            <link href="/suite/help/26.7/css/design-sys/ds-content_browser.css" rel="stylesheet" />
+            <!-- topic info  --> 
+
+
+
+
+
+
+<!-- hide browser if page.topic isn't defined -->
+
+
+
+
+
+
+
+
+
+<!-- pages in topic -->
+
+
+
+
+
+
+
+<!-- sub-product versioning stuff -->
+
+  
+  
+
+
+<!-- get proxy pages -->
+
+
+
+<!-- For cases where a docs page topic browser includes a proxy-topic in a subproduct repo, this code will ensure no duplicates links appear for each subproduct version -->
+<!-- Check if the current page is a docs page and not subproduct. -->
+
+   <!-- Group by page.title to see which have dups -->
+   
+   
+   
+
+
+
+
+<!-- parent backlink -->
+
+
+<!-- set list of groups / get top-level items -->
+
+
+
+<!-- this variable stores all the pages that successfuly get
+  placed in the browser (pushed in cb_item.html) to be later
+  compared against all pages in the topic to see who didn't
+  make it -->
+
+
+<!-- set home if exist -->
+
+  
+    <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class="nochildren ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/components.html"><span>
+       Components
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+  
+
+
+<!-- root-level items -->
+
+  
+
+<!-- groups and items -->
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Top-Level Layouts</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-form-layout.html"><span>
+       Form Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-wizard-layout.html"><span>
+       Wizard Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-header-content-layout.html"><span>
+       Header Content Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-pane-layout.html"><span>
+       Pane Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Layouts</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-section-layout.html"><span>
+       Section Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-columns-layout.html"><span>
+       Columns Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-side-by-side-layout.html"><span>
+       Side by Side Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-tab-layout.html"><span>
+       Tab Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-box-layout.html"><span>
+       Box Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-card-layout.html"><span>
+       Card Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-billboard-layout.html"><span>
+       Billboard Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Display</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-images.html"><span>
+       Images
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-rich-text.html"><span>
+       Rich Text
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-kpi.html"><span>
+       KPIs
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-tags.html"><span>
+       Tags
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-gauge.html"><span>
+       Gauges
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-styled-icons.html"><span>
+       Standard Icons
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Action</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-buttons.html"><span>
+       Buttons
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-record-actions.html"><span>
+       Record Actions
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Grids & Lists</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <li class=" current"><a class="navigator-clickable-area" aria-current="page" href="#"><span>Grids <span class="ricon_group"></span></span></a></li>
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-event-history-list.html"><span>
+       Event History List
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Charts</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-charts.html"><span>
+       Charts
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+
+<!-- OTHER category for pages that were orphaned because the topic-group or type wasn't set properly. -->
+
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+
+          
+        
+      </ul>
+    </div>
+
+    <div class="col py-3 px-3">
+      
+
+
+
+        <div hidden class="page_phone_nav_content" data-ignore="true">
+          <select onchange="location = this.value;" class="page_phone_nav">
+            
+              
+              <option value="/suite/help/26.7/sail/components.html" >
+                Components Overview
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-form-layout.html" >
+                Form Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-wizard-layout.html" >
+                Wizard Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-header-content-layout.html" >
+                Header Content Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-pane-layout.html" >
+                Pane Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-section-layout.html" >
+                Section Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-columns-layout.html" >
+                Columns Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-side-by-side-layout.html" >
+                Side by Side Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-tab-layout.html" >
+                Tab Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-box-layout.html" >
+                Box Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-card-layout.html" >
+                Card Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-billboard-layout.html" >
+                Billboard Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-images.html" >
+                Images
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-rich-text.html" >
+                Rich Text
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-kpi.html" >
+                KPIs
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-tags.html" >
+                Tags
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-gauge.html" >
+                Gauges
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-styled-icons.html" >
+                Standard Icons
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-buttons.html" >
+                Buttons
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-record-actions.html" >
+                Record Actions
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-grids.html" selected>
+                Grids
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-event-history-list.html" >
+                Event History List
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-charts.html" >
+                Charts
+              </option>
+              
+            
+          </select>
+        </div>
+        <script>
+          const wrapper = document.querySelector(".page_phone_nav_content");
+          wrapper.remove();
+          wrapper.hidden = false;
+          document.querySelector("main > nav").append(wrapper);
+        </script>
+      
+      
+      <!-- content, including page.description as a subtitle -->
+      <div class="d-flex align-items-center justify-content-sm-between">
+        <h1 class="d-sm-inline-block">Grids</h1>
+        
+          <div class="d-sm-inline-block" style="z-index: 1001;"><style>
+  .share-container {
+    position: relative;
+  }
+
+  .share-container p {
+    margin: 0;
+  }
+
+  .share-button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .share-button:hover {
+    cursor: pointer;
+  }
+
+  .share-box {
+    display: none;
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    right: 3px;
+    background-color: white;
+    padding: 10px 10px 0;
+    border-radius: 0.2rem;
+    border: solid #cfcfcf 1px;
+    border-width: 1px;
+  }
+
+  .share-menu-item {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: black;
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0 10px;
+    height: 35px;
+  }
+
+  .share-icon {
+    margin-right: 8px;
+  }
+
+  .share-box div:hover {
+    cursor: pointer;
+    color: var(--light-blue);
+  }
+
+  #share-button-icon {
+    font-size: 24px;
+    color: var(--dark-blue);
+  }
+
+  hr.solid {
+    border-top: 1px solid #bbb;
+    margin: 0;
+  }
+</style>
+
+<script>
+
+  document.addEventListener("click", function (event) {
+    var shareContainer = document.querySelector(".share-container");
+    var isClickInside = shareContainer.contains(event.target);
+    var shareBox = document.querySelector(".share-box");
+    var printButton = document.querySelector("#print-button");
+    var shareButton = document.querySelector(".share-button");
+    var isPrint = event.target === printButton || printButton.contains(event.target);
+    var isShareButton = event.target.matches(".share-button") || event.target.matches("#share-button-icon");
+    var copyButton = document.querySelector("#copy-button");
+    var isCopy = event.target === copyButton || copyButton.contains(event.target);
+
+
+    const toggleCopy = (copied) => {
+    const copyIcon = document.querySelector("#copy-icon");
+    const copyLabel = copyButton.childNodes[3];
+    if (copied) {
+      copyIcon.setAttribute('class', 'bi bi-check-lg');
+      copyLabel.innerHTML = "Copied!";
+    } else {
+      copyIcon.setAttribute('class', 'bi bi-link-45deg');
+      copyLabel.innerHTML = "Copy Link";
+    }
+    
+    }
+
+    const toggleShare = (open) => {
+      var shareBox = document.querySelector(".share-box");
+      if (!open) {
+        shareBox.style.display = "none";
+        shareBox.setAttribute("aria-hidden", "true");
+        shareButton.setAttribute("aria-expanded", "false");
+      } else {
+        shareBox.style.display = "block";
+        shareBox.setAttribute("aria-hidden", "false");
+        shareButton.setAttribute("aria-expanded", "true");
+      }
+    }
+
+    if (!isClickInside) {
+      toggleShare(false);
+      toggleCopy(false);
+    } else if (isPrint) {
+      toggleShare(false);
+      window.print();
+    } else if (isCopy) {
+      toggleCopy(true);
+    } else if (isShareButton) {
+      if (shareBox.style.display === "block") {
+        toggleShare(false);
+        toggleCopy(false);
+      } else {
+        toggleShare(true);
+      }
+    }
+  });
+</script>
+
+<div class="share-container" aria-haspopup="true" data-ignore="true">
+  <button class="share-button" aria-label="Share button" aria-expanded="false" aria-controls="share-menu" style="z-index: 1;">
+    <i class="bi bi-share-fill" id="share-button-icon" aria-hidden="true"></i>
+    <span class="sr-only">Share</span>
+  </button>
+  <div class="share-box" id="share-menu" aria-label="Share button menu" role="menu" aria-hidden="true">
+    <p>Share via</p>
+    <div class="share-menu-item" data-share-type="LinkedIn" aria-label="Share on LinkedIn menuitem" role="menuitem" onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`);">
+      <div class="share-icon">
+        <i class="bi bi-linkedin" aria-hidden="true"></i>
+      </div>
+      <p>LinkedIn</p>
+    </div>
+    <div class="share-menu-item" data-share-type="Reddit" aria-label="Share on Reddot menuitem" role="menuitem" onclick="window.open(`https://www.reddit.com/r/appian/submit?selftext=true&title=${window.location.href}`);">
+      <div class="share-icon">
+        <i class="bi bi-reddit" aria-hidden="true"></i>
+      </div>
+      <p>Reddit</p>
+    </div>
+    <div class="share-menu-item" data-share-type="Email" aria-label="Email current page menuitem" role="menuitem" onclick="window.open(`mailto:?&body=${window.location.href}`);">
+      <div class="share-icon">
+        <i class="bi bi-envelope-open-fill" aria-hidden="true"></i>
+      </div>
+      <p>Email</p>
+    </div>
+    <div class="share-menu-item" id="copy-button" data-share-type="Copy" aria-label="Copy url to clipboard menuitem" role="menuitem" onclick="navigator.clipboard.writeText(`${window.location.href}`)">
+      <div class="share-icon">
+        <i class="bi bi-link-45deg" id="copy-icon" aria-hidden="true"></i>
+      </div>
+      <p>Copy Link</p>
+    </div>
+    <hr class="solid" />
+    <div class="share-menu-item" id="print-button" data-share-type="Print" aria-label="Print current page menuitem" role="menuitem">
+      <div class="share-icon">
+        <i class="bi bi-printer-fill" aria-hidden="true"></i>
+      </div>
+      <p>Print</p>
+    </div>
+  </div>
+</div></div>
+        
+        
+      </div>
+      
+      <hr class="mb-4" />
+      <div class="row">
+        <div class="col page_content">
+          
+
+
+
+
+
+
+
+
+
+
+<!-- path: collection_docs/_ds-components/groupE/ux-grids.md -->
+
+<div class="card bg-light mb-3" data-ignore="true">
+   <div class="card-body pt-1">
+     <p class="card-text">
+       <span class="fs-1 me-2"><i class="bi bi-journal-code"></i></span>See the developer documentation for technical details about the <a href="/suite/help/26.7/Editable_Grid_Component.html" target="_blank">editable grid component</a><i class="bi bi-box-arrow-in-up-right ms-1"></i> or <a href="/suite/help/26.7/Paging_Grid_Component.html" target="_blank">read-only grid component</a><i class="bi bi-box-arrow-in-up-right ms-1"></i>.
+     </p>
+   </div>
+  </div>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Use grids to display tabular data in a structured, easy-to-scan layout. Keep grid data values concise and consistently-formatted to maximize readability.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/regular_grid.png" data-lightbox="image-100"><img src="ds-images/regular_grid.png" alt="alttext" standalone="" /></a></div>
+  <p>Apply the same formatting to all data in a given column.</p></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/bad_grid_example.png" data-lightbox="image-101"><img src="ds-images/bad_grid_example.png" alt="alttext" standalone="" /></a></div>
+  <p>Don't use grids to display large blocks of text.</p></div>
+
+<h2 id="sort-order-and-filtering">Sort order and filtering</h2>
+
+<p>Grids should be designed to allow users to quickly find the item(s) that they are looking for.</p>
+
+<p>The first priority should be to apply a logical sort order that would display the most important information at the top of the list.</p>
+
+<p><img src="ds-images/logical_sort_order.png" alt="ds-images/logical_sort_order.png" /></p>
+
+<p><em>The sort order of the grid is applied to the "Tenure (in Years)" column</em></p>
+
+<p>Then, provide commonly used filter and search capabilities to let users narrow down the list.</p>
+
+<p><img src="ds-images/commonly_used_filters.png" alt="ds-images/commonly_used_filters.png" /></p>
+
+<p>Use a Record Type as the grid’s data source to take advantage of a search field and user filters that have already been defined in the Record Type object.</p>
+
+<p>If your users need to be able to customize the order of rows in editable grids, you can enable <a href="../Editable_Grid_Component.html#reordering-grid-rows">row reordering</a>.</p>
+
+<p><img src="ds-images/grids_editable_grid_reordering.gif" alt="editable grid being reordered" class="screenshot" /></p>
+
+<h2 id="record-actions">Record actions</h2>
+
+<h3 id="in-grid-columns">In grid columns</h3>
+
+<p>Record action buttons can be displayed in a grid column by using the <a href="../Record_Action_Component.html">Record Action</a> component.</p>
+
+<p><img src="ds-images/grid_recordActions_column.png" alt="ds-images/grid_recordActions_column.png" /></p>
+
+<p><em>The pencil icon is a related action using the “Icon Only” style</em></p>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/grid_recordActions_dont.png" data-lightbox="image-102"><img src="ds-images/grid_recordActions_dont.png" alt="alttext" standalone="" /></a></div>
+  <p>Don’t display multiple related actions within a grid cell. Instead, try placing actions above the grid or in separate columns.</p></div>
+
+<h3 id="above-grids-with-record-data">Above grids with record data</h3>
+<p>Record actions can be displayed in “Toolbar” style above a grid when the grid is backed by a Record Type. Selection is often necessary when related actions are configured. Refer to the <a href="../read-only-grid-configuration.html">Read-Only Grid</a> documentation to learn more.</p>
+
+<p><img src="ds-images/grid_recordActions_above.png" alt="ds-images/grid_recordActions_above.png" /></p>
+
+<p><em>“New Item” is a record list action and “Edit Case” and “Reassign Case” are related actions</em></p>
+
+<h2 id="batch-size">Batch size</h2>
+
+<p>Establish an appropriate batch size that minimizes scrolling.</p>
+
+<h3 id="multiple-component-interface">Multiple component interface</h3>
+<p>If the interface has several other components along with the grid, then use a smaller batch size, such as 5 - 10 items, so that the user can easily access the other components in the interface.</p>
+
+<h3 id="single-grid-interface">Single grid interface</h3>
+<p>If the grid is the only component on the interface, prioritize getting the user to the items they are looking for on the first page using sort order and filter controls. Use a large batch size, such as 50 items, so that users can scroll to their items rather than paging multiple times and waiting for items to load.</p>
+
+<p>If you are not sure if the sort order and filter controls will get the users to the items they are looking for on the first page, then use a smaller batch, size such as 25 items, and ensure that users are able to access paging controls without scrolling.</p>
+
+<h2 id="cell-formatting">Cell formatting</h2>
+
+<h3 id="alignment">Alignment</h3>
+
+<p>The first column should always be left-aligned (in left-to-right languages) regardless of the value type. For all other columns, left-align text columns and right-align columns with numerical values. Quantitative numbers like amounts, measures, and percentages should always be right aligned to be easily compared across rows. Qualitative numbers like dates, postal codes, and phone numbers can be left-aligned if preferred.</p>
+
+<p><img src="ds-images/grid_alignment_new.png" alt="ds-images/grid_alignment.png" /></p>
+
+<p>For editable grid columns, use left alignment for all field types (in left-to-right languages) including numbers and dates.</p>
+
+<p><img src="ds-images/editable_grid_alignment.png" alt="ds-images/editable_grid_alignment.png" /></p>
+
+<p>If an icon is the only component displayed in a grid column, keep it center-aligned.</p>
+
+<p>Always align headers consistently with column content.</p>
+
+<h3 id="calling-attention-to-important-information">Calling attention to important information</h3>
+
+<p>Use visual elements like rich text and tags to emphasize information and make grid contents easier to digest.</p>
+
+<h4 id="color">Color</h4>
+
+<p>Use color sparingly to draw the user's attention to important details in your grid. Using too many colors can dilute their meaning, overwhelm the user, and make your grid difficult to scan.</p>
+
+<p>Bright shades of red, yellow, and green should be used minimally to indicate negative, warning, or positive values like risk level and priority. Avoid using these colors decoratively, and only use them on important values that need attention. It is generally recommended to use no more than two non-neutral colors in a grid.</p>
+
+<p>Do not rely on text color to communicate meaning, because users with limited vision or those with certain types of color blindness will not benefit from the color differentiation.</p>
+
+<p>Avoid displaying accent-colored text that is not a link. Because the accent color is used for links, users may think accent-colored text is clickable.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/grid_tasks_good_example.png" data-lightbox="image-103"><img src="ds-images/grid_tasks_good_example.png" alt="alttext" standalone="" /></a></div>
+  <p>Use colorful components to highlight only the most important information in your grid</p></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/grid_colorful_bad_example.png" data-lightbox="image-104"><img src="ds-images/grid_colorful_bad_example.png" alt="alttext" standalone="" /></a></div>
+  <p>Avoid using too much color in a grid. Don't rely only on text color to convey meaning or use low-contrast colors which may be harder to read.</p></div>
+
+<h4 id="icons">Icons</h4>
+<p>Icons can be used to differentiate grid values. When using icons in a grid column, make sure they are useful and have clear and obvious meanings. If using colored icons, choose a limited set of colors that have a high level of contrast with the grid background color. Emphasize important values with color. De-emphasize values that are not as important by giving them a neutral color, like gray or black, or by using a less prominent shape.</p>
+
+<p><img src="ds-images/grid_column_status_with_icon.png" alt="ds-images/grid_column_status_with_icon.png" class="screenshot" style="width:20%" /></p>
+
+<h4 id="tags">Tags</h4>
+
+<p>Tags can be used to emphasize important information in your grid. When using tags in grids, use a limited set of colors, and avoid mixing several bright colors.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/grid_tags_column_good_example.png" data-lightbox="image-105"><img src="ds-images/grid_tags_column_good_example.png" alt="alttext" standalone="" /></a></div>
+  <p>When using tags to display neutral values, like categories, use a limited set of muted, neutral colors to ensure they are not too prominent relative to the rest of the grid</p></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/grid_cases_colorful_tags_example.png" data-lightbox="image-106"><img src="ds-images/grid_cases_colorful_tags_example.png" alt="alttext" standalone="" /></a></div>
+  <p>When displaying tags in every row of a grid, avoid using overly prominent colors or a large set of colors</p></div>
+
+<p>To give more emphasis to important values, consider using tags to highlight certain values in a grid column.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style="width:20%"><a href="ds-images/grid_column_status_tag_good_example.png" data-lightbox="image-107"><img src="ds-images/grid_column_status_tag_good_example.png" alt="alttext" standalone="" /></a></div>
+  <p>Use tags to highlight only the most important values in a grid column</p></div>
+
+<h3 id="consolidated-columns">Consolidated columns</h3>
+
+<p>Use text formatting to consolidate logical groupings of fields into a single grid column. This is especially useful when horizontal space is limited and you need to display grid information in a denser layout. Use rich text display components to format the consolidated information in an easy-to-read format.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/grid_consolidated_columns.png" data-lightbox="image-108"><img src="ds-images/grid_consolidated_columns.png" alt="alttext" standalone="" /></a></div>
+  <p>Rather than having individual columns for related information, like a person's name, email, and phone number, or the parts of an address, you can condense information into fewer columns for a simpler view.</p></div>
+
+<p>When combining data in a grid column, make sure each row has an appropriate height. When a grid displays many rows, avoid formatting information into more than 2-3 lines, especially when other grid columns do not require additional row height.</p>
+
+<p>Use an appropriate sort field for a column with consolidated information. If there is a primary value in the column, sort by that field. In the above example, the Name column should sort by the contact's name, because it is the primary value in the column.</p>
+
+<p>Do not consolidate multiple columns that need to be individually sortable, because you will only be able to sort on one field per column.</p>
+
+<h3 id="concise-language">Concise Language</h3>
+<p>Avoid redundancy in grid cell contents. Use appropriate column headers to keep values concise.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style="width:20%"><a href="ds-images/grid_column_concise_values.png" data-lightbox="image-109"><img src="ds-images/grid_column_concise_values.png" alt="alttext" standalone="" /></a></div></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style="width:20%"><a href="ds-images/grid_column_redundant_values.png" data-lightbox="image-110"><img src="ds-images/grid_column_redundant_values.png" alt="alttext" standalone="" /></a></div>
+  <p>Avoid using redundant language across grid rows</p></div>
+
+<h3 id="empty-cells">Empty cells</h3>
+
+<p>Use a hyphen (–) when displaying cells with no value/data.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/gridEmptyCells_do.png" data-lightbox="image-111"><img src="ds-images/gridEmptyCells_do.png" alt="alttext" standalone="" /></a></div></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/gridEmptyCells_dont.png" data-lightbox="image-112"><img src="ds-images/gridEmptyCells_dont.png" alt="alttext" standalone="" /></a></div>
+  <p>Avoid using "N/A" or "Not Applicable", as it tends to create clutter</p></div>
+
+<h2 id="column-widths">Column widths</h2>
+
+<h3 id="read-only-grids">Read-only grids</h3>
+
+<h4 id="automatic-column-widths">Automatic column widths</h4>
+<p>Set column widths to “Auto” (this is the default for new columns)  to allow the grid to distribute space based on the amount of content in each column. When in doubt, try this setting first as it often produces good results without additional effort. Note that column widths will fluctuate as data changes: a cell with a large amount of text will cause its column to be wider, all else being equal.</p>
+
+<h4 id="fixed-column-widths">Fixed column widths</h4>
+<p>Use fixed column widths, such as "Narrow" or "Wide", for consistent behavior that mimics how spreadsheets work. The width of each column will remain constant even as the width of the grid changes (such as when resizing the browser window). Horizontal scrolling will be automatically enabled when the total of column widths exceeds the grid’s width.</p>
+
+<p><img src="ds-images/grid_scrolling_fixed_columns.gif" alt="ds-images/grid_scrolling_fixed_columns.gif" /></p>
+
+<p>Note: when the total of configured column widths is less than the grid’s overall width, columns will be expanded to fill the available space.</p>
+
+<h4 id="relative-column-widths">Relative column widths</h4>
+<p>Use relative widths to set proportional column widths that distribute available space. For example, 3 columns with "2X", "3X", and "5X" widths, respectively, will take up 20%, 30%, and 50% of the width of the grid. As much as possible, the proportional relationship between columns will be preserved as the overall grid width changes. A particular set of relative widths that look appropriate on a wide monitor, for example, may not work well on a phone display because each column will become much narrower.</p>
+
+<p><img src="ds-images/grid_weighted_columns.png" alt="ds-images/grid_weighted_columns.png" /></p>
+
+<p><em>A particular set of relative widths that work well on wide screens may not transfer well to narrow screens. The "Start Date" and "Department" column values on the phone are too narrow.</em></p>
+
+<p>In general, relative column widths work well when the grid is typically viewed on similar screen sizes (i.e. mostly viewed on a phone or mostly viewed on a desktop monitor). Fixed column widths offer more predictability when grids are viewed across a wide variety of screen sizes.</p>
+
+<h4 id="combining-different-types-of-width-configurations">Combining different types of width configurations</h4>
+<p>Sometimes, the best results may come from using more than one type of grid column width configuration within the same grid. For example, one might set fixed widths for columns that always require the same amount of space: "Icon"-width for a column that shows a status icon, "Narrow"-width for a column that shows a percentage value. The remaining columns in the grid may show varying amounts of text and work best with "Auto" or a set proportion of relative widths.</p>
+
+<h3 id="editable-grids">Editable grids</h3>
+<p>While considerations for setting column widths are similar across the two types of grids, editable grids lack some of the configurations available for read-only grids.</p>
+
+<h4 id="no-automatic-column-widths">No automatic column widths</h4>
+<p>Editable grids do not support automatic column widths based on the amount of content in each cell. The default column width of "Distribute" produces the same result as specifying "1" as the weight. A grid with all "Distribute"-width columns will evenly distribute space across all columns.</p>
+
+<p><img src="ds-images/grid_auto_vs_distribute.png" alt="ds-images/grid_auto_vs_distribute.png" /></p>
+
+<p><em>The editable grid (TOP) has "Distribute"-width columns, so the column spacing is evenly distributed. The read-only grid (BOTTOM) has "Auto"-width columns, allocating space based on the column content.</em></p>
+
+<h2 id="styling-options">Styling options</h2>
+
+<h3 id="spacing">Spacing</h3>
+
+<p>The "Standard" grid spacing offers a good balance between information density and readability.</p>
+
+<p>Use the "Dense" spacing option to reduce the need for vertical scrolling when showing grids with a large number of rows. Note that some users may find the dense grids to be harder to read because of their reduced white space.</p>
+
+<p><img src="ds-images/grid_dense.png" alt="ds-images/grid_dense.png" /></p>
+
+<h3 id="background-color">Background color</h3>
+<p>Use column background colors to highlight certain columns in read-only grids. You can create a heatmap grid by configuring conditionally-formatted background colors, so the background color of the cell conveys important information at a glance. Heatmaps are a great tool you can use to spot trends by finding regions of concentration of a certain color. You can see an example heatmap in the <a href="../grid-with-heatmap-pattern.html">grid with heatmap pattern</a></p>
+
+<p><img src="ds-images/grid_background_color.png" alt="ds-images/grid_background_color.png" /></p>
+
+<h3 id="shade-alternate-rows">Shade alternate rows</h3>
+
+<p>Use the alternate row shading option to help users match up values on the same row when scanning grids with a lot of data. The shading may not be necessary when showing grids with only a few rows of data.</p>
+
+<p><img src="ds-images/grid_shaded.png" alt="ds-images/grid_shaded.png" /></p>
+
+<h3 id="border-style">Border style</h3>
+
+<p>Use the "Light" border style to remove the outer border and vertical column divider lines from grids. This creates a less cluttered look for simple grids that can easily be scanned without the need for extra decorative lines.</p>
+
+<p><img src="ds-images/grid_lightweight.png" alt="ds-images/grid_lightweight.png" /></p>
+
+<h3 id="selection-style">Selection style</h3>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/grid_row_selection_paging.png" data-lightbox="image-113"><img src="ds-images/grid_row_selection_paging.png" alt="alttext" standalone="" /></a></div>
+  <p>Use the "Row Highlight" selection style for read only content. An example of this can be seen in the <a href="../grid-with-detail-pattern.html">grid with detail pattern</a>.</p></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/grid_row_selection_editable.png" data-lightbox="image-114"><img src="ds-images/grid_row_selection_editable.png" alt="alttext" standalone="" /></a></div>
+  <p>Avoid mixing "Row Highlight" selection style and interactive components, such as links or inputs, in grid cells. This may make it difficult for the user to differentiate between clicking on the row or one of the interactive components within the row. Instead, use the "Checkbox" selection style when there are interactive components in a grid.</p></div>
+
+<h2 id="consistency">Consistency</h2>
+
+<p>When displaying multiple grids on the same page, use the same density and styling options for all grids to create a consistent experience.</p>
+
+<h2 id="fixed-height">Fixed height</h2>
+
+<p>Use the height option to maintain a fixed height for the grid regardless of the number of rows and to ensure that the header is always visible.</p>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/double_grid_scroll.gif" data-lightbox="image-115"><img src="ds-images/double_grid_scroll.gif" alt="alttext" standalone="" /></a></div>
+  <p>Don't pick a fixed height when the grid is the only/main thing on the page as users may have to scroll the page AND scroll the contents of the grid to find what they're looking for</p></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/grid_with_scrolling_and_paging.png" data-lightbox="image-116"><img src="ds-images/grid_with_scrolling_and_paging.png" alt="alttext" standalone="" /></a></div>
+  <p>Don't mix paging and fixed heights as users would have to scroll and page to find what they're looking for. At the same time, be aware of performance considerations when choosing to remove paging or setting a very large batch size and relying on scrolling.</p></div>
+
+<h2 id="accessibility">Accessibility</h2>
+
+<h3 id="row-headers">Row headers</h3>
+
+<p>When designing a grid, use the <strong>Row Header</strong> parameter to help users with screen readers better understand the context of each cell they're traversing. The row header acts as the identifier for a given row, similar to how the column header is the identifier for each column. When screen reader users navigate to a cell within a grid, both the corresponding column header and row header values are announced by the screen reader.</p>
+
+<p>Note that the row header is only recognized as the header for columns to its right. Because of this, the first column containing text is usually the correct choice for row header.</p>
+
+<h3 id="grid-column-labels">Grid column labels</h3>
+
+<p>Include a column header, even for icon-only columns. Because the column header and row header values are announced by the screen reader when a user navigates to a grid cell, defining both will help users understand the cell contents.</p>
+
+        </div>
+        <!-- add in tocbot page nav -->
+        <div
+          class="col-3 d-none d-xl-block"
+          data-ignore="true"
+          sup>
+          <div id="toc" class="sticky-top bs-docs-sidebar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- if coming to the page from a search result, this script will cause the page to jump to that result -->
+      <script src="/suite/help/26.7/js/jumptosearchresult.js"></script>
+
+      
+
+
+
+
+
+<div id="frontmatter" hidden data-title='Grids' data-topic='ds-components' data-searchCategory='saildesignsystem'></div>
+
+      <script>
+        // TODO: Couldn't get Ryan's to work, so using different one until he can fix.
+        const codeBlocks = document.querySelectorAll(
+          ".code-box-toolbar + div.highlighter-rouge td.rouge-code, table.rouge-table td.code"
+        );
+        const copyCodeButtons = document.querySelectorAll(".copy-code-button");
+
+        copyCodeButtons.forEach((copyCodeButton, index) => {
+          const code = codeBlocks[index].innerText;
+
+          copyCodeButton.addEventListener("click", () => {
+            // Copy the code to the user's clipboard
+            window.navigator.clipboard.writeText(code);
+
+            // Update the button text visually
+            const { innerText: originalText } = copyCodeButton;
+            copyCodeButton.innerText = "Copied!";
+
+            // (Optional) Toggle a class for styling the button
+            copyCodeButton.classList.add("copied");
+
+            // After 2 seconds, reset the button to its initial UI
+            setTimeout(() => {
+              copyCodeButton.innerText = originalText;
+              copyCodeButton.classList.remove("copied");
+            }, 2000);
+          });
+        });
+      </script>
+
+      <div
+        class="container-fluid py-5"
+        id="footer"
+        data-ignore="true">
+        <div class="container-xxxl px-4">
+          <div class="row mb-4">
+            <img
+              src="../images/design-sys/logo-appian-white-rebrand.svg"
+              alt="Appian logo"
+              class="footer-logo" />
+          </div>
+          <div class="row mb-4">
+            <a href="https://www.appian.com/" target="_blank">Appian.com
+            </a>
+            <a href="/suite/help/26.7/" target="_blank">Appian Documentation
+            </a>
+            <a href="https://community.appian.com" target="_blank">Appian Community
+            </a>
+            <a href="https://appian.com/legal/privacy-information.html">Privacy
+            </a>
+            <a href="#" id="open_preferences_center">Update Cookie Preferences
+            </a>
+            <br/>
+            &nbsp;
+            <br/>
+          </div>
+          &copy;2026 Appian. All rights reserved.
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- page toc on right side using tocbot -->
+<script src="/suite/help/26.7/js/design-sys/tocbot.min.js"></script>
+<script>
+      tocbot.init({
+    // Where to render the table of contents.
+    tocSelector: "#toc",
+    // Where to grab the headings to build the table of contents.
+    contentSelector: ".page_content",
+    // Which headings to grab inside of the contentSelector element.
+    headingSelector: "h2,h3,h4,h5",
+    // For headings inside relative or absolute positioned containers within content.
+    hasInnerContainers: true,
+    // orderedList can be set to false to generate unordered lists (ul)
+    // instead of ordered lists (ol)
+    orderedList: false,
+    // Smooth scrolling enabled.
+    scrollSmooth: true,
+    // Smooth scroll duration.
+    scrollSmoothDuration: 420,
+    // Smooth scroll offset.
+    scrollSmoothOffset: -17,
+    // Headings offset between the headings and the top of the document (this is meant for minor adjustments).
+    headingsOffset: 17,
+      });
+</script>
+
+<!-- script for left nav to expand or collapse on click -->
+<script type="text/javascript" src="/suite/help/26.7/js/initialize_nav.js"></script>
+
+<!-- typeahead scripts -->
+<script src="/suite/help/26.7/js/typeahead.bundle.min.js"></script>
+
+<script>
+      // hides searchbox until it loads with typeahead
+      $("#search").css("visibility", "visible");
+</script>
+
+<script>
+
+
+  if(Object.keys(localStorage).length > 10) {
+    Object.keys(localStorage).forEach(
+      function(currentValue){
+        if(currentValue.indexOf("search-typeahead-data")>0){
+          localStorage.removeItem(currentValue)
+        }
+      }
+    );
+  }
+  var typeaheadSuggestions = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.obj.nonword('name'),
+    queryTokenizer: Bloodhound.tokenizers.nonword,
+    limit: 20,
+    sorter: function compare(a, b) {
+      var input_regex = new RegExp($('input[type="text"]:focus').val(), "i");
+      var a_indexof = a.name.search(input_regex); 
+      var b_indexof = b.name.search(input_regex); 
+      if (a_indexof > -1  && b_indexof == -1) {
+      return -1;
+      }
+      if (a_indexof == -1  && b_indexof > -1) {
+        return 1;
+      }
+      if (a_indexof < b_indexof) {
+        return -1;
+      }
+      if (a_indexof > b_indexof) {
+        return 1;
+      }
+      return 0;
+    },
+    prefetch: {
+      url: "/suite/help/26.7/search-typeahead-ds-data.json?Appian 26.7-2026-08-02 03:41:03 +0000",
+    }
+  });typeaheadSuggestions.initialize();
+
+  typeaheads = ['input#search-query-splash', 'input#search-query-sp', 'input#search-query-ds', 'input#search-query-mobile', 'input#search-query-nav']
+
+// For the typeaheads in the navmenu and mobile navmenu, they need to be loaded first (see megamenu.js and megamenu-mobile.js) 
+// so we are setting a timeout here just for those so that there are no errors
+  typeaheads.forEach((t, idx) => {
+      if (t === 'input#search-query-nav' || t === 'input#search-query-mobile') {
+          setTimeout(() => {
+            if(document.querySelector(t)) {
+              initializeTypeahead(t, idx);
+            }
+          }, 1000);
+      } else {
+        initializeTypeahead(t, idx);
+      }
+  });
+
+  function initializeTypeahead(t, idx) {
+      $(t).typeahead({ highlight: true, hint: true }, {
+        name: `typeaheadSuggestions-${idx}`,
+        displayKey: 'name',source: typeaheadSuggestions.ttAdapter()
+      });
+
+      $(t).bind(
+        'typeahead:selected',
+        function(obj, datum, name){
+          targetURL = "/suite/help/26.7" + datum.path;
+          if (window.dataLayer) {
+            window.dataLayer.push({
+              'event': 'dsTypeAheadClicked',
+              'link_URL': targetURL, 
+              'link_text': datum.name
+            });
+          }  
+          window.top.location = targetURL;
+        }
+      );
+
+      $(t).on('focus', (e) => {
+        e.stopPropagation();
+        $(this).typeahead('open');
+      })
+  }
+
+
+</script>
+
+<!-- prospect tracking -->
+<script type="text/plain" data-cookie-consent="tracking">
+  piAId = '11342';
+  piCId = '1671';
+
+  (function() {
+  function async_load(){
+    var s = document.createElement('script'); s.type = 'text/javascript';
+    s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+    var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+  }
+  
+  if(window.attachEvent) { window.attachEvent('onload', async_load); }
+  else { window.addEventListener('load', async_load, false); }
+  })();
+</script>
+
+<!-- Scrape page for sail components and adds hyperlinks to all functions -->
+<style>
+    .functions-anchor {
+        text-decoration: none;
+    }
+
+    .functions-anchor:hover {
+        text-decoration: underline;
+    }
+</style>
+<script>
+    const linkFunctions = async () => {
+        let functions = document.querySelectorAll('span.nf');
+
+        if (functions.length > 0) {
+        const response = await fetch("/suite/help/26.7/functions.json");
+            const functionsJson = await response.json();
+
+            functions.forEach((func) => {
+                if (func) {
+                    func.addEventListener("mouseover", () => {
+                    let originalText = func.innerText.trim();
+                    let parts = originalText.split('(');  
+                    
+                    func.innerHTML = '';  
+
+                    parts.forEach((part, index) => {
+                        if (index > 0) {
+                            func.appendChild(document.createTextNode('('));
+                        }
+
+                        let subParts = part.split(/(fn!)/).filter(Boolean);
+                        
+                        subParts.forEach(subPart => {
+                            let cleanedSubPart = subPart.replace('fn!', '').trim().toLowerCase();
+                            const currentPage = "/suite/help/26.7/sail/ux-grids.html";
+                            if (functionsJson[cleanedSubPart] && currentPage.toLowerCase() !== functionsJson[cleanedSubPart].toLowerCase()) {
+                                const link = document.createElement('a');
+                                link.href = functionsJson[cleanedSubPart];
+                                link.textContent = subPart;
+                                link.setAttribute('target', '_blank');
+                                link.setAttribute('class', 'nf functions-anchor');
+                                func.appendChild(link);
+                            } else {
+                                func.appendChild(document.createTextNode(subPart));
+                            }
+                        });
+                    });
+                }, {once: true});
+                }
+            });
+        }
+    }
+
+    linkFunctions();
+</script>
+
+<script type="text/javascript">
+  $('a').filter(function() {
+    return this.hostname && this.hostname !== location.hostname;
+  }).attr("target","_blank");
+</script>
+
+<script src="/suite/help/26.7/js/headinganchorlinks.js"></script>

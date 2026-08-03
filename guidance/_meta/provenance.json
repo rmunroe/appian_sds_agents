@@ -1,0 +1,243 @@
+{
+ "components/billboard-layout.md": [
+  "corpus/analysis/ux-billboard-layout.md",
+  "corpus/pages/ux-billboard-layout.md"
+ ],
+ "components/box-layout.md": [
+  "corpus/analysis/ux-box-layout.md",
+  "corpus/pages/ux-box-layout.md"
+ ],
+ "components/buttons.md": [
+  "corpus/analysis/ux-buttons.md",
+  "corpus/pages/ux-buttons.md"
+ ],
+ "components/card-layout.md": [
+  "corpus/analysis/ux-card-layout.md",
+  "corpus/pages/ux-card-layout.md"
+ ],
+ "components/charts.md": [
+  "corpus/analysis/ux-charts.md",
+  "corpus/pages/ux-charts.md"
+ ],
+ "components/columns-layout.md": [
+  "corpus/analysis/ux-columns-layout.md",
+  "corpus/pages/ux-columns-layout.md"
+ ],
+ "components/event-history-list.md": [
+  "corpus/analysis/ux-event-history-list.md",
+  "corpus/pages/ux-event-history-list.md"
+ ],
+ "components/form-layout.md": [
+  "corpus/analysis/ux-form-layout.md",
+  "corpus/pages/ux-form-layout.md"
+ ],
+ "components/gauge.md": [
+  "corpus/analysis/ux-gauge.md",
+  "corpus/pages/ux-gauge.md"
+ ],
+ "components/grids.md": [
+  "corpus/analysis/ux-grids.md",
+  "corpus/pages/ux-grids.md"
+ ],
+ "components/header-content-layout.md": [
+  "corpus/analysis/ux-header-content-layout.md",
+  "corpus/pages/ux-header-content-layout.md"
+ ],
+ "components/images.md": [
+  "corpus/analysis/ux-images.md",
+  "corpus/pages/ux-images.md"
+ ],
+ "components/inputs.md": [
+  "corpus/analysis/ux-inputs.md",
+  "corpus/pages/ux-inputs.md"
+ ],
+ "components/kpi.md": [
+  "corpus/analysis/ux-kpi.md",
+  "corpus/pages/ux-kpi.md"
+ ],
+ "components/pane-layout.md": [
+  "corpus/analysis/ux-pane-layout.md",
+  "corpus/pages/ux-pane-layout.md"
+ ],
+ "components/record-actions.md": [
+  "corpus/analysis/ux-record-actions.md",
+  "corpus/pages/ux-record-actions.md"
+ ],
+ "components/rich-text.md": [
+  "corpus/analysis/ux-rich-text.md",
+  "corpus/pages/ux-rich-text.md"
+ ],
+ "components/section-layout.md": [
+  "corpus/analysis/ux-section-layout.md",
+  "corpus/pages/ux-section-layout.md"
+ ],
+ "components/side-by-side-layout.md": [
+  "corpus/analysis/ux-side-by-side-layout.md",
+  "corpus/pages/ux-side-by-side-layout.md"
+ ],
+ "components/styled-icons.md": [
+  "corpus/analysis/ux-styled-icons.md",
+  "corpus/pages/ux-styled-icons.md"
+ ],
+ "components/tab-layout.md": [
+  "corpus/analysis/ux-tab-layout.md",
+  "corpus/pages/ux-tab-layout.md"
+ ],
+ "components/tags.md": [
+  "corpus/analysis/ux-tags.md",
+  "corpus/pages/ux-tags.md"
+ ],
+ "components/wizard-layout.md": [
+  "corpus/analysis/ux-wizard-layout.md",
+  "corpus/pages/ux-wizard-layout.md"
+ ],
+ "case-studies/conference-home-page.md": [
+  "corpus/analysis/conference-home-page.md",
+  "guidance/sail/sources/conference-home-page.sail"
+ ],
+ "case-studies/conference-registration-portal.md": [
+  "corpus/analysis/conference-registration-portal.md",
+  "guidance/sail/sources/conference-registration-portal.sail"
+ ],
+ "case-studies/customer-acct-management.md": [
+  "corpus/analysis/customer-acct-management.md",
+  "guidance/sail/sources/customer-acct-management.sail"
+ ],
+ "case-studies/ins-agent-home-page.md": [
+  "corpus/analysis/ins-agent-home-page.md",
+  "guidance/sail/sources/ins-agent-home-page.sail"
+ ],
+ "case-studies/mobile-incident-reporting.md": [
+  "corpus/analysis/mobile-incident-reporting.md",
+  "guidance/sail/sources/mobile-incident-reporting.sail"
+ ],
+ "case-studies/my-health-site.md": [
+  "corpus/analysis/my-health-site.md",
+  "guidance/sail/sources/my-health-site.sail"
+ ],
+ "case-studies/nonprofit-fundraise-campaign-dashboard.md": [
+  "corpus/analysis/nonprofit-fundraise-campaign-dashboard.md",
+  "guidance/sail/sources/nonprofit-fundraise-campaign-dashboard.sail"
+ ],
+ "case-studies/nonprofit-fundraise-campaign-overview.md": [
+  "corpus/analysis/nonprofit-fundraise-campaign-overview.md",
+  "guidance/sail/sources/nonprofit-fundraise-campaign-overview.sail"
+ ],
+ "case-studies/portal-home-page.md": [
+  "corpus/analysis/portal-home-page.md",
+  "guidance/sail/sources/portal-home-page.sail"
+ ],
+ "case-studies/real-estate-property-list.md": [
+  "corpus/analysis/real-estate-property-list.md",
+  "guidance/sail/sources/real-estate-property-list.sail"
+ ],
+ "case-studies/restaurant-order.md": [
+  "corpus/analysis/restaurant-order.md",
+  "guidance/sail/sources/restaurant-order.sail"
+ ],
+ "case-studies/sales-perform-dashboard.md": [
+  "corpus/analysis/sales-perform-dashboard.md",
+  "guidance/sail/sources/sales-perform-dashboard.sail"
+ ],
+ "case-studies/sustainability-dashboard.md": [
+  "corpus/analysis/sustainability-dashboard.md",
+  "guidance/sail/sources/sustainability-dashboard.sail"
+ ],
+ "case-studies/university-student-dashboard.md": [
+  "corpus/analysis/university-student-dashboard.md",
+  "guidance/sail/sources/university-student-dashboard.sail"
+ ],
+ "patterns/dashboards.md": [
+  "corpus/analysis/dashboards.md",
+  "corpus/analysis/sustainability-dashboard.md",
+  "corpus/analysis/sales-perform-dashboard.md",
+  "corpus/analysis/nonprofit-fundraise-campaign-dashboard.md"
+ ],
+ "patterns/data-value-display.md": [
+  "corpus/analysis/data-value-display.md"
+ ],
+ "patterns/page-headers.md": [
+  "corpus/analysis/page-headers.md",
+  "corpus/analysis/page-titles.md"
+ ],
+ "patterns/forms.md": [
+  "corpus/analysis/forms.md",
+  "corpus/analysis/ux-form-layout.md",
+  "corpus/analysis/ux-wizard-layout.md"
+ ],
+ "patterns/record-views.md": [
+  "corpus/analysis/record-views.md"
+ ],
+ "patterns/comment-thread.md": [
+  "corpus/analysis/comment-thread.md"
+ ],
+ "patterns/lists-and-grids.md": [
+  "corpus/analysis/lists.md",
+  "corpus/analysis/tabular-data-display.md"
+ ],
+ "patterns/kanban.md": [
+  "corpus/analysis/kanban.md"
+ ],
+ "patterns/calendar.md": [
+  "corpus/analysis/calendar.md"
+ ],
+ "patterns/home-pages-employee.md": [
+  "corpus/analysis/employee-home-pages.md",
+  "corpus/analysis/ins-agent-home-page.md",
+  "corpus/analysis/university-student-dashboard.md"
+ ],
+ "patterns/landing-pages-visitor.md": [
+  "corpus/analysis/visitor-landing-pages.md",
+  "corpus/analysis/conference-home-page.md"
+ ],
+ "patterns/shopping-journey.md": [
+  "corpus/analysis/online-shopping-journey.md"
+ ],
+ "patterns/portals.md": [
+  "corpus/analysis/ux-portals.md",
+  "corpus/analysis/my-health-site.md",
+  "corpus/analysis/portal-home-page.md"
+ ],
+ "patterns/secondary-navigation.md": [
+  "corpus/analysis/secondary-navigation.md",
+  "corpus/analysis/ux-site-branding.md"
+ ],
+ "core/design-philosophy.md": [
+  "corpus/pages/ux-designing-for-your-users.md",
+  "corpus/pages/ux-avoiding-clutter.md",
+  "corpus/pages/ux-presenting-information-clearly.md",
+  "corpus/pages/ux-progressive-disclosure.md",
+  "corpus/pages/sail-design.md"
+ ],
+ "core/layout-foundations.md": [
+  "corpus/pages/ux-page-width.md",
+  "corpus/pages/ux-columns-and-side-by-side.md",
+  "corpus/pages/content-structure.md",
+  "corpus/analysis/ux-example-walkthrough.md"
+ ],
+ "core/mobile.md": [
+  "corpus/pages/ux-mobile-considerations.md",
+  "corpus/analysis/ux-mobile-considerations.md"
+ ],
+ "styling/styling-mechanics.md": [
+  "corpus/pages/ux-color-overview.md",
+  "corpus/analysis/ux-site-branding.md",
+  "guidance/sail/sources/*"
+ ],
+ "styling/recipes.md": [
+  "all 18 tier-A case-study analyses (palette digests)"
+ ],
+ "styling/anti-corporate.md": [
+  "tier-A why-not-boring/boring-twin fields corpus-wide"
+ ],
+ "anti-patterns.md": [
+  "all tier-C DO/DON'T sections corpus-wide"
+ ],
+ "sail/cookbook.md": [
+  "signature-moves + notable-techniques corpus-wide",
+  "guidance/sail/sources/*"
+ ],
+ "use-case-selector.md": [
+  "all 18 tier-A case-study analyses (palette digests)"
+ ]
+}

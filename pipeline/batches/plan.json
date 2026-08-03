@@ -1,0 +1,398 @@
+[
+ {
+  "batch": 1,
+  "pages": [
+   "conference-home-page"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 2,
+  "pages": [
+   "conference-registration-portal"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 3,
+  "pages": [
+   "customer-acct-management"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 4,
+  "pages": [
+   "ins-agent-home-page"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 5,
+  "pages": [
+   "ins-claim-case-study"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 6,
+  "pages": [
+   "ins-quote-review"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 7,
+  "pages": [
+   "ins-quote-wizard-1"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 8,
+  "pages": [
+   "ins-quote-wizard-2"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 9,
+  "pages": [
+   "mobile-incident-reporting"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 10,
+  "pages": [
+   "my-health-site"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 11,
+  "pages": [
+   "nonprofit-fundraise-campaign-dashboard"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 12,
+  "pages": [
+   "nonprofit-fundraise-campaign-overview"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 13,
+  "pages": [
+   "portal-home-page"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 14,
+  "pages": [
+   "real-estate-property-list"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 15,
+  "pages": [
+   "restaurant-order"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 16,
+  "pages": [
+   "sales-perform-dashboard"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 17,
+  "pages": [
+   "sustainability-dashboard"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 18,
+  "pages": [
+   "university-student-dashboard"
+  ],
+  "images": 1
+ },
+ {
+  "batch": 19,
+  "pages": [
+   "components",
+   "ux-billboard-layout",
+   "ux-box-layout"
+  ],
+  "images": 15
+ },
+ {
+  "batch": 20,
+  "pages": [
+   "ux-buttons"
+  ],
+  "images": 28
+ },
+ {
+  "batch": 21,
+  "pages": [
+   "ux-card-layout"
+  ],
+  "images": 31
+ },
+ {
+  "batch": 22,
+  "pages": [
+   "ux-charts"
+  ],
+  "images": 48
+ },
+ {
+  "batch": 23,
+  "pages": [
+   "ux-columns-layout"
+  ],
+  "images": 14
+ },
+ {
+  "batch": 24,
+  "pages": [
+   "ux-event-history-list"
+  ],
+  "images": 9
+ },
+ {
+  "batch": 25,
+  "pages": [
+   "ux-form-layout"
+  ],
+  "images": 32
+ },
+ {
+  "batch": 26,
+  "pages": [
+   "ux-gauge"
+  ],
+  "images": 6
+ },
+ {
+  "batch": 27,
+  "pages": [
+   "ux-grids"
+  ],
+  "images": 32
+ },
+ {
+  "batch": 28,
+  "pages": [
+   "ux-header-content-layout"
+  ],
+  "images": 19
+ },
+ {
+  "batch": 29,
+  "pages": [
+   "ux-images"
+  ],
+  "images": 9
+ },
+ {
+  "batch": 30,
+  "pages": [
+   "ux-kpi"
+  ],
+  "images": 17
+ },
+ {
+  "batch": 31,
+  "pages": [
+   "ux-pane-layout"
+  ],
+  "images": 10
+ },
+ {
+  "batch": 32,
+  "pages": [
+   "ux-record-actions"
+  ],
+  "images": 18
+ },
+ {
+  "batch": 33,
+  "pages": [
+   "ux-rich-text",
+   "ux-section-layout"
+  ],
+  "images": 14
+ },
+ {
+  "batch": 34,
+  "pages": [
+   "ux-side-by-side-layout"
+  ],
+  "images": 12
+ },
+ {
+  "batch": 35,
+  "pages": [
+   "ux-tab-layout"
+  ],
+  "images": 14
+ },
+ {
+  "batch": 36,
+  "pages": [
+   "ux-tags"
+  ],
+  "images": 7
+ },
+ {
+  "batch": 37,
+  "pages": [
+   "ux-wizard-layout"
+  ],
+  "images": 20
+ },
+ {
+  "batch": 38,
+  "pages": [
+   "guidance",
+   "ux-accessibility",
+   "ux-avoiding-clutter",
+   "ux-buttons-vs-links"
+  ],
+  "images": 16
+ },
+ {
+  "batch": 39,
+  "pages": [
+   "ux-color-overview",
+   "ux-columns-and-side-by-side"
+  ],
+  "images": 12
+ },
+ {
+  "batch": 40,
+  "pages": [
+   "ux-designing-for-your-users"
+  ],
+  "images": 14
+ },
+ {
+  "batch": 41,
+  "pages": [
+   "ux-example-walkthrough",
+   "ux-formatting-and-punctuation"
+  ],
+  "images": 17
+ },
+ {
+  "batch": 42,
+  "pages": [
+   "ux-inputs"
+  ],
+  "images": 38
+ },
+ {
+  "batch": 43,
+  "pages": [
+   "ux-labels"
+  ],
+  "images": 18
+ },
+ {
+  "batch": 44,
+  "pages": [
+   "ux-mobile-considerations",
+   "ux-page-width",
+   "ux-portals"
+  ],
+  "images": 16
+ },
+ {
+  "batch": 45,
+  "pages": [
+   "ux-presenting-information-clearly",
+   "ux-progressive-disclosure"
+  ],
+  "images": 14
+ },
+ {
+  "batch": 46,
+  "pages": [
+   "ux-site-branding"
+  ],
+  "images": 31
+ },
+ {
+  "batch": 47,
+  "pages": [
+   "sail-benefits",
+   "sail-design",
+   "sail-design-system-overview",
+   "calendar",
+   "comment-thread",
+   "content-structure",
+   "dashboards"
+  ],
+  "images": 16
+ },
+ {
+  "batch": 48,
+  "pages": [
+   "data-value-display",
+   "employee-home-pages"
+  ],
+  "images": 15
+ },
+ {
+  "batch": 49,
+  "pages": [
+   "forms"
+  ],
+  "images": 16
+ },
+ {
+  "batch": 50,
+  "pages": [
+   "introduction",
+   "kanban"
+  ],
+  "images": 7
+ },
+ {
+  "batch": 51,
+  "pages": [
+   "lists",
+   "online-shopping-journey"
+  ],
+  "images": 18
+ },
+ {
+  "batch": 52,
+  "pages": [
+   "page-headers",
+   "page-titles",
+   "popular-patterns",
+   "record-views"
+  ],
+  "images": 17
+ },
+ {
+  "batch": 53,
+  "pages": [
+   "secondary-navigation",
+   "tabular-data-display",
+   "visitor-landing-pages"
+  ],
+  "images": 18
+ }
+]

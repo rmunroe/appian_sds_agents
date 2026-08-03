@@ -1,0 +1,2534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Cookie Consent and Google Tags initialzation -->
+    <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script
+  type="text/javascript"
+  src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js"
+  charset="UTF-8"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied'
+  })
+</script>
+<!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-2RTKZX15VD"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+
+  gtag('config', 'G-2RTKZX15VD')
+</script>
+<script type="text/javascript" charset="UTF-8">
+  document.addEventListener('DOMContentLoaded', function () {
+    cookieconsent.run({
+      notice_banner_type: 'simple',
+      consent_type: 'express',
+      palette: 'light',
+      language: 'en',
+      page_load_consent_levels: ['strictly-necessary'],
+      notice_banner_reject_button_hide: false,
+      preferences_center_close_button_hide: false,
+      page_refresh_confirmation_buttons: true,
+      website_name: 'Appian Documentation',
+      website_privacy_policy_url: 'https://www.appian.com/privacy/',
+
+      callbacks: {
+        scripts_specific_loaded: level => {
+          switch (level) {
+            case 'targeting':
+              gtag('consent', 'update', {
+                ad_storage: 'granted',
+                ad_user_data: 'granted',
+                ad_personalization: 'granted',
+                analytics_storage: 'granted'
+              })
+              break
+          }
+        }
+      },
+      callbacks_force: true
+    })
+  })
+</script>
+<link href="/suite/help/26.7/css/cookie_consent.css" rel="stylesheet" />
+<noscript
+  >Free cookie consent management tool by
+  <a href="https://www.termsfeed.com/">TermsFeed</a>
+</noscript>
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+<!-- Google Tag Manager -->
+<script type="text/plain" data-cookie-consent="tracking">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M2LCFFW');
+</script>
+<!-- End Google Tag Manager -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    
+    
+
+
+    <title>
+      Designing Sites and Portals [SAIL Design System: Guidelines]
+    </title>
+    <link rel="shortcut icon" href="/suite/help/26.7/images/appian_48x48.ico" />
+    <link href="/suite/help/26.7/css/design-sys/tocbot.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/bootstrap.min.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/lightbox.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/appian-base-styles.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/appian-sail.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/appian-sail-responsive.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/balloon_notes.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/syntax.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/ds-typeahead.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/ds-syntax.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700" rel="stylesheet" />
+
+      <!-- TODO: for the icons. Dunno what Charles wants to do. -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <script src="/suite/help/26.7/js/design-sys/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="/suite/help/26.7/js/design-sys/bootstrap.bundle.min.js"></script>
+    <script src="/suite/help/26.7/js/design-sys/sidebars.js"></script>
+    <script src="/suite/help/26.7/js/design-sys/lightbox.js"></script>
+
+    <script src="/suite/help/26.7/js/serverless-sail.js"></script>
+    <link href="/suite/help/26.7/css/iframe.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/serverless-sail.css" rel="stylesheet" />
+
+    <meta property="og:title" content="Designing Sites and Portals">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://docs.appian.com/suite/help/26.7/sail/ux-site-branding.html" />
+<meta property="og:url" content="https://docs.appian.com/suite/help/26.7/sail/ux-site-branding.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://docs.appian.com/suite/help/26.7/images/open_graph_preview.png" />
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Designing Sites and Portals">
+
+  <script
+    async
+    src="https://widget.kapa.ai/kapa-widget.bundle.js"
+    data-website-id="cb54ded1-4d63-4b15-97bf-5c77eda3fbcb"
+    data-source-group-ids-include="6ce0e4f1-f64b-4623-a739-90dce4278292"
+    data-button-hide="true"
+    data-kapa-branding-hide='true'
+    data-modal-title='​Appian Docs AI'
+    data-modal-disclaimer="Welcome to the Appian Docs AI Chat! Ask questions about the Appian Docs and Community Knowledge Base."
+    data-modal-disclaimer-bg-color="none"
+    data-modal-disclaimer-font-size="14px"
+    data-modal-disclaimer-text-color="#000000"
+    data-project-logo="/suite/help/26.7/images/appian_48x48.ico"
+    data-modal-image-height="40px"
+    data-modal-image-width="40px"
+    data-modal-border-radius='none'
+    data-modal-z-index='9999'
+    data-user-analytics-cookie-enabled="true"
+    data-consent-required="true"
+    data-consent-screen-title="Help us improve our AI assistant"
+    data-consent-screen-disclaimer="This feature is not available unless you consent to anonymous user tracking which helps us improve our service. We don't collect any personally identifiable information beyond what you explicitly provide."
+    data-consent-screen-accept-button-text="Allow tracking"
+    data-consent-screen-reject-button-text="No thanks"
+    data-modal-ask-ai-input-placeholder="Ask me a question..."
+    data-modal-example-questions="What is data fabric?,What are AI agents?,How do I create a record type?"
+    data-example-question-button-bg-color="#e7f1ffff"
+    data-example-question-button-border="1px solid #E8E8E8"
+    data-example-question-button-border-radius="8px"
+    data-example-question-button-font-size="14px"
+    data-example-question-button-width="min-content"
+    data-modal-example-questions-col-span="none"
+    data-hyperlink-color="#2322f0ff"
+    data-modal-full-screen-on-mobile='true'
+    data-modal-x-offset="0"
+    data-modal-y-offset="0"
+    data-modal-with-overlay="false"
+    data-modal-inner-flex-direction="column"
+    data-modal-inner-justify-content="end"
+    data-modal-inner-max-width="500px"
+    data-modal-inner-position-left="auto"
+    data-modal-inner-position-right="0"
+    data-modal-inner-position-bottom="0"
+    data-modal-inner-position-top="0"
+    data-modal-size="100vh"
+    data-modal-lock-scroll="false"></script>
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "WebPage", 
+    "name": "Designing Sites and Portals",
+    "headline": "Designing Sites and Portals",
+    "image": "https://docs.appian.com/suite/help/26.7/images/open_graph_preview.png", 
+    "url": "https://docs.appian.com/suite/help/26.7/sail/ux-site-branding.html",
+    "about": "SAIL Design System: Guidelines"
+  }
+
+</script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript type="text/plain" data-cookie-consent="tracking">
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2LCFFW" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+</noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main>
+      <header class="py-2 docs-header border-bottom" data-ignore="true">
+        <div class="container-xxxl d-flex flex-wrap">
+          <div class="flex-grow-1 align-self-center mt-2 mb-3 mt-lg-0 mb-lg-0">
+            <a href="/suite/help/26.7/"><img
+                src="../images/design-sys/appian-docs-logo.png"
+                class="nav-company-logo"
+                alt="Appian logo" />
+            </a>
+            
+
+
+
+
+
+
+ 
+
+<select aria-label="Version" onchange="redirectAppianVer(this.value)" class="docs-header-version-select">
+  
+    
+    
+    
+    
+      <option value="26.7" selected>
+        26.7
+      </option>
+  
+    
+    
+    
+    
+      <option value="26.6" >
+        26.6
+      </option>
+  
+    
+    
+    
+    
+      <option value="26.3" >
+        26.3
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.4" >
+        25.4
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.3" >
+        25.3
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.2" >
+        25.2
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.1" >
+        25.1
+      </option>
+  
+    
+    
+    
+    
+      <option value="24.4" >
+        24.4
+      </option>
+  
+    
+    
+    
+    
+      <option value="24.3" >
+        24.3
+      </option>
+  
+</select><script>
+var appianvers = ["26.7","26.6","26.3","25.4","25.3","25.2","25.1","24.4","24.3"];
+
+async function redirectAppianVer(intendedVer) {
+  try {
+    URL = "/suite/help/" + intendedVer + "/sail/ux-site-branding.html"; 
+    const res = await fetch(URL);
+    if (res.ok) {
+      window.location.href = URL; 
+    } else {
+      if (sessionStorage) {
+        sessionStorage.setItem('pageTitle', "Designing Sites and Portals");
+        sessionStorage.setItem('pageURL', "/sail/ux-site-branding.html");
+        sessionStorage.setItem('intendedVer', intendedVer);
+        sessionStorage.setItem('appianvers', JSON.stringify(appianvers));
+      }
+      window.location.href = '/suite/help/26.7' + '/page-not-found-verjump.html';
+    }
+  } catch (err) {
+    if (sessionStorage) {
+      sessionStorage.setItem('pageTitle', '');
+      sessionStorage.setItem('pageURL', '');
+      sessionStorage.setItem('intendedVer', '');
+      sessionStorage.setItem('appianvers', '');
+    }
+    window.location.href = '/suite/help/26.7' + '/page-not-found-verjump.html';
+    console.log("Error in redirectAppianVer function"); 
+  }
+}
+
+</script>
+          </div>
+          <!-- search box -->
+          <form
+            id="search"
+            class="col-12 col-lg-auto mb-3 mb-lg-0"
+            role="search"
+            action="/suite/help/26.7/Search_Results.php"
+            method="get"
+            style="visibility: hidden">
+            <input
+              type="text"
+              id="search-query-ds"
+              class="form-control"
+              name="q"
+              autocomplete="off"
+              placeholder="Search..."
+              aria-label="Search"
+              style="min-width: 319px"
+              autofocus />
+            <div class="info-container">
+  <div class="info-icon"></div>
+  <div class="info-tooltip">
+    <p>
+      <strong class="info-tooltip-text">How search works:</strong> 
+      <ul>
+        <li class="info-tooltip-text">Capitalization, punctuation, and special characters are ignored</li>
+        <li class="info-tooltip-text">Matches in a title, heading, or function name rank higher</li>
+        <li class="info-tooltip-text">Synonyms are applied</li>
+        <li class="info-tooltip-text">Wildcards are not supported</li>
+      </ul>
+    </p>
+  </div>
+</div>
+            <input
+              type="hidden"
+              name="searchcategories[]"
+              value="saildesignsystem" />
+            <input
+              type="submit"
+              value=""
+              style="display: none" />
+          </form>
+        </div>
+      </header>
+        
+        
+        
+          <div class="page-version-preview ovw-upgrade" hidden data-ignore="true">
+  <a href="#">View this page in the latest version of Appian</a>.
+</div>
+
+<script>
+  const showUpgrade = (upgradeURL, linktext) => {
+    // Render upgrade link
+    const container = document.querySelector('.ovw-upgrade');
+    container.hidden = false;
+    const link = container.querySelector('a');
+    link.href = upgradeURL;
+    link.textContent = linktext; 
+  };
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    let displayName = '';
+    
+    let isOlderVersionOfAppian = false; 
+    
+    let currentsubprod_ver;
+    let prod;
+    let latestsubprod_ver;
+    let isLatestSubProdVer;
+    
+    // if there is a displayName then we know it's a subproduct
+    if (displayName) {
+        
+        prod = 'ds'
+        latestsubprod_ver = 'ds-1';
+        currentsubprod_ver = 'ds-guidelines';
+        if (currentsubprod_ver != latestsubprod_ver) {
+          isLatestSubProdVer = "false"
+        }
+    }
+    
+    // We want this to run on pages where either it's a subproduct that is an older version, or the page is in an older version of Appian docs
+    if (isLatestSubProdVer == "false" || isOlderVersionOfAppian ) {
+      // set variable defaults for cases where it is an older version of Appian docs
+      let regex = new RegExp(`^\/suite\/help\/${'26.7'.replaceAll('.', '\\.')}\/`);
+      let matchstring = '/suite/help/26.7/';
+      let linktext = "View this page in the latest version of Appian"
+      
+      // if subproduct page in older version, update variables
+      if ( isLatestSubProdVer == "false" ) {
+        regex = new RegExp(`^\/suite\/help\/${'26.7'.replaceAll('.', '\\.')}\/${currentsubprod_ver.replaceAll('.', '\\.')}\/`); 
+        matchstring = `/suite/help/26.7/${latestsubprod_ver}/`;
+        linktext = `View this page in the latest version of ${displayName}`
+      } 
+
+      (async () => {
+        try {
+          // Match an upgradeable path which starts with /suite/help/<current version>/
+          if (!window.location.pathname.match(regex)) {
+            throw new Error("Can't upgrade path!");
+          }
+          // Attempt an upgrade - replace matched path with newer version
+          const upgradeURL = window.location.pathname.replace(regex, matchstring);
+          // Check that an upgraded version of this page exists
+          if (!(await fetch(upgradeURL, { method: 'HEAD' })).ok) {
+            throw new Error('Response was not OK');
+          }
+          // Render upgrade link
+          showUpgrade(upgradeURL, linktext);
+        } catch {
+          // Cannot upgrade; leave the page as it is.
+        }
+      })();
+    } 
+  });
+</script>
+
+        
+      <nav class="sticky-top" data-ignore="true">
+        <div class="container-xxxl bg-white d-flex flex-wrap align-items-center py-2 border-bottom">
+          <div>
+            <a
+              href="/suite/help/26.7/sail/home.html"
+              aria-label="Go to SAIL Design System Home Page"
+              class="sail-home-link"><img
+                src="../images/design-sys/appian-icon-sail.png"
+                class="sail-icon"
+                alt="Appian SAIL logo" />
+              SAIL Design System
+            </a>
+          </div>
+          <div class="flex-grow-1"></div>
+          <!-- Nav bar -->
+          <nav>
+            <ul class="nav me-auto topnav">
+              
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/sail-design-system-overview.html" class="nav-link link-dark px-3">
+                      Getting Started
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/inspiration.html" class="nav-link link-dark px-3">
+                      Inspiration
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/components.html" class="nav-link link-dark px-3">
+                      Components
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/introduction.html" class="nav-link link-dark px-3">
+                      Patterns
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a
+                      href="/suite/help/26.7/sail/guidance.html"
+                      class="nav-link link-dark px-3 selected"
+                      aria-current="page">
+                      Guidelines
+                    </a>
+                  </li>
+                
+              
+            </ul>
+          </nav>
+        </div>
+      </nav>
+
+      
+    
+      <!-- set any of the following to "1" to force build when speedybuild -->
+      
+      
+      
+      
+    
+      <!-- show page properties button top of all pages -->
+      
+      
+      <div class="container-xxxl">
+  <div class="row">
+    
+    
+    
+    
+    
+
+    <!-- add in content browser left nav -->
+    <div
+      class="flex-column leftnav flex-shrink-0 py-3"
+      data-ignore="true"
+      sup>
+      <ul class="navigator sticky-top">
+        <!-- TODO: I added sticky-top so it wouldn't scroll. Also updated the CSS. -->
+        
+          
+            <link href="/suite/help/26.7/css/design-sys/ds-content_browser.css" rel="stylesheet" />
+            <!-- topic info  --> 
+
+
+
+
+
+
+<!-- hide browser if page.topic isn't defined -->
+
+
+
+
+
+
+
+
+
+<!-- pages in topic -->
+
+
+
+
+
+
+
+<!-- sub-product versioning stuff -->
+
+  
+  
+
+
+<!-- get proxy pages -->
+
+
+
+<!-- For cases where a docs page topic browser includes a proxy-topic in a subproduct repo, this code will ensure no duplicates links appear for each subproduct version -->
+<!-- Check if the current page is a docs page and not subproduct. -->
+
+   <!-- Group by page.title to see which have dups -->
+   
+   
+   
+
+
+
+
+<!-- parent backlink -->
+
+
+<!-- set list of groups / get top-level items -->
+
+
+
+<!-- this variable stores all the pages that successfuly get
+  placed in the browser (pushed in cb_item.html) to be later
+  compared against all pages in the topic to see who didn't
+  make it -->
+
+
+<!-- set home if exist -->
+
+  
+    <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class="nochildren ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/guidance.html"><span>
+       Guidelines
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+  
+
+
+<!-- root-level items -->
+
+  
+
+<!-- groups and items -->
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Welcome</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-designing-for-your-users.html"><span>
+       Designing for Your Users
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-presenting-information-clearly.html"><span>
+       Presenting Information Clearly
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Layout Best Practices</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-example-walkthrough.html"><span>
+       Example Walk-Through
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-page-width.html"><span>
+       Page Width
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-columns-and-side-by-side.html"><span>
+       Columns vs. Side by Side
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Component Best Practices</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-labels.html"><span>
+       Labels
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-inputs.html"><span>
+       Inputs, Selection, and Pickers
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-buttons-vs-links.html"><span>
+       Buttons vs. Links
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Site & Portal Best Practices</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-portals.html"><span>
+       Portal Design Guidelines
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <li class=" current"><a class="navigator-clickable-area" aria-current="page" href="#"><span>Designing Sites and Portals <span class="ricon_group"></span></span></a></li>
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>General Guidelines</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-accessibility.html"><span>
+       Accessibility
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-avoiding-clutter.html"><span>
+       Avoiding Clutter
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-formatting-and-punctuation.html"><span>
+       Formatting and Punctuation
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-mobile-considerations.html"><span>
+       Mobile Considerations
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-progressive-disclosure.html"><span>
+       Progressive Disclosure
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-color-overview.html"><span>
+       Using Colors
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+
+<!-- OTHER category for pages that were orphaned because the topic-group or type wasn't set properly. -->
+
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+
+          
+        
+      </ul>
+    </div>
+
+    <div class="col py-3 px-3">
+      
+
+
+
+        <div hidden class="page_phone_nav_content" data-ignore="true">
+          <select onchange="location = this.value;" class="page_phone_nav">
+            
+              
+              <option value="/suite/help/26.7/sail/guidance.html" >
+                Guidelines Overview
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-designing-for-your-users.html" >
+                Designing for Your Users
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-presenting-information-clearly.html" >
+                Presenting Information Clearly
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-example-walkthrough.html" >
+                Example Walk-Through
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-page-width.html" >
+                Page Width
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-columns-and-side-by-side.html" >
+                Columns vs. Side by Side
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-labels.html" >
+                Labels
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-inputs.html" >
+                Inputs, Selection, and Pickers
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-buttons-vs-links.html" >
+                Buttons vs. Links
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-portals.html" >
+                Portal Design Guidelines
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-site-branding.html" selected>
+                Designing Sites and Portals
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-accessibility.html" >
+                Accessibility
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-avoiding-clutter.html" >
+                Avoiding Clutter
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-formatting-and-punctuation.html" >
+                Formatting and Punctuation
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-mobile-considerations.html" >
+                Mobile Considerations
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-progressive-disclosure.html" >
+                Progressive Disclosure
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-color-overview.html" >
+                Using Colors
+              </option>
+              
+            
+          </select>
+        </div>
+        <script>
+          const wrapper = document.querySelector(".page_phone_nav_content");
+          wrapper.remove();
+          wrapper.hidden = false;
+          document.querySelector("main > nav").append(wrapper);
+        </script>
+      
+      
+      <!-- content, including page.description as a subtitle -->
+      <div class="d-flex align-items-center justify-content-sm-between">
+        <h1 class="d-sm-inline-block">Designing Sites and Portals</h1>
+        
+          <div class="d-sm-inline-block" style="z-index: 1001;"><style>
+  .share-container {
+    position: relative;
+  }
+
+  .share-container p {
+    margin: 0;
+  }
+
+  .share-button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .share-button:hover {
+    cursor: pointer;
+  }
+
+  .share-box {
+    display: none;
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    right: 3px;
+    background-color: white;
+    padding: 10px 10px 0;
+    border-radius: 0.2rem;
+    border: solid #cfcfcf 1px;
+    border-width: 1px;
+  }
+
+  .share-menu-item {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: black;
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0 10px;
+    height: 35px;
+  }
+
+  .share-icon {
+    margin-right: 8px;
+  }
+
+  .share-box div:hover {
+    cursor: pointer;
+    color: var(--light-blue);
+  }
+
+  #share-button-icon {
+    font-size: 24px;
+    color: var(--dark-blue);
+  }
+
+  hr.solid {
+    border-top: 1px solid #bbb;
+    margin: 0;
+  }
+</style>
+
+<script>
+
+  document.addEventListener("click", function (event) {
+    var shareContainer = document.querySelector(".share-container");
+    var isClickInside = shareContainer.contains(event.target);
+    var shareBox = document.querySelector(".share-box");
+    var printButton = document.querySelector("#print-button");
+    var shareButton = document.querySelector(".share-button");
+    var isPrint = event.target === printButton || printButton.contains(event.target);
+    var isShareButton = event.target.matches(".share-button") || event.target.matches("#share-button-icon");
+    var copyButton = document.querySelector("#copy-button");
+    var isCopy = event.target === copyButton || copyButton.contains(event.target);
+
+
+    const toggleCopy = (copied) => {
+    const copyIcon = document.querySelector("#copy-icon");
+    const copyLabel = copyButton.childNodes[3];
+    if (copied) {
+      copyIcon.setAttribute('class', 'bi bi-check-lg');
+      copyLabel.innerHTML = "Copied!";
+    } else {
+      copyIcon.setAttribute('class', 'bi bi-link-45deg');
+      copyLabel.innerHTML = "Copy Link";
+    }
+    
+    }
+
+    const toggleShare = (open) => {
+      var shareBox = document.querySelector(".share-box");
+      if (!open) {
+        shareBox.style.display = "none";
+        shareBox.setAttribute("aria-hidden", "true");
+        shareButton.setAttribute("aria-expanded", "false");
+      } else {
+        shareBox.style.display = "block";
+        shareBox.setAttribute("aria-hidden", "false");
+        shareButton.setAttribute("aria-expanded", "true");
+      }
+    }
+
+    if (!isClickInside) {
+      toggleShare(false);
+      toggleCopy(false);
+    } else if (isPrint) {
+      toggleShare(false);
+      window.print();
+    } else if (isCopy) {
+      toggleCopy(true);
+    } else if (isShareButton) {
+      if (shareBox.style.display === "block") {
+        toggleShare(false);
+        toggleCopy(false);
+      } else {
+        toggleShare(true);
+      }
+    }
+  });
+</script>
+
+<div class="share-container" aria-haspopup="true" data-ignore="true">
+  <button class="share-button" aria-label="Share button" aria-expanded="false" aria-controls="share-menu" style="z-index: 1;">
+    <i class="bi bi-share-fill" id="share-button-icon" aria-hidden="true"></i>
+    <span class="sr-only">Share</span>
+  </button>
+  <div class="share-box" id="share-menu" aria-label="Share button menu" role="menu" aria-hidden="true">
+    <p>Share via</p>
+    <div class="share-menu-item" data-share-type="LinkedIn" aria-label="Share on LinkedIn menuitem" role="menuitem" onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`);">
+      <div class="share-icon">
+        <i class="bi bi-linkedin" aria-hidden="true"></i>
+      </div>
+      <p>LinkedIn</p>
+    </div>
+    <div class="share-menu-item" data-share-type="Reddit" aria-label="Share on Reddot menuitem" role="menuitem" onclick="window.open(`https://www.reddit.com/r/appian/submit?selftext=true&title=${window.location.href}`);">
+      <div class="share-icon">
+        <i class="bi bi-reddit" aria-hidden="true"></i>
+      </div>
+      <p>Reddit</p>
+    </div>
+    <div class="share-menu-item" data-share-type="Email" aria-label="Email current page menuitem" role="menuitem" onclick="window.open(`mailto:?&body=${window.location.href}`);">
+      <div class="share-icon">
+        <i class="bi bi-envelope-open-fill" aria-hidden="true"></i>
+      </div>
+      <p>Email</p>
+    </div>
+    <div class="share-menu-item" id="copy-button" data-share-type="Copy" aria-label="Copy url to clipboard menuitem" role="menuitem" onclick="navigator.clipboard.writeText(`${window.location.href}`)">
+      <div class="share-icon">
+        <i class="bi bi-link-45deg" id="copy-icon" aria-hidden="true"></i>
+      </div>
+      <p>Copy Link</p>
+    </div>
+    <hr class="solid" />
+    <div class="share-menu-item" id="print-button" data-share-type="Print" aria-label="Print current page menuitem" role="menuitem">
+      <div class="share-icon">
+        <i class="bi bi-printer-fill" aria-hidden="true"></i>
+      </div>
+      <p>Print</p>
+    </div>
+  </div>
+</div></div>
+        
+        
+      </div>
+      
+      <hr class="mb-4" />
+      <div class="row">
+        <div class="col page_content">
+          <!-- path: collection_docs/_ds-guidelines/groupD/ux-site-branding.md -->
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In both the <a href="../sites_object.html">site</a> and <a href="../portal-object.html">portal</a> objects, you have the power to configure all the details that will shape the look and feel of your site or portal.</p>
+
+<p>While sites and portals share many of the same page structure and branding options, there are some instances where a certain setting is only available in one object and not the other.</p>
+
+<p>To learn more about portal-specific design best practices, see <a href="../portals-design.html">Portal Best Practices</a> and <a href="ux-portals.html">Portals</a> design guidance.</p>
+
+<h2 id="organizing-pages-and-page-groups">Organizing pages and page groups</h2>
+
+<p>Pages provide the structure for how users will interact with and navigate through your <a href="../sites_object.html#pages">site</a> or <a href="../portal-object.html#pages">portal</a>. You can add a combination of up to ten pages or page groups to a site or portal. This section outlines the guidelines you should follow when adding pages and page groups to give your users the best experience. For more information on organizing and presenting information in your sites and portals, see <a href="ux-presenting-information-clearly.html">Presenting Information Clearly</a>.</p>
+
+<h3 id="use-an-appropriate-number-of-pages-to-optimize-navigation">Use an appropriate number of pages to optimize navigation</h3>
+
+<p>Well-organized and clearly defined pages will offer the best navigation experience.</p>
+
+<p>To help guide users to important information, pages and page groups should have a clear title and distinct purpose for being in your navigation bar. As a general rule, try to limit the number of top-level items in your navigation bar to eight.</p>
+
+<p>Group pages with a similar purpose into page groups so they are organized under a single title in your navigation bar. You want to make it easy for users to scan the list of pages in a group and quickly find what they need. Keep this in mind when adding pages to your groups.</p>
+
+<p>If you need additional navigation options on a particular page, use <a href="secondary-navigation.html">secondary navigation</a> to break up page contents.</p>
+
+<p>For <a href="ux-mobile-considerations.html#site-pages">mobile-first sites</a> that are only accessed on Appian Mobile, we recommend using no more than five pages or page groups in the navigation bar.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/organized_header_bar_do.png" data-lightbox="image-100"><img src="ds-images/organized_header_bar_do.png" alt="alttext" standalone="" /></a></div></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/organized_header_bar_dont.png" data-lightbox="image-101"><img src="ds-images/organized_header_bar_dont.png" alt="alttext" standalone="" /></a></div></div>
+
+<h3 id="order-pages-for-efficient-navigation">Order pages for efficient navigation</h3>
+
+<p>Organize your pages and page groups in some kind of logical order, such as most-used to least-used or alphabetical order. Choose an arrangement will best suit the needs of your users.</p>
+
+<h3 id="use-clear-concise-page-names">Use clear, concise page names</h3>
+
+<p>Users can more easily scan and find information when the page names are clear and concise. Using concise pages names also prevents the names from being truncated, since they are more likely to fit on the screen.</p>
+
+<h3 id="use-clear-titles-for-pages-in-page-groups">Use clear titles for pages in page groups</h3>
+
+<p>To help users immediately understand what page they are on when navigating through page groups, make sure to include a <a href="page-titles.html">title</a> at the top of each page that clearly indicates its intended purpose.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/page_group_clear_page_title_do.png" data-lightbox="image-102"><img src="ds-images/page_group_clear_page_title_do.png" alt="alttext" standalone="" /></a></div></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/page_group_clear_page_title_dont.png" data-lightbox="image-103"><img src="ds-images/page_group_clear_page_title_dont.png" alt="alttext" standalone="" /></a></div></div>
+
+<h3 id="for-sites-use-the-best-page-width-for-the-page-content">For sites, use the best page width for the page content</h3>
+
+<p>When adding a site page, choose the <a href="../sites_object.html#add-a-page">page width</a> that best matches the interface content.</p>
+
+<p>For example, actions that have only a few fields will benefit from a narrow page width. Otherwise, the form may look stretched. Likewise, a dense interface can benefit from a wide page width or, if users have extra wide monitors, a full page width.</p>
+
+<p>See <a href="ux-page-width.html">Page Width</a> for more information.</p>
+
+<p>Note portal page width is always "Full".</p>
+
+<h2 id="navigation-bar">Navigation bar</h2>
+
+<p>The navigation bar provides the primary navigation for sites and portals, allowing users to move between pages. It can be configured with different layouts, styles, and branding options to match your organization's needs.</p>
+
+<p>Since sites and portals serve different user types, there are some key differences between them:</p>
+
+<div class="zoomimage" style=""><a href="ds-images/sites_vs_portals_navigation_bar.png" data-lightbox="image-104"><img src="ds-images/sites_vs_portals_navigation_bar.png" alt="sites_vs_portals_navigation_bar" standalone="" /></a></div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th># </th>
+            <th>UI Element</th>
+            <th>Sites</th>
+            <th>Portals</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Configurable logo (optional)</td>
+            <td aria-label="Yes"><i class="fa fa-check" aria-hidden="true"></i><span class="sr-only">Yes</span></td>
+            <td aria-label="Yes"><i class="fa fa-check" aria-hidden="true"></i><span class="sr-only">Yes</span></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Display name (optional)</td>
+            <td aria-label="Yes"><i class="fa fa-check" aria-hidden="true"></i><span class="sr-only">Yes</span></td>
+            <td aria-label="Yes"><i class="fa fa-check" aria-hidden="true"></i><span class="sr-only">Yes</span></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Page titles</td>
+            <td aria-label="Yes"><i class="fa fa-check" aria-hidden="true"></i><span class="sr-only">Yes</span></td>
+            <td aria-label="Yes"><i class="fa fa-check" aria-hidden="true"></i><span class="sr-only">Yes</span></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Navigation menu</td>
+            <td aria-label="Yes"><i class="fa fa-check" aria-hidden="true"></i><span class="sr-only">Yes</span></td>
+            <td aria-label="No"><span class="sr-only">No</span></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>User menu</td>
+            <td aria-label="Yes"><i class="fa fa-check" aria-hidden="true"></i><span class="sr-only">Yes</span></td>
+            <td aria-label="No"><span class="sr-only">No</span></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Non-configurable Appian logo</td>
+            <td aria-label="Yes"><i class="fa fa-check" aria-hidden="true"></i><span class="sr-only">Yes</span></td>
+            <td aria-label="No"><span class="sr-only">No</span></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="when-to-use-navigation-bar-layouts">When to use navigation bar layouts</h3>
+
+<h4 id="use-sidebar-for-complex-navigation">Use sidebar for complex navigation</h4>
+
+<p>If your site or portal has many top-level pages or page groups, a sidebar layout simplifies navigation because the vertically stacked list is easier for users to scan.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/sidebar-complex.png" data-lightbox="image-105"><img src="ds-images/sidebar-complex.png" alt="screenshot of a sidebar with five pages and two page groups" standalone="" /></a></div>
+  <p>Use a sidebar for complex navigation</p></div>
+
+<h4 id="use-header-bar-for-simple-navigation">Use header bar for simple navigation</h4>
+
+<p>For sites or portals with only a few pages, the header bar layout prevents unnecessary blank space that a sidebar might introduce.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/header-bar-simple.png" data-lightbox="image-106"><img src="ds-images/header-bar-simple.png" alt="screenshot of a header with three pages" standalone="" /></a></div>
+  <p>Use a header bar for simple navigation</p></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/sidebar-simple.png" data-lightbox="image-107"><img src="ds-images/sidebar-simple.png" alt="screenshot of a sidebar with just three pages" standalone="" /></a></div>
+  <p>Don't use a sidebar with only a few site or portal pages</p></div>
+
+<h4 id="choose-header-bar-style-based-on-your-needs">Choose header bar style based on your needs</h4>
+
+<p>Header bar styles are primarily aesthetic choices. Choose the one that best matches your company's brand guidelines. But consider these functional differences:</p>
+
+<ul>
+  <li>Use <strong>Mercury</strong> or <strong>Oxygen</strong> for single-page sites when you don't want the page name displayed.</li>
+  <li>Use <strong>Helium</strong> when you want page names always visible and want icons for visual clarity.</li>
+</ul>
+
+<h3 id="configuration-options">Configuration options</h3>
+
+<p>This section highlights variations of the navigation bar to help you visualize what's possible for your site and portal designs.</p>
+
+<p>The following sections describe the configurations as they are displayed in the site and portal objects.</p>
+
+<div class="note">
+<p> 
+<strong>Note:&nbsp;&nbsp;</strong>The following configurations don't apply to Appian Mobile: <a href="#layout">Layout</a>, <a href="#style-header-bar-only">Style</a>, <a href="#show-display-name">Show display name in navigation bar</a>, <a href="#page-name-capitalization">Use uppercase capitalization for page titles</a>, <a href="#user-profile-and-settings-access-sites-only">Enable user settings link in user menu</a>.</p></div>
+
+<h4 id="show-navigation-bar-portals-only">Show navigation bar (portals only)</h4>
+
+<p>Use the <strong>Show navigation bar</strong> configuration to control whether a navigation bar displays for single-page portals. When enabled, it provides a fixed header that helps brand your portal with a company logo and custom color scheme.</p>
+
+<div class="zoomimage" style=""><a href="ds-images/portal-header-comparison1.png" data-lightbox="image-108"><img src="ds-images/portal-header-comparison1.png" alt="comparison of portal with and without navigation bar" standalone="" /></a></div>
+
+<h4 id="layout">Layout</h4>
+
+<p>Use the <strong>Layout</strong> configuration to choose between two layout options: <strong>Header Bar</strong> and <strong>Sidebar</strong>.</p>
+
+<div class="zoomimage" style=""><a href="ds-images/site_sidebar_vs_headerbar.png" data-lightbox="image-109"><img src="ds-images/site_sidebar_vs_headerbar.png" alt="comparison of header bar and sidebar layouts" standalone="" /></a></div>
+
+<p>The following table compares the key differences between header bar and sidebar layouts:</p>
+
+<table class="appianTable table table-striped">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Header Bar</th>
+      <th>Sidebar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Style options</strong></td>
+      <td>Three options: Helium, Mercury, Oxygen</td>
+      <td>No style options available</td>
+    </tr>
+    <tr>
+      <td><strong>Page display</strong></td>
+      <td>Pages displayed horizontally across the top</td>
+      <td>Pages displayed in a vertically stacked, collapsible list</td>
+    </tr>
+    <tr>
+      <td><strong>Icons</strong></td>
+      <td>Icons display for Helium style only</td>
+      <td>Icons always display next to page titles</td>
+    </tr>
+    <tr>
+      <td><strong>Selected highlight</strong></td>
+      <td>Displays as underline (Mercury/Oxygen) or background highlight (Helium)</td>
+      <td>Displays as background highlight</td>
+    </tr>
+    <tr>
+      <td><strong>Collapsible state</strong></td>
+      <td>Not applicable</td>
+      <td>User's collapse/expand choice is remembered per site or portal</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Both layouts are automatically responsive and collapse to a <i class="fa fa-bars" aria-hidden="true"></i> menu when pages don't fit on screen. On Appian Mobile, they are always accessed from the <i class="fa fa-bars" aria-hidden="true"></i> menu.</p>
+
+<p><img src="ds-images/site_responsive_menu.gif" alt="responsive menu in a site" class="screenshot" /></p>
+
+<h4 id="style-header-bar-only">Style (header bar only)</h4>
+
+<p>Use the <strong>Style</strong> configuration to select the visual appearance of your header bar. Sites offer three style options: Helium, Mercury, and Oxygen. Portals offer two style options: Mercury and Oxygen.</p>
+
+<div class="zoomimage" style=""><a href="ds-images/navigation-bar-styles.png" data-lightbox="image-110"><img src="ds-images/navigation-bar-styles.png" alt="navigation-bar-styles" standalone="" /></a></div>
+
+<p>Each style has different characteristics:</p>
+
+<table class="appianTable table table-striped">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Helium</th>
+      <th>Mercury</th>
+      <th>Oxygen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td>Sites only</td>
+      <td>Sites and portals</td>
+      <td>Sites and portals</td>
+    </tr>
+    <tr>
+      <td><strong>Logo position</strong></td>
+      <td>Right side</td>
+      <td>Left side</td>
+      <td>Left side</td>
+    </tr>
+    <tr>
+      <td><strong>Page name position</strong></td>
+      <td>Left side with icons above</td>
+      <td>Left side</td>
+      <td>Right side</td>
+    </tr>
+    <tr>
+      <td><strong>Page name visibility</strong></td>
+      <td>Always displays</td>
+      <td>Only with multiple pages</td>
+      <td>Only with multiple pages</td>
+    </tr>
+    <tr>
+      <td><strong>Icons</strong></td>
+      <td>Required above each page name</td>
+      <td>No icons displayed</td>
+      <td>No icons displayed</td>
+    </tr>
+    <tr>
+      <td><strong>Selected highlight</strong></td>
+      <td>Highlights entire page tab</td>
+      <td>Underlines page name</td>
+      <td>Underlines page name</td>
+    </tr>
+    <tr>
+      <td><strong>Display name (optional)</strong></td>
+      <td>(Sites only) Replaces the navigation menu icon <i class="fa fa-th" aria-hidden="true"></i></td>
+      <td>Sites: Replaces the navigation menu icon <i class="fa fa-th" aria-hidden="true"></i><br />Portals: Displays on right</td>
+      <td>Displays on left</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="logo">Logo</h4>
+
+<p>Use the <strong>Logo</strong> configuration to display a custom logo to brand your site or portal. You call also set it to <strong>NONE</strong> to hide it entirely.</p>
+
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i> Sites and portals also display a <a href="../Sites.html#navigation-bar">non-configurable Appian logo</a> that cannot be turned off or changed.</p>
+
+<p><img src="ds-images/nav-bar-logo.png" alt="nav-bar-logo" class="screenshot" /></p>
+
+<h4 id="show-display-name">Show display name</h4>
+
+<p>Use the show display name configuration to control whether the site or portal display name appears in the navigation bar.</p>
+
+<p>The behavior of this option depends on the selected navigation bar layout and style:</p>
+
+<p>For Helium and Mercury header bars, turning this on changes the navigation icon <i class="fa fa-th" aria-hidden="true"></i> to the site display name.</p>
+
+<p>For the sidebar and Oxygen header bar, turning this on displays the site display name in the navigation bar. The navigation icon <i class="fa fa-th" aria-hidden="true"></i> always displays.</p>
+
+<p><img src="ds-images/show-display-name.png" alt="ds-images/show-portal-display-name.png" /></p>
+
+<h4 id="page-name-capitalization">Page name capitalization</h4>
+
+<p>Use the <strong>Page name capitalization</strong> configuration to control whether page names appear in uppercase or preserve original capitalization. Doesn't apply to Appian Mobile.</p>
+
+<p><img src="ds-images/page-name-capitalization.png" alt="page-name-capitalization" class="screenshot" /></p>
+
+<h4 id="user-profile-and-settings-access-sites-only">User profile and settings access (sites only)</h4>
+
+<p>Use the these configurations to control what options appear in the <a href="../common-view-elements.html#header-bar">user menu</a> in sites.</p>
+
+<ul>
+  <li><strong>Enable profile link in user menu</strong>: Controls whether users can access the <strong>Profile</strong> option in the user menu.</li>
+  <li><strong>Enable user settings link in user menu</strong>: Controls whether users can access the <strong>Settings</strong> option in the user menu.</li>
+</ul>
+
+<p>When these options are turned off, users can still access profile and settings from other sites. Users can always access their profile through <a href="../User_Record_Link_Component.html">user record links</a>.</p>
+
+<h3 id="style-guidelines">Style guidelines</h3>
+
+<h4 id="be-consistent-across-sites">Be consistent across sites</h4>
+
+<p>Use the same layout and style for navigation bars across sites that share users to provide a consistent experience.</p>
+
+<h4 id="sidebar-considerations">Sidebar considerations</h4>
+
+<h5 id="test-content-with-sidebar-width-changes">Test content with sidebar width changes</h5>
+
+<p>Because the sidebar will take up some horizontal space that the header bar does not, make sure your pages work well on a slightly narrower width. Components may stack sooner with a sidebar than they would with a header bar.</p>
+
+<p>Stacking behavior will follow the width of the page itself and will not take the sidebar into account. For example, the following interface begins stacking sooner with a sidebar than with a header bar even though the Stack When parameter has the same value and the screen size is the same.</p>
+
+<p><img src="ds-images/site_sidebar_stacking_behavior.gif" alt="content stacking with sidebar gif" class="screenshot" /></p>
+
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i> Users have the option to collapse and expand the sidebar which will have some impact on the horizontal space on the page.</p>
+
+<h5 id="dont-use-the-same-color-for-the-sidebar-and-page-background">Don't use the same color for the sidebar and page background</h5>
+
+<p>Make sure the background color of your pages provide sufficient contrast against the sidebar color. Using a different color for your sidebar and page background color helps separate the page contents from the navigation bar and adds structure to your pages.</p>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/sidebar-page-background-dont.png" data-lightbox="image-111"><img src="ds-images/sidebar-page-background-dont.png" alt="alttext" standalone="" /></a></div>
+  <p>Don't use a page background color that is too similar to the sidebar color</p></div>
+
+<h4 id="background-and-highlight-color-guidance">Background and highlight color guidance</h4>
+
+<h5 id="make-sure-text-and-icons-are-easy-to-read">Make sure text and icons are easy to read</h5>
+
+<p>Based on the configured background color, a dark gray or white color is automatically applied to the text and icons in the navigation bar. Avoid a medium-brightness color which may not provide sufficient contrast with the text or icon color.</p>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/navBar.png" data-lightbox="image-112"><img src="ds-images/navBar.png" alt="alttext" standalone="" /></a></div>
+  <p>Don't choose a header bar color that makes the text and icons difficult to read.</p></div>
+
+<h5 id="make-it-is-clear-which-page-is-selected">Make it is clear which page is selected</h5>
+
+<p>The selected highlight color should be distinguishable enough from the navigation bar color so that users can easily tell which tab is highlighted.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/sidebar-highlight-do.png" data-lightbox="image-113"><img src="ds-images/sidebar-highlight-do.png" alt="screenshot of a sidebar with a white selected highlight color on a dark sidebar" standalone="" /></a></div>
+  <p>Choose a sidebar color that makes it clear which page is selected.</p></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/sidebar-highlight-dont.png" data-lightbox="image-114"><img src="ds-images/sidebar-highlight-dont.png" alt="screenshot of a sidebar with a dark selected highlight color on a dark sidebar" standalone="" /></a></div>
+  <p>Don't choose a selected highlight color that makes it hard to tell which page is selected.</p></div>
+
+<h5 id="color-guidance-for-sidebar-and-helium-header-bar">Color guidance for sidebar and Helium header bar</h5>
+
+<p>For a clean, monochromatic look using the sidebar or Helium header bar style, configure a selected highlight color that is a darker or lighter shade of the navigation bar color.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/tabColor.png" data-lightbox="image-115"><img src="ds-images/tabColor.png" alt="screenshot" standalone="" /></a></div>
+  <p>This Helium header bar style uses a dark blue background with a lighter blue highlight to create a monochromatic look.</p></div>
+
+<h5 id="color-guidance-for-mercury-and-oxygen-header-bar">Color guidance for Mercury and Oxygen header bar</h5>
+
+<p>For a streamlined, easy to navigate look using the Mercury or Oxygen header bar style, configure a selected highlight color that contrasts well with the header bar background color so that users can easily tell which tab they're on.</p>
+
+<p><img src="ds-images/mercuryHighlightColor.png" alt="ds-images/mercuryHighlightColor.png" /></p>
+
+<p><em>This site with the Mercury header bar style uses a light blue background with a gold highlight to create user-friendly contrast.</em></p>
+
+<h4 id="ensure-the-logo-displays-clearly">Ensure the logo displays clearly</h4>
+
+<p>Use a logo with a transparent background and sufficient contrast against the header bar color.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/siteColors_do_ex2.png" data-lightbox="image-116"><img src="ds-images/siteColors_do_ex2.png" alt="alttext" standalone="" /></a></div></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/siteColors_dont_ex2.png" data-lightbox="image-117"><img src="ds-images/siteColors_dont_ex2.png" alt="alttext" standalone="" /></a></div></div>
+
+<h2 id="url-parameter-navigation">URL parameter navigation</h2>
+
+<p>Consider using URL parameters to enable seamless and intuitive navigation behavior.</p>
+
+<p>For example, if your site or portal page has tabs that users can switch between, you can configure URL parameters to update the web address with the selected tab, making it easier for users to bookmark links to a specific tab. For an example of how to enable this, see <a href="../url-parameters.html#example-update-web-address-when-switching-between-tabs">Example: Update web address when switching between tabs</a>.</p>
+
+<div class="zoomimage" style=""><a href="ds-images/select-vehicle-tab-do.gif" data-lightbox="image-118"><img src="ds-images/select-vehicle-tab-do.gif" alt="gif of user selecting two different tabs on a page and the tab content and web address updating" standalone="" /></a></div>
+
+<p><em>The URL parameters update in the web address when users navigate between tabs, allowing users to bookmark a link to the tab.</em></p>
+
+<p>If you have an interface that can be filtered, when you set up the filters to work with URL parameters, you can configure the web address to update when users filter the content. This works whether the URL parameters are encrypted or plaintext.</p>
+
+<p>Doing this:</p>
+
+<ul>
+  <li><a href="../url-parameters.html#allow-users-to-share-links-with-their-selected-filters">Allows users to share and bookmark links with their selected filters</a>.</li>
+  <li><a href="../url-parameters.html#remember-filter-selections-when-returning-to-a-previously-filtered-page">Remembers filter selections when users return to a previously filtered page</a>.</li>
+</ul>
+
+<p>For an example of how to set up filters to work with URL parameters, see <a href="../url-parameters.html#example-setting-up-a-filter-to-work-with-url-parameters">Example: Setting the value of a filter using a rule input</a>.</p>
+
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i> To get the desired behavior for remembering filter selections, be sure to set <strong>Refresh After</strong> to "Unfocus" for the filter. If it is set to "Keypress", each character the user typed will be remembered when they click the browser back button.</p>
+
+<div class="zoomimage" style=""><a href="ds-images/sales_db_back_button.gif" data-lightbox="image-119"><img src="ds-images/sales_db_back_button.gif" alt="gif of a sales dashboard with filter values changing and the URL updating" standalone="" /></a></div>
+
+<p><em>When filtering the page, the URL parameters update in the web address and they are remembered when the user clicks the browser back button. If the user copies the link to the filtered page, they can share and bookmark their selections.</em></p>
+
+<h2 id="color-scheme">Color scheme</h2>
+
+<p>For portals, you can create a custom color scheme using hex codes for the header bar, selected highlight, accent, and loading bar colors.</p>
+
+<p>For sites, you can either create a custom color scheme by selecting hex codes for each field or you can use one of our predefined <a href="../Sites_Color_Schemes.html">dark color schemes</a>.</p>
+
+<h3 id="creating-a-custom-color-scheme">Creating a custom color scheme</h3>
+
+<p>You can create a custom color scheme to match your company branding. To create a custom color scheme, you will need to choose a set of site branding colors. These include your header bar color, selected highlight color, accent color, and loading bar color. Once you've selected the color scheme for your site, use them consistently across all interfaces and site pages for a cohesive and professional look.</p>
+
+<p>For more information on custom color schemes for sites and header content layouts, see our <a href="ux-header-content-layout.html#use-a-custom-background-color-to-match-company-branding">header content layout design guidance</a>.</p>
+
+<h2 id="branding">Branding</h2>
+
+<p>For a more cohesive user experience, you can better match your organization's branding using the branding configurations in site and portal objects.</p>
+
+<p>With just a few clicks, you can configure all interfaces in your site or portal to use specific border shapes, colors, button label capitalization, and more.</p>
+
+<p>To ensure you are working with the most accurate representation of your interfaces, we recommend configuring the branding for your site or portal early on in your app development. This allows you to take full advantage of the interface object <a href="../interface_object.html#branding-preview">Branding preview</a> <img src="ds-images/branding-preview-icon.svg" alt="branding preview icon" style="width:20px" /> throughout your design process. When you are editing interface objects, use this menu to select the site or portal that the interface will display in and see how your branding applies while you are designing.</p>
+
+<p><img src="ds-images/branding_preview_selection.gif" alt="branding_preview_selection" class="screenshot" /></p>
+
+<h3 id="accent-color">Accent color</h3>
+
+<p>A configurable accent color is used to highlight key UI elements such as "Primary" style links and section headings. The accent color is also used as the default color for buttons.</p>
+
+<p>Avoid accent colors that are:</p>
+
+<ul>
+  <li>Too close to the standard, black text color.</li>
+  <li>Too close to the red destructive button and error message color.</li>
+  <li>Too low in contrast against the white page background. The accent color should have a minimum contrast ratio of 4.5:1. Use a <a href="https://webaim.org/resources/contrastchecker/">contrast checker</a> to ensure your selected color meets the requirement.</li>
+</ul>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/accentColor_dont.png" data-lightbox="image-120"><img src="ds-images/accentColor_dont.png" alt="alttext" standalone="" /></a></div></div>
+
+<p>If you're using a predefined dark color scheme, make sure that your accent color looks good everywhere that it will be used throughout your site.</p>
+
+<h4 id="accent-color-accessibility">Accent color accessibility</h4>
+
+<p>A faded version of the accent color is used as a hover style on certain components, such as dropdown menus and grids with row highlight. For better accessibility, test your accent color while hovering on dropdown menus and grids with row highlight to ensure they have adequate color contrast. The contrast ratio between the cell color and the text should be 4.5:1.</p>
+
+<h3 id="loading-bar-color">Loading bar color</h3>
+
+<p>The loading bar, which appears above the header bar, gives users an idea of how long it will take the system to load a page or process an action. Select a loading bar color with sufficient contrast against the header bar color to ensure that users notice it.</p>
+
+<p><img src="ds-images/loadingBar.png" alt="loadingBar.png" class="screenshot" /></p>
+<p class="ux_p"><em>The loading bar color should stand out from the header bar color so that users notice it</em></p>
+
+<h3 id="button-label-capitalization">Button label capitalization</h3>
+
+<p>By default, all button labels use uppercase capitalization. You can configure this in a <a href="../sites_object.html#branding">site object</a> or <a href="../portal-object.html#branding">portal object</a>, which will apply to all buttons in the site or portal.</p>
+
+<p>If you deselect <strong>Use uppercase capitalization for button labels</strong>, you can control button label capitalization in each button component. Just be sure to use consistent capitalization across all buttons in your site or portal.</p>
+
+<h3 id="border-shapes">Border shapes</h3>
+
+<p>You can configure the shapes of inputs, dialogs, and buttons at the site or portal level.</p>
+
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i> You can configure the shape of <a href="../Box_Layout.html">box layouts</a> and <a href="../card_layout.html">card layouts</a> at the component level. These shape configurations can't be applied site-wide.</p>
+
+<h4 id="button-shape">Button shape</h4>
+
+<p>You can select a button shape to match the branding and style of your site or portal. The button shape is applied to all buttons on every page of a site or portal, including record view and record actions.</p>
+
+<p>There are three options for button shape: squared, semi-rounded, and rounded. Squared is the default selection.</p>
+
+<p><img src="ds-images/site_rounded_buttons.png" alt="ds-images/site_rounded_buttons.png" /></p>
+
+<p><em>This dashboard shows rounded buttons displayed in a site.</em></p>
+
+<h4 id="input-shape">Input shape</h4>
+
+<p>You can select an input shape to match your branding and experience. The input shape is applied to all inputs, pickers, and selection fields, as well as all tooltips, on every page of a site or portal.</p>
+
+<p>There are two options for input shape: squared and semi-rounded. Squared is the default selection.</p>
+
+<p>The input shape does not apply to the following interface elements:</p>
+
+<ul>
+  <li>Layouts</li>
+  <li>Display fields</li>
+  <li>Actions</li>
+  <li>Grids</li>
+  <li>Charts</li>
+  <li>Browsers</li>
+  <li>Record banners</li>
+</ul>
+
+<div class="zoomimage" style=""><a href="ds-images/semi-rounded-input-shape-example.png" data-lightbox="image-121"><img src="ds-images/semi-rounded-input-shape-example.png" alt="alttext" standalone="" /></a></div>
+
+<p><em>This dashboard shows both semi-rounded inputs and semi-rounded cards displayed in a site. Use rounded cards and rounded inputs together for a professional and consistent user experience.</em></p>
+
+<h4 id="dialog-shape">Dialog shape</h4>
+
+<p>You can select a dialog shape to match the branding and style of your site or portal. The dialog shape is applied to all dialogs that are opened when a user is on the site or portal, including:</p>
+
+<ul>
+  <li>Record action dialogs</li>
+  <li>User Settings dialog</li>
+  <li>About Appian dialog</li>
+  <li>Confirmation dialogs</li>
+  <li>Event history dialogs</li>
+</ul>
+
+<div class="tip">
+<p> 
+<strong>Tip:&nbsp;&nbsp;</strong>If you open a dialog when you aren't on a site or portal, such as from Appian Designer, the dialog will use the default <strong>Squared</strong> shape.</p></div>
+
+<h3 id="css-profiles">CSS profiles</h3>
+
+<div class="note">
+<p>
+<strong>Note:&nbsp;&nbsp;</strong>CSS profiles are included in Appian's <a href="../Appian_Tiers.html">advanced and premium capability tiers</a>. Usage limits may apply.</p></div>
+
+<p><a href="../css-profiles.html">CSS profiles</a> extend the branding capabilities available in site and portal objects by giving you direct control over the look of specific UI elements, such as headings, tooltips, and labels, using CSS-based properties. CSS profiles also allow you to apply different <a href="../css-profile-typefaces.html">typefaces</a> to individual sites and portals.</p>
+
+<p>With CSS profiles, you can map your organization's design guidelines to a set of configurable <a href="../css-properties.html">properties</a> and apply them consistently across your sites and portals. You can create a single CSS profile to standardize your look, or create multiple profiles for different use cases, such as separate branding for internal sites and customer-facing portals.</p>
+
+<p>CSS profiles are configured in the <a href="../Appian_Administration_Console.html">Admin Console</a> and can be assigned to individual site and portal objects. New sites and portals automatically use the default CSS profile.</p>
+
+        </div>
+        <!-- add in tocbot page nav -->
+        <div
+          class="col-3 d-none d-xl-block"
+          data-ignore="true"
+          sup>
+          <div id="toc" class="sticky-top bs-docs-sidebar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- if coming to the page from a search result, this script will cause the page to jump to that result -->
+      <script src="/suite/help/26.7/js/jumptosearchresult.js"></script>
+
+      
+
+
+
+
+
+<div id="frontmatter" hidden data-title='Designing Sites and Portals' data-topic='ds-guidelines' data-searchCategory='["sites", "portals", "saildesignsystem"]'></div>
+
+      <script>
+        // TODO: Couldn't get Ryan's to work, so using different one until he can fix.
+        const codeBlocks = document.querySelectorAll(
+          ".code-box-toolbar + div.highlighter-rouge td.rouge-code, table.rouge-table td.code"
+        );
+        const copyCodeButtons = document.querySelectorAll(".copy-code-button");
+
+        copyCodeButtons.forEach((copyCodeButton, index) => {
+          const code = codeBlocks[index].innerText;
+
+          copyCodeButton.addEventListener("click", () => {
+            // Copy the code to the user's clipboard
+            window.navigator.clipboard.writeText(code);
+
+            // Update the button text visually
+            const { innerText: originalText } = copyCodeButton;
+            copyCodeButton.innerText = "Copied!";
+
+            // (Optional) Toggle a class for styling the button
+            copyCodeButton.classList.add("copied");
+
+            // After 2 seconds, reset the button to its initial UI
+            setTimeout(() => {
+              copyCodeButton.innerText = originalText;
+              copyCodeButton.classList.remove("copied");
+            }, 2000);
+          });
+        });
+      </script>
+
+      <div
+        class="container-fluid py-5"
+        id="footer"
+        data-ignore="true">
+        <div class="container-xxxl px-4">
+          <div class="row mb-4">
+            <img
+              src="../images/design-sys/logo-appian-white-rebrand.svg"
+              alt="Appian logo"
+              class="footer-logo" />
+          </div>
+          <div class="row mb-4">
+            <a href="https://www.appian.com/" target="_blank">Appian.com
+            </a>
+            <a href="/suite/help/26.7/" target="_blank">Appian Documentation
+            </a>
+            <a href="https://community.appian.com" target="_blank">Appian Community
+            </a>
+            <a href="https://appian.com/legal/privacy-information.html">Privacy
+            </a>
+            <a href="#" id="open_preferences_center">Update Cookie Preferences
+            </a>
+            <br/>
+            &nbsp;
+            <br/>
+          </div>
+          &copy;2026 Appian. All rights reserved.
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- page toc on right side using tocbot -->
+<script src="/suite/help/26.7/js/design-sys/tocbot.min.js"></script>
+<script>
+      tocbot.init({
+    // Where to render the table of contents.
+    tocSelector: "#toc",
+    // Where to grab the headings to build the table of contents.
+    contentSelector: ".page_content",
+    // Which headings to grab inside of the contentSelector element.
+    headingSelector: "h2,h3,h4,h5",
+    // For headings inside relative or absolute positioned containers within content.
+    hasInnerContainers: true,
+    // orderedList can be set to false to generate unordered lists (ul)
+    // instead of ordered lists (ol)
+    orderedList: false,
+    // Smooth scrolling enabled.
+    scrollSmooth: true,
+    // Smooth scroll duration.
+    scrollSmoothDuration: 420,
+    // Smooth scroll offset.
+    scrollSmoothOffset: -17,
+    // Headings offset between the headings and the top of the document (this is meant for minor adjustments).
+    headingsOffset: 17,
+      });
+</script>
+
+<!-- script for left nav to expand or collapse on click -->
+<script type="text/javascript" src="/suite/help/26.7/js/initialize_nav.js"></script>
+
+<!-- typeahead scripts -->
+<script src="/suite/help/26.7/js/typeahead.bundle.min.js"></script>
+
+<script>
+      // hides searchbox until it loads with typeahead
+      $("#search").css("visibility", "visible");
+</script>
+
+<script>
+
+
+  if(Object.keys(localStorage).length > 10) {
+    Object.keys(localStorage).forEach(
+      function(currentValue){
+        if(currentValue.indexOf("search-typeahead-data")>0){
+          localStorage.removeItem(currentValue)
+        }
+      }
+    );
+  }
+  var typeaheadSuggestions = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.obj.nonword('name'),
+    queryTokenizer: Bloodhound.tokenizers.nonword,
+    limit: 20,
+    sorter: function compare(a, b) {
+      var input_regex = new RegExp($('input[type="text"]:focus').val(), "i");
+      var a_indexof = a.name.search(input_regex); 
+      var b_indexof = b.name.search(input_regex); 
+      if (a_indexof > -1  && b_indexof == -1) {
+      return -1;
+      }
+      if (a_indexof == -1  && b_indexof > -1) {
+        return 1;
+      }
+      if (a_indexof < b_indexof) {
+        return -1;
+      }
+      if (a_indexof > b_indexof) {
+        return 1;
+      }
+      return 0;
+    },
+    prefetch: {
+      url: "/suite/help/26.7/search-typeahead-ds-data.json?Appian 26.7-2026-08-02 03:41:03 +0000",
+    }
+  });typeaheadSuggestions.initialize();
+
+  typeaheads = ['input#search-query-splash', 'input#search-query-sp', 'input#search-query-ds', 'input#search-query-mobile', 'input#search-query-nav']
+
+// For the typeaheads in the navmenu and mobile navmenu, they need to be loaded first (see megamenu.js and megamenu-mobile.js) 
+// so we are setting a timeout here just for those so that there are no errors
+  typeaheads.forEach((t, idx) => {
+      if (t === 'input#search-query-nav' || t === 'input#search-query-mobile') {
+          setTimeout(() => {
+            if(document.querySelector(t)) {
+              initializeTypeahead(t, idx);
+            }
+          }, 1000);
+      } else {
+        initializeTypeahead(t, idx);
+      }
+  });
+
+  function initializeTypeahead(t, idx) {
+      $(t).typeahead({ highlight: true, hint: true }, {
+        name: `typeaheadSuggestions-${idx}`,
+        displayKey: 'name',source: typeaheadSuggestions.ttAdapter()
+      });
+
+      $(t).bind(
+        'typeahead:selected',
+        function(obj, datum, name){
+          targetURL = "/suite/help/26.7" + datum.path;
+          if (window.dataLayer) {
+            window.dataLayer.push({
+              'event': 'dsTypeAheadClicked',
+              'link_URL': targetURL, 
+              'link_text': datum.name
+            });
+          }  
+          window.top.location = targetURL;
+        }
+      );
+
+      $(t).on('focus', (e) => {
+        e.stopPropagation();
+        $(this).typeahead('open');
+      })
+  }
+
+
+</script>
+
+<!-- prospect tracking -->
+<script type="text/plain" data-cookie-consent="tracking">
+  piAId = '11342';
+  piCId = '1671';
+
+  (function() {
+  function async_load(){
+    var s = document.createElement('script'); s.type = 'text/javascript';
+    s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+    var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+  }
+  
+  if(window.attachEvent) { window.attachEvent('onload', async_load); }
+  else { window.addEventListener('load', async_load, false); }
+  })();
+</script>
+
+<!-- Scrape page for sail components and adds hyperlinks to all functions -->
+<style>
+    .functions-anchor {
+        text-decoration: none;
+    }
+
+    .functions-anchor:hover {
+        text-decoration: underline;
+    }
+</style>
+<script>
+    const linkFunctions = async () => {
+        let functions = document.querySelectorAll('span.nf');
+
+        if (functions.length > 0) {
+        const response = await fetch("/suite/help/26.7/functions.json");
+            const functionsJson = await response.json();
+
+            functions.forEach((func) => {
+                if (func) {
+                    func.addEventListener("mouseover", () => {
+                    let originalText = func.innerText.trim();
+                    let parts = originalText.split('(');  
+                    
+                    func.innerHTML = '';  
+
+                    parts.forEach((part, index) => {
+                        if (index > 0) {
+                            func.appendChild(document.createTextNode('('));
+                        }
+
+                        let subParts = part.split(/(fn!)/).filter(Boolean);
+                        
+                        subParts.forEach(subPart => {
+                            let cleanedSubPart = subPart.replace('fn!', '').trim().toLowerCase();
+                            const currentPage = "/suite/help/26.7/sail/ux-site-branding.html";
+                            if (functionsJson[cleanedSubPart] && currentPage.toLowerCase() !== functionsJson[cleanedSubPart].toLowerCase()) {
+                                const link = document.createElement('a');
+                                link.href = functionsJson[cleanedSubPart];
+                                link.textContent = subPart;
+                                link.setAttribute('target', '_blank');
+                                link.setAttribute('class', 'nf functions-anchor');
+                                func.appendChild(link);
+                            } else {
+                                func.appendChild(document.createTextNode(subPart));
+                            }
+                        });
+                    });
+                }, {once: true});
+                }
+            });
+        }
+    }
+
+    linkFunctions();
+</script>
+
+<script type="text/javascript">
+  $('a').filter(function() {
+    return this.hostname && this.hostname !== location.hostname;
+  }).attr("target","_blank");
+</script>
+
+<script src="/suite/help/26.7/js/headinganchorlinks.js"></script>

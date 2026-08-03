@@ -1,0 +1,2658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Cookie Consent and Google Tags initialzation -->
+    <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script
+  type="text/javascript"
+  src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js"
+  charset="UTF-8"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied'
+  })
+</script>
+<!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-2RTKZX15VD"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+
+  gtag('config', 'G-2RTKZX15VD')
+</script>
+<script type="text/javascript" charset="UTF-8">
+  document.addEventListener('DOMContentLoaded', function () {
+    cookieconsent.run({
+      notice_banner_type: 'simple',
+      consent_type: 'express',
+      palette: 'light',
+      language: 'en',
+      page_load_consent_levels: ['strictly-necessary'],
+      notice_banner_reject_button_hide: false,
+      preferences_center_close_button_hide: false,
+      page_refresh_confirmation_buttons: true,
+      website_name: 'Appian Documentation',
+      website_privacy_policy_url: 'https://www.appian.com/privacy/',
+
+      callbacks: {
+        scripts_specific_loaded: level => {
+          switch (level) {
+            case 'targeting':
+              gtag('consent', 'update', {
+                ad_storage: 'granted',
+                ad_user_data: 'granted',
+                ad_personalization: 'granted',
+                analytics_storage: 'granted'
+              })
+              break
+          }
+        }
+      },
+      callbacks_force: true
+    })
+  })
+</script>
+<link href="/suite/help/26.7/css/cookie_consent.css" rel="stylesheet" />
+<noscript
+  >Free cookie consent management tool by
+  <a href="https://www.termsfeed.com/">TermsFeed</a>
+</noscript>
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+<!-- Google Tag Manager -->
+<script type="text/plain" data-cookie-consent="tracking">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M2LCFFW');
+</script>
+<!-- End Google Tag Manager -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    
+    
+
+
+    <title>
+      Wizard Layout [SAIL Design System: Components]
+    </title>
+    <link rel="shortcut icon" href="/suite/help/26.7/images/appian_48x48.ico" />
+    <link href="/suite/help/26.7/css/design-sys/tocbot.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/bootstrap.min.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/lightbox.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/appian-base-styles.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/appian-sail.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/appian-sail-responsive.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/balloon_notes.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/syntax.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/ds-typeahead.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/design-sys/ds-syntax.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700" rel="stylesheet" />
+
+      <!-- TODO: for the icons. Dunno what Charles wants to do. -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <script src="/suite/help/26.7/js/design-sys/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="/suite/help/26.7/js/design-sys/bootstrap.bundle.min.js"></script>
+    <script src="/suite/help/26.7/js/design-sys/sidebars.js"></script>
+    <script src="/suite/help/26.7/js/design-sys/lightbox.js"></script>
+
+    <script src="/suite/help/26.7/js/serverless-sail.js"></script>
+    <link href="/suite/help/26.7/css/iframe.css" rel="stylesheet" />
+    <link href="/suite/help/26.7/css/serverless-sail.css" rel="stylesheet" />
+
+    <meta property="og:title" content="Wizard Layout">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://docs.appian.com/suite/help/26.7/sail/ux-wizard-layout.html" />
+<meta property="og:url" content="https://docs.appian.com/suite/help/26.7/sail/ux-wizard-layout.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://docs.appian.com/suite/help/26.7/images/open_graph_preview.png" />
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Wizard Layout">
+
+  <script
+    async
+    src="https://widget.kapa.ai/kapa-widget.bundle.js"
+    data-website-id="cb54ded1-4d63-4b15-97bf-5c77eda3fbcb"
+    data-source-group-ids-include="6ce0e4f1-f64b-4623-a739-90dce4278292"
+    data-button-hide="true"
+    data-kapa-branding-hide='true'
+    data-modal-title='​Appian Docs AI'
+    data-modal-disclaimer="Welcome to the Appian Docs AI Chat! Ask questions about the Appian Docs and Community Knowledge Base."
+    data-modal-disclaimer-bg-color="none"
+    data-modal-disclaimer-font-size="14px"
+    data-modal-disclaimer-text-color="#000000"
+    data-project-logo="/suite/help/26.7/images/appian_48x48.ico"
+    data-modal-image-height="40px"
+    data-modal-image-width="40px"
+    data-modal-border-radius='none'
+    data-modal-z-index='9999'
+    data-user-analytics-cookie-enabled="true"
+    data-consent-required="true"
+    data-consent-screen-title="Help us improve our AI assistant"
+    data-consent-screen-disclaimer="This feature is not available unless you consent to anonymous user tracking which helps us improve our service. We don't collect any personally identifiable information beyond what you explicitly provide."
+    data-consent-screen-accept-button-text="Allow tracking"
+    data-consent-screen-reject-button-text="No thanks"
+    data-modal-ask-ai-input-placeholder="Ask me a question..."
+    data-modal-example-questions="What is data fabric?,What are AI agents?,How do I create a record type?"
+    data-example-question-button-bg-color="#e7f1ffff"
+    data-example-question-button-border="1px solid #E8E8E8"
+    data-example-question-button-border-radius="8px"
+    data-example-question-button-font-size="14px"
+    data-example-question-button-width="min-content"
+    data-modal-example-questions-col-span="none"
+    data-hyperlink-color="#2322f0ff"
+    data-modal-full-screen-on-mobile='true'
+    data-modal-x-offset="0"
+    data-modal-y-offset="0"
+    data-modal-with-overlay="false"
+    data-modal-inner-flex-direction="column"
+    data-modal-inner-justify-content="end"
+    data-modal-inner-max-width="500px"
+    data-modal-inner-position-left="auto"
+    data-modal-inner-position-right="0"
+    data-modal-inner-position-bottom="0"
+    data-modal-inner-position-top="0"
+    data-modal-size="100vh"
+    data-modal-lock-scroll="false"></script>
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "WebPage", 
+    "name": "Wizard Layout",
+    "headline": "Wizard Layout",
+    "image": "https://docs.appian.com/suite/help/26.7/images/open_graph_preview.png", 
+    "url": "https://docs.appian.com/suite/help/26.7/sail/ux-wizard-layout.html",
+    "about": "SAIL Design System: Components"
+  }
+
+</script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript type="text/plain" data-cookie-consent="tracking">
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2LCFFW" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+</noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main>
+      <header class="py-2 docs-header border-bottom" data-ignore="true">
+        <div class="container-xxxl d-flex flex-wrap">
+          <div class="flex-grow-1 align-self-center mt-2 mb-3 mt-lg-0 mb-lg-0">
+            <a href="/suite/help/26.7/"><img
+                src="../images/design-sys/appian-docs-logo.png"
+                class="nav-company-logo"
+                alt="Appian logo" />
+            </a>
+            
+
+
+
+
+
+
+ 
+
+<select aria-label="Version" onchange="redirectAppianVer(this.value)" class="docs-header-version-select">
+  
+    
+    
+    
+    
+      <option value="26.7" selected>
+        26.7
+      </option>
+  
+    
+    
+    
+    
+      <option value="26.6" >
+        26.6
+      </option>
+  
+    
+    
+    
+    
+      <option value="26.3" >
+        26.3
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.4" >
+        25.4
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.3" >
+        25.3
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.2" >
+        25.2
+      </option>
+  
+    
+    
+    
+    
+      <option value="25.1" >
+        25.1
+      </option>
+  
+    
+    
+    
+    
+      <option value="24.4" >
+        24.4
+      </option>
+  
+    
+    
+    
+    
+      <option value="24.3" >
+        24.3
+      </option>
+  
+</select><script>
+var appianvers = ["26.7","26.6","26.3","25.4","25.3","25.2","25.1","24.4","24.3"];
+
+async function redirectAppianVer(intendedVer) {
+  try {
+    URL = "/suite/help/" + intendedVer + "/sail/ux-wizard-layout.html"; 
+    const res = await fetch(URL);
+    if (res.ok) {
+      window.location.href = URL; 
+    } else {
+      if (sessionStorage) {
+        sessionStorage.setItem('pageTitle', "Wizard Layout");
+        sessionStorage.setItem('pageURL', "/sail/ux-wizard-layout.html");
+        sessionStorage.setItem('intendedVer', intendedVer);
+        sessionStorage.setItem('appianvers', JSON.stringify(appianvers));
+      }
+      window.location.href = '/suite/help/26.7' + '/page-not-found-verjump.html';
+    }
+  } catch (err) {
+    if (sessionStorage) {
+      sessionStorage.setItem('pageTitle', '');
+      sessionStorage.setItem('pageURL', '');
+      sessionStorage.setItem('intendedVer', '');
+      sessionStorage.setItem('appianvers', '');
+    }
+    window.location.href = '/suite/help/26.7' + '/page-not-found-verjump.html';
+    console.log("Error in redirectAppianVer function"); 
+  }
+}
+
+</script>
+          </div>
+          <!-- search box -->
+          <form
+            id="search"
+            class="col-12 col-lg-auto mb-3 mb-lg-0"
+            role="search"
+            action="/suite/help/26.7/Search_Results.php"
+            method="get"
+            style="visibility: hidden">
+            <input
+              type="text"
+              id="search-query-ds"
+              class="form-control"
+              name="q"
+              autocomplete="off"
+              placeholder="Search..."
+              aria-label="Search"
+              style="min-width: 319px"
+              autofocus />
+            <div class="info-container">
+  <div class="info-icon"></div>
+  <div class="info-tooltip">
+    <p>
+      <strong class="info-tooltip-text">How search works:</strong> 
+      <ul>
+        <li class="info-tooltip-text">Capitalization, punctuation, and special characters are ignored</li>
+        <li class="info-tooltip-text">Matches in a title, heading, or function name rank higher</li>
+        <li class="info-tooltip-text">Synonyms are applied</li>
+        <li class="info-tooltip-text">Wildcards are not supported</li>
+      </ul>
+    </p>
+  </div>
+</div>
+            <input
+              type="hidden"
+              name="searchcategories[]"
+              value="saildesignsystem" />
+            <input
+              type="submit"
+              value=""
+              style="display: none" />
+          </form>
+        </div>
+      </header>
+        
+        
+        
+          <div class="page-version-preview ovw-upgrade" hidden data-ignore="true">
+  <a href="#">View this page in the latest version of Appian</a>.
+</div>
+
+<script>
+  const showUpgrade = (upgradeURL, linktext) => {
+    // Render upgrade link
+    const container = document.querySelector('.ovw-upgrade');
+    container.hidden = false;
+    const link = container.querySelector('a');
+    link.href = upgradeURL;
+    link.textContent = linktext; 
+  };
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    let displayName = '';
+    
+    let isOlderVersionOfAppian = false; 
+    
+    let currentsubprod_ver;
+    let prod;
+    let latestsubprod_ver;
+    let isLatestSubProdVer;
+    
+    // if there is a displayName then we know it's a subproduct
+    if (displayName) {
+        
+        prod = 'ds'
+        latestsubprod_ver = 'ds-1';
+        currentsubprod_ver = 'ds-components';
+        if (currentsubprod_ver != latestsubprod_ver) {
+          isLatestSubProdVer = "false"
+        }
+    }
+    
+    // We want this to run on pages where either it's a subproduct that is an older version, or the page is in an older version of Appian docs
+    if (isLatestSubProdVer == "false" || isOlderVersionOfAppian ) {
+      // set variable defaults for cases where it is an older version of Appian docs
+      let regex = new RegExp(`^\/suite\/help\/${'26.7'.replaceAll('.', '\\.')}\/`);
+      let matchstring = '/suite/help/26.7/';
+      let linktext = "View this page in the latest version of Appian"
+      
+      // if subproduct page in older version, update variables
+      if ( isLatestSubProdVer == "false" ) {
+        regex = new RegExp(`^\/suite\/help\/${'26.7'.replaceAll('.', '\\.')}\/${currentsubprod_ver.replaceAll('.', '\\.')}\/`); 
+        matchstring = `/suite/help/26.7/${latestsubprod_ver}/`;
+        linktext = `View this page in the latest version of ${displayName}`
+      } 
+
+      (async () => {
+        try {
+          // Match an upgradeable path which starts with /suite/help/<current version>/
+          if (!window.location.pathname.match(regex)) {
+            throw new Error("Can't upgrade path!");
+          }
+          // Attempt an upgrade - replace matched path with newer version
+          const upgradeURL = window.location.pathname.replace(regex, matchstring);
+          // Check that an upgraded version of this page exists
+          if (!(await fetch(upgradeURL, { method: 'HEAD' })).ok) {
+            throw new Error('Response was not OK');
+          }
+          // Render upgrade link
+          showUpgrade(upgradeURL, linktext);
+        } catch {
+          // Cannot upgrade; leave the page as it is.
+        }
+      })();
+    } 
+  });
+</script>
+
+        
+      <nav class="sticky-top" data-ignore="true">
+        <div class="container-xxxl bg-white d-flex flex-wrap align-items-center py-2 border-bottom">
+          <div>
+            <a
+              href="/suite/help/26.7/sail/home.html"
+              aria-label="Go to SAIL Design System Home Page"
+              class="sail-home-link"><img
+                src="../images/design-sys/appian-icon-sail.png"
+                class="sail-icon"
+                alt="Appian SAIL logo" />
+              SAIL Design System
+            </a>
+          </div>
+          <div class="flex-grow-1"></div>
+          <!-- Nav bar -->
+          <nav>
+            <ul class="nav me-auto topnav">
+              
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/sail-design-system-overview.html" class="nav-link link-dark px-3">
+                      Getting Started
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/inspiration.html" class="nav-link link-dark px-3">
+                      Inspiration
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a
+                      href="/suite/help/26.7/sail/components.html"
+                      class="nav-link link-dark px-3 selected"
+                      aria-current="page">
+                      Components
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/introduction.html" class="nav-link link-dark px-3">
+                      Patterns
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/suite/help/26.7/sail/guidance.html" class="nav-link link-dark px-3">
+                      Guidelines
+                    </a>
+                  </li>
+                
+              
+            </ul>
+          </nav>
+        </div>
+      </nav>
+
+      
+    
+      <!-- set any of the following to "1" to force build when speedybuild -->
+      
+      
+      
+      
+    
+      <!-- show page properties button top of all pages -->
+      
+      
+      <div class="container-xxxl">
+  <div class="row">
+    
+    
+    
+    
+    
+
+    <!-- add in content browser left nav -->
+    <div
+      class="flex-column leftnav flex-shrink-0 py-3"
+      data-ignore="true"
+      sup>
+      <ul class="navigator sticky-top">
+        <!-- TODO: I added sticky-top so it wouldn't scroll. Also updated the CSS. -->
+        
+          
+            <link href="/suite/help/26.7/css/design-sys/ds-content_browser.css" rel="stylesheet" />
+            <!-- topic info  --> 
+
+
+
+
+
+
+<!-- hide browser if page.topic isn't defined -->
+
+
+
+
+
+
+
+
+
+<!-- pages in topic -->
+
+
+
+
+
+
+
+<!-- sub-product versioning stuff -->
+
+  
+  
+
+
+<!-- get proxy pages -->
+
+
+
+<!-- For cases where a docs page topic browser includes a proxy-topic in a subproduct repo, this code will ensure no duplicates links appear for each subproduct version -->
+<!-- Check if the current page is a docs page and not subproduct. -->
+
+   <!-- Group by page.title to see which have dups -->
+   
+   
+   
+
+
+
+
+<!-- parent backlink -->
+
+
+<!-- set list of groups / get top-level items -->
+
+
+
+<!-- this variable stores all the pages that successfuly get
+  placed in the browser (pushed in cb_item.html) to be later
+  compared against all pages in the topic to see who didn't
+  make it -->
+
+
+<!-- set home if exist -->
+
+  
+    <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class="nochildren ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/components.html"><span>
+       Components
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+  
+
+
+<!-- root-level items -->
+
+  
+
+<!-- groups and items -->
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Top-Level Layouts</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-form-layout.html"><span>
+       Form Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <li class=" current"><a class="navigator-clickable-area" aria-current="page" href="#"><span>Wizard Layout <span class="ricon_group"></span></span></a></li>
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-header-content-layout.html"><span>
+       Header Content Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-pane-layout.html"><span>
+       Pane Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Layouts</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-section-layout.html"><span>
+       Section Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-columns-layout.html"><span>
+       Columns Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-side-by-side-layout.html"><span>
+       Side by Side Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-tab-layout.html"><span>
+       Tab Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-box-layout.html"><span>
+       Box Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-card-layout.html"><span>
+       Card Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-billboard-layout.html"><span>
+       Billboard Layout
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Display</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-images.html"><span>
+       Images
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-rich-text.html"><span>
+       Rich Text
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-kpi.html"><span>
+       KPIs
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-tags.html"><span>
+       Tags
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-gauge.html"><span>
+       Gauges
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-styled-icons.html"><span>
+       Standard Icons
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Action</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-buttons.html"><span>
+       Buttons
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-record-actions.html"><span>
+       Record Actions
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Grids & Lists</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-grids.html"><span>
+       Grids
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-event-history-list.html"><span>
+       Event History List
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+  <!-- get items for group depending on grouping type -->
+  
+  <!-- prevent empty groups -->
+  
+  <!-- START: HIDE, if grouphide is true -->
+  
+  <!-- END: HIDE -->
+  <!-- group -->
+  <li class="expanded subcat">
+    
+    <a>Charts</a>
+    <ul class="subnav" style="display: block">
+     <!-- items -->
+     
+       <!-- START: multiple proxy groups -->
+       
+       <!-- END: multiple proxy groups -->
+       <!-- called by content-browser.html
+     root=0 means style as subitem. 
+     nopush=1 means don't add to winners --> 
+
+
+
+
+
+
+
+<!-- called by cb_item.html --> 
+
+
+
+
+   <!-- check if proxy item, then set the proxy classes -->
+   
+   <!-- called by cb_item.html --> 
+
+
+
+   
+   <li data-role="" class=" ">
+     <a class="navigator-clickable-area " target="" href="/suite/help/26.7/sail/ux-charts.html"><span>
+       Charts
+       <span class="ricon_group">
+         
+       </span>
+     </span></a>
+   </li>
+   
+
+
+     
+     </ul>
+  </li>
+
+
+<!-- OTHER category for pages that were orphaned because the topic-group or type wasn't set properly. -->
+
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+
+
+          
+        
+      </ul>
+    </div>
+
+    <div class="col py-3 px-3">
+      
+
+
+
+        <div hidden class="page_phone_nav_content" data-ignore="true">
+          <select onchange="location = this.value;" class="page_phone_nav">
+            
+              
+              <option value="/suite/help/26.7/sail/components.html" >
+                Components Overview
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-form-layout.html" >
+                Form Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-wizard-layout.html" selected>
+                Wizard Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-header-content-layout.html" >
+                Header Content Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-pane-layout.html" >
+                Pane Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-section-layout.html" >
+                Section Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-columns-layout.html" >
+                Columns Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-side-by-side-layout.html" >
+                Side by Side Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-tab-layout.html" >
+                Tab Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-box-layout.html" >
+                Box Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-card-layout.html" >
+                Card Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-billboard-layout.html" >
+                Billboard Layout
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-images.html" >
+                Images
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-rich-text.html" >
+                Rich Text
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-kpi.html" >
+                KPIs
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-tags.html" >
+                Tags
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-gauge.html" >
+                Gauges
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-styled-icons.html" >
+                Standard Icons
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-buttons.html" >
+                Buttons
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-record-actions.html" >
+                Record Actions
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-grids.html" >
+                Grids
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-event-history-list.html" >
+                Event History List
+              </option>
+              
+            
+              
+              <option value="/suite/help/26.7/sail/ux-charts.html" >
+                Charts
+              </option>
+              
+            
+          </select>
+        </div>
+        <script>
+          const wrapper = document.querySelector(".page_phone_nav_content");
+          wrapper.remove();
+          wrapper.hidden = false;
+          document.querySelector("main > nav").append(wrapper);
+        </script>
+      
+      
+      <!-- content, including page.description as a subtitle -->
+      <div class="d-flex align-items-center justify-content-sm-between">
+        <h1 class="d-sm-inline-block">Wizard Layout</h1>
+        
+          <div class="d-sm-inline-block" style="z-index: 1001;"><style>
+  .share-container {
+    position: relative;
+  }
+
+  .share-container p {
+    margin: 0;
+  }
+
+  .share-button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .share-button:hover {
+    cursor: pointer;
+  }
+
+  .share-box {
+    display: none;
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    right: 3px;
+    background-color: white;
+    padding: 10px 10px 0;
+    border-radius: 0.2rem;
+    border: solid #cfcfcf 1px;
+    border-width: 1px;
+  }
+
+  .share-menu-item {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: black;
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0 10px;
+    height: 35px;
+  }
+
+  .share-icon {
+    margin-right: 8px;
+  }
+
+  .share-box div:hover {
+    cursor: pointer;
+    color: var(--light-blue);
+  }
+
+  #share-button-icon {
+    font-size: 24px;
+    color: var(--dark-blue);
+  }
+
+  hr.solid {
+    border-top: 1px solid #bbb;
+    margin: 0;
+  }
+</style>
+
+<script>
+
+  document.addEventListener("click", function (event) {
+    var shareContainer = document.querySelector(".share-container");
+    var isClickInside = shareContainer.contains(event.target);
+    var shareBox = document.querySelector(".share-box");
+    var printButton = document.querySelector("#print-button");
+    var shareButton = document.querySelector(".share-button");
+    var isPrint = event.target === printButton || printButton.contains(event.target);
+    var isShareButton = event.target.matches(".share-button") || event.target.matches("#share-button-icon");
+    var copyButton = document.querySelector("#copy-button");
+    var isCopy = event.target === copyButton || copyButton.contains(event.target);
+
+
+    const toggleCopy = (copied) => {
+    const copyIcon = document.querySelector("#copy-icon");
+    const copyLabel = copyButton.childNodes[3];
+    if (copied) {
+      copyIcon.setAttribute('class', 'bi bi-check-lg');
+      copyLabel.innerHTML = "Copied!";
+    } else {
+      copyIcon.setAttribute('class', 'bi bi-link-45deg');
+      copyLabel.innerHTML = "Copy Link";
+    }
+    
+    }
+
+    const toggleShare = (open) => {
+      var shareBox = document.querySelector(".share-box");
+      if (!open) {
+        shareBox.style.display = "none";
+        shareBox.setAttribute("aria-hidden", "true");
+        shareButton.setAttribute("aria-expanded", "false");
+      } else {
+        shareBox.style.display = "block";
+        shareBox.setAttribute("aria-hidden", "false");
+        shareButton.setAttribute("aria-expanded", "true");
+      }
+    }
+
+    if (!isClickInside) {
+      toggleShare(false);
+      toggleCopy(false);
+    } else if (isPrint) {
+      toggleShare(false);
+      window.print();
+    } else if (isCopy) {
+      toggleCopy(true);
+    } else if (isShareButton) {
+      if (shareBox.style.display === "block") {
+        toggleShare(false);
+        toggleCopy(false);
+      } else {
+        toggleShare(true);
+      }
+    }
+  });
+</script>
+
+<div class="share-container" aria-haspopup="true" data-ignore="true">
+  <button class="share-button" aria-label="Share button" aria-expanded="false" aria-controls="share-menu" style="z-index: 1;">
+    <i class="bi bi-share-fill" id="share-button-icon" aria-hidden="true"></i>
+    <span class="sr-only">Share</span>
+  </button>
+  <div class="share-box" id="share-menu" aria-label="Share button menu" role="menu" aria-hidden="true">
+    <p>Share via</p>
+    <div class="share-menu-item" data-share-type="LinkedIn" aria-label="Share on LinkedIn menuitem" role="menuitem" onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`);">
+      <div class="share-icon">
+        <i class="bi bi-linkedin" aria-hidden="true"></i>
+      </div>
+      <p>LinkedIn</p>
+    </div>
+    <div class="share-menu-item" data-share-type="Reddit" aria-label="Share on Reddot menuitem" role="menuitem" onclick="window.open(`https://www.reddit.com/r/appian/submit?selftext=true&title=${window.location.href}`);">
+      <div class="share-icon">
+        <i class="bi bi-reddit" aria-hidden="true"></i>
+      </div>
+      <p>Reddit</p>
+    </div>
+    <div class="share-menu-item" data-share-type="Email" aria-label="Email current page menuitem" role="menuitem" onclick="window.open(`mailto:?&body=${window.location.href}`);">
+      <div class="share-icon">
+        <i class="bi bi-envelope-open-fill" aria-hidden="true"></i>
+      </div>
+      <p>Email</p>
+    </div>
+    <div class="share-menu-item" id="copy-button" data-share-type="Copy" aria-label="Copy url to clipboard menuitem" role="menuitem" onclick="navigator.clipboard.writeText(`${window.location.href}`)">
+      <div class="share-icon">
+        <i class="bi bi-link-45deg" id="copy-icon" aria-hidden="true"></i>
+      </div>
+      <p>Copy Link</p>
+    </div>
+    <hr class="solid" />
+    <div class="share-menu-item" id="print-button" data-share-type="Print" aria-label="Print current page menuitem" role="menuitem">
+      <div class="share-icon">
+        <i class="bi bi-printer-fill" aria-hidden="true"></i>
+      </div>
+      <p>Print</p>
+    </div>
+  </div>
+</div></div>
+        
+        
+      </div>
+      
+      <hr class="mb-4" />
+      <div class="row">
+        <div class="col page_content">
+          
+
+
+
+
+
+
+
+
+
+
+<!-- path: collection_docs/_ds-components/groupA/ux-wizard-layout.md -->
+
+<div class="card bg-light mb-3" data-ignore="true">
+   <div class="card-body pt-1">
+     <p class="card-text">
+       <span class="fs-1 me-2"><i class="bi bi-journal-code"></i></span>See the developer documentation for technical details about the <a href="/suite/help/26.7/Wizard_Layout.html" target="_blank">wizard layout</a><i class="bi bi-box-arrow-in-up-right ms-1"></i>.
+     </p>
+   </div>
+  </div>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>The wizard layout allows you to design pages with built-in features that streamline multi-step form design, including:</p>
+
+<ul>
+  <li>A title bar that can include a title and instructions for the wizard.</li>
+  <li>A step indicator that can optionally display a horizontal or vertical milestone with the wizard step names.</li>
+  <li>Wizard steps with input fields as well as other components and layouts.</li>
+  <li>A button footer with primary and secondary buttons that allow users to easily navigate between wizard steps.</li>
+</ul>
+
+<p><img src="ds-images/wizard-layout-example.png" alt="wizard layout example" class="screenshot" /></p>
+
+<p>Because the wizard layout is a top-level layout, it cannot be nested within other layouts.</p>
+
+<p>This page talks about when to use the wizard layout, how to use its design configurations, and what style guidelines to follow when designing interfaces.</p>
+
+<h2 id="when-to-use-a-wizard-layout">When to use a wizard layout</h2>
+
+<p>Use the wizard layout as your top-level interface to organize long forms into sequential steps. Drag and drop it from the component palette to quickly create a wizard with a title bar, milestone, wizard step area, and button footer for a familiar user experience.</p>
+
+<p><img src="ds-images/wizard-layout-drag-from-palette.gif" alt="gif of a user dragging a wizard layout into their interface from the component palette" class="screenshot" /></p>
+
+<p>The wizard layout includes built-in features that help you provide a user-friendly experience:</p>
+
+<ul>
+  <li>Button footers are automatically fixed to the bottom of record action dialogs.</li>
+  <li><a href="#primary-buttons-parameter">Primary</a> and <a href="#secondary-buttons-parameter">secondary</a> buttons are automatically placed and styled, and Next and Back buttons are configured for you.</li>
+  <li>You can decide whether the wizard should <a href="#automatically-focus-on-first-input-parameter">focus on the first field</a> when each step loads.</li>
+  <li>You can configure <a href="#validations-parameter">validations</a> for each step to make sure forms are completed correctly.</li>
+</ul>
+
+<p>Consider the following when deciding which layouts to use for form content.</p>
+
+<table class="appianTable table table-striped">
+  <thead>
+    <tr>
+      <th>Use</th>
+      <th>When</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A <a href="ux-form-layout.html">form layout</a></td>
+      <td>The form is simple and doesn't need to be divided into separate sections</td>
+    </tr>
+    <tr>
+      <td>A <a href="ux-wizard-layout.html">wizard layout</a></td>
+      <td>The form is complex and the form sections are best organized into sequential steps</td>
+    </tr>
+    <tr>
+      <td>A <a href="ux-tab-layout.html">tab layout</a> inside a form layout</td>
+      <td>The form is complex and the form sections are independent and can be completed in any order</td>
+    </tr>
+    <tr>
+      <td><a href="ux-section-layout.html">Section layouts</a> inside a form layout</td>
+      <td>The form is complex and all the form sections should be viewed at once</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="wizard-layout-parameter-configurations">Wizard layout parameter configurations</h2>
+
+<p>This section highlights variations of the wizard layout to help you visualize what's possible for your interface designs.</p>
+
+<p>To use a wizard layout in design view, you must start with a blank interface. For existing interfaces, the <strong>TOP LEVEL LAYOUTS</strong> menu is not visible. To add a wizard layout to an existing page, either remove all existing content or switch to expression mode.</p>
+
+<p>The following sections describe the parameter configurations as they are displayed in the <a href="../working_in_design_mode.html#using-the-component-configuration-pane">component configuration pane</a> of an interface object.</p>
+
+<h3 id="content-configurations">Content configurations</h3>
+
+<p>The parameters in this section control what displays for the layout.</p>
+
+<h4 id="wizard-steps-parameter">Wizard steps parameter</h4>
+
+<p>Use the <strong>Wizard Steps</strong> parameter to define the individual steps using the <code class="language-plaintext highlighter-rouge">a!wizardStep()</code> component. Each wizard step includes:</p>
+
+<ul>
+  <li><strong><a href="#label-parameter">Label</a></strong>: Text displayed in the milestone and step heading.</li>
+  <li><strong><a href="#instructions-parameter">Instructions</a></strong>: Optional instructions below the step label.</li>
+  <li><strong><a href="#contents-parameter">Contents</a></strong>: Components and layouts for the step body.</li>
+  <li><strong><a href="#validations-parameter">Validations</a></strong>: Step-level validation messages.</li>
+  <li><strong><a href="#validation-group-parameter">Validation Group</a></strong>: Keyword to identify the validation group.</li>
+  <li><strong><a href="#show-when-parameter">Show When</a></strong>: Shows or hides each step.</li>
+  <li><strong><a href="#disable-next-button-parameter">Disable Next Button</a></strong>: Controls when the Next button is disabled.</li>
+</ul>
+
+<h4 id="show-wizard-step-heading-parameter">Show wizard step heading parameter</h4>
+
+<p><em>Related style guidelines: <a href="#show-step-headings-to-give-users-context">Show step headings to give users context</a>, <a href="#choose-an-appropriate-section-heading-size">Choose an appropriate section heading size</a></em></p>
+
+<p>Use the <strong>Show wizard step heading</strong> to choose whether to show the wizard step labels as headings above the step contents. The step labels will still appear in the wizard milestone, if you choose a <a href="#style-parameter">style</a> that shows a milestone.</p>
+
+<div class="zoomimage" style=""><a href="ds-images/wizard-layout-step-heading.png" data-lightbox="image-100"><img src="ds-images/wizard-layout-step-heading.png" alt="wizard layout showing the step heading" standalone="" /></a></div>
+
+<h4 id="primary-buttons-parameter">Primary buttons parameter</h4>
+
+<p>Use the <strong>Primary Buttons</strong> parameter to add buttons to the bottom of the wizard using the <a href="../Button_Layout.html">Button Layout</a> component.</p>
+
+<p>When you add more primary buttons, they appear next to the Next button.</p>
+
+<p>The Next button is added automatically and can't be configured. You can use the <a href="#disable-next-button-parameter"><strong>Disable next button</strong> parameter</a> in the <a href="../Wizard_Step_Component.html">Wizard Step component</a> to specify when the Next button is disabled for users.</p>
+
+<p><img src="ds-images/primary-buttons.png" alt="primary buttons" class="screenshot" /></p>
+
+<h4 id="secondary-buttons-parameter">Secondary buttons parameter</h4>
+
+<p>Use the <strong>Secondary Buttons</strong> parameter to add buttons to the bottom of the wizard using the <a href="../Button_Layout.html">Button Layout</a> component.</p>
+
+<p>When you add more secondary buttons, they appear next to the Back button.</p>
+
+<p>The Back button is added automatically and can't be configured. If you drag and drop the wizard layout into an interface, a Cancel button is also added automatically.</p>
+
+<p><img src="ds-images/secondary-buttons.png" alt="secondary buttons" class="screenshot" /></p>
+
+<h3 id="behavior-configurations">Behavior configurations</h3>
+
+<p>The parameters in this section control how things behave when users interact with the layout.</p>
+
+<h4 id="show-when-parameter">Show when parameter</h4>
+
+<p>Use the <strong>Show When</strong> parameter to show or hide the entire wizard.</p>
+
+<h4 id="automatically-focus-on-first-input-parameter">Automatically focus on first input parameter</h4>
+
+<p>Use the <strong>Automatically focus on first input</strong> parameter to control whether the cursor is automatically placed in the first field when each wizard step loads. When this option is enabled, the first input field will be active by default.</p>
+
+<h4 id="fix-title-bar-when-scrolling-parameter">Fix title bar when scrolling parameter</h4>
+
+<p><em>Related style guidelines: <a href="ux-form-layout.html#in-scrolling-dialogs-use-a-fixed-title-bar-and-buttons">Form Layout: In scrolling dialogs, use a fixed title bar and buttons </a></em></p>
+
+<p>Use the <strong>Fix header when scrolling</strong> parameter to choose if the title bar stays fixed at the top of the wizard while scrolling.</p>
+
+<p><img src="ds-images/wizard-layout-fixed-title-bar.gif" alt="gif of title bar remaining fixed while scrolling" /></p>
+
+<h4 id="fix-buttons-to-bottom-of-form-parameter">Fix buttons to bottom of form parameter</h4>
+
+<p><em>Related style guidelines: <a href="ux-form-layout.html#in-scrolling-dialogs-use-a-fixed-title-bar-and-buttons">Form Layout: In scrolling dialogs, use a fixed title bar and buttons</a></em></p>
+
+<p>Use the <strong>Fix buttons to bottom of wizard</strong> parameter to fix the buttons to the bottom of the wizard.</p>
+
+<h3 id="styling-configurations">Styling configurations</h3>
+
+<p>The parameters in this section control how things display for the layout.</p>
+
+<p>Styling configurations affect the look of the entire wizard. They allow you to control the wizard <a href="#style-parameter">style</a>, <a href="#wizard-background-color-parameter">background color</a>, and <a href="#show-when-parameter">when to show the wizard</a>.</p>
+
+<h4 id="title-bar-template-parameter">Title bar template parameter</h4>
+
+<p>Title bar configurations affect the wizard title bar. They allow you to control the title bar appearance, <a href="#show-title-bar-divider-parameter">title bar divider</a>, and whether the title bar is <a href="#fix-title-bar-when-scrolling-parameter">fixed when scrolling</a>.</p>
+
+<p><img src="ds-images/wizard_layout_titleBar.png" alt="wizard_layout_titleBar" class="screenshot" /></p>
+
+<p><em>Related style guidelines: <a href="ux-form-layout.html#title-bar-guidelines">Form Layout: Title bar guidelines</a></em></p>
+
+<p>Use the <strong>Title Bar Template</strong> parameter to customize the title bar's main text, optional secondary text, and style. You can configure this parameter using text, a header component (<a href="../Header_Template_Simple.html">simple</a>, <a href="../Header_Template_Full.html">full</a>, <a href="../Header_Template_Image.html">image</a>, or <a href="../Sidebar_Template.html">sidebar</a>), a single <a href="ux-billboard-layout.html">billboard layout</a> or <a href="ux-card-layout.html">card layout</a>, or an array of billboard and card layouts.</p>
+
+<p><img src="ds-images/header-template-compare.png" alt="header-template-compare" class="screenshot" /></p>
+
+<h4 id="step-contents-width-parameter">Step contents width parameter</h4>
+
+<p><em>Related style guidelines: <a href="ux-form-layout.html#use-full-width-when-displaying-forms-in-dialogs">Form Layout: Use "Full" width when displaying forms in dialogs</a>, <a href="ux-form-layout.html#use-one-narrow-column-for-the-form-content">Form Layout: Use one narrow column for the form content</a>, <a href="ux-form-layout.html#dont-add-additional-columns-to-center-form-content">Form Layout: Don't add additional columns to center form content</a></em></p>
+
+<p>Use the <strong>Step Contents Width</strong> parameter to set the width of the wizard step contents. Valid values are "Full", "Wide", "Medium", "Narrow", and "Extra Narrow".</p>
+
+<p>Select "Full" if you want the wizard step contents to take up the entire width of the screen. If you are displaying the wizard in a record action dialog, we recommend selecting "Full" and configuring the dialog size in the record type to control the width of the wizard.</p>
+
+<p>This parameter only controls the width of the step contents area.</p>
+
+<p>The following example shows the progression of wizard width values from "Full" to "Extra Narrow".</p>
+
+<p><img src="ds-images/wizard-layout-contents-width.gif" alt="gif showing different wizard content widths" /></p>
+
+<h4 id="wizard-background-color-parameter">Wizard background color parameter</h4>
+
+<p><em>Related style guidelines: <a href="ux-form-layout.html#form-background-color-guidelines">Form Layout: Form background color guidelines</a></em></p>
+
+<p>Use the <strong>Wizard Background Color</strong> parameter to change the color of the wizard page. Valid values are "White" (default), "Transparent", "Charcoal Scheme", "Navy Scheme", and "Plum Scheme". You can also set a custom color by using a hex code.</p>
+
+<p>If you set the background color to "Transparent", the wizard will use the standard light gray background color that is standard in all sites and portals.</p>
+
+<p><img src="ds-images/wizard-layout-bg-comparison.png" alt="image comparing white and transparent wizard backgrounds" class="screenshot" /></p>
+
+<p>For information about the three dark color schemes (Charcoal, Navy, and Plum), see <a href="../Sites_Color_Schemes.html">Dark Color Schemes</a>.</p>
+
+<h4 id="style-parameter">Style parameter</h4>
+
+<p><em>Related style guidelines: <a href="#selecting-a-wizard-style">Selecting a wizard style</a>, <a href="#avoid-using-vertical-tab-patterns-with-vertical-milestone-styles">Avoid using vertical tab patterns with vertical milestone style</a></em></p>
+
+<p>Use the <strong>Style</strong> parameter to choose whether you want to show a vertical milestone, a horizontal milestone, or no milestone. Valid values are "Dot Vertical" (default), "Dot Horizontal", "Chevron Vertical", "Chevron Horizontal", "Line Vertical", "Line Horizontal", and "Minimal".</p>
+
+<p>Vertical and horizontal styles will provide the most information to your users. Vertical styles display a milestone to the left of the wizard step contents, and horizontal styles display a milestone above the wizard step contents. Use vertical milestone styles to balance horizontal white space with narrower content widths.</p>
+
+<p>If you don't want to display the milestone, select <code class="language-plaintext highlighter-rouge">"MINIMAL"</code> to show the step number above the contents instead (for example, "Step 1 of 2"). Use the minimal style when step progress information is not as important for the user. For example if there are only a few steps in your wizard, users might not need to see the names of each step.</p>
+
+<p>On smaller screens, wizards will responsively display a minimal milestone style.</p>
+
+<p><img src="ds-images/wizard-milestones.gif" alt="gif showing different wizard styles" /></p>
+
+<h4 id="show-title-bar-divider-parameter">Show title bar divider parameter</h4>
+
+<p>Use the <strong>Show title bar divider parameter</strong> to choose whether to show a divider line below the title bar.</p>
+
+<h4 id="show-button-divider-parameter">Show button divider parameter</h4>
+
+<p>Use the <strong>Show button divider</strong> parameter to show or hide a divider above the wizard buttons.</p>
+
+<p><img src="ds-images/wizard-layout-button-divider.png" alt="button divider" class="screenshot" /></p>
+
+<h2 id="wizard-step-parameter-configurations">Wizard step parameter configurations</h2>
+
+<p>When you build a wizard, you use the <a href="../Wizard_Step_Component.html">Wizard Step</a> component to create each wizard step.</p>
+
+<p>The following sections describe the parameter configurations as they are displayed in the <a href="../working_in_design_mode.html#using-the-component-configuration-pane">component configuration pane</a> of an interface object.</p>
+
+<h3 id="content-configurations-1">Content configurations</h3>
+
+<p>The parameters in this section control what displays for the component.</p>
+
+<h4 id="label-parameter">Label parameter</h4>
+
+<p>Use the <strong>Step Label</strong> parameter to name the wizard step.</p>
+
+<p>Wizard step names appear in milestones, if you picked a wizard <a href="#style-parameter">style</a> that shows milestones. The step names also appear at the top of the step contents area, if you choose to <a href="#show-step-headings-to-give-users-context">show step headings</a> in your wizard.</p>
+
+<p><img src="ds-images/wizard-step-label.png" alt="wizard step labels" class="screenshot" /></p>
+
+<h4 id="instructions-parameter">Instructions parameter</h4>
+
+<p>Use the <strong>Instructions</strong> parameter to add optional instructions to the wizard step.</p>
+
+<p>Instructions appear as secondary text below the step label, above the rest of the wizard step. Instructions can help users understand the purpose of a step how to complete it.</p>
+
+<p><img src="ds-images/wizard-instructions.png" alt="wizard step instructions" class="screenshot" /></p>
+
+<h4 id="contents-parameter">Contents parameter</h4>
+
+<p>Use the <strong>Contents</strong> parameter to create the contents of a wizard step. This will usually be input field components, but you can display any component or layout, as long as it isn't a top-level layout.</p>
+
+<p>Make sure to follow best practices for <a href="../responsive_design.html">responsive design</a> to ensure that the contents look good and function well on all screen widths.</p>
+
+<p><img src="ds-images/wizard-layout-example-contents.png" alt="example wizard step with contents highlighted" class="screenshot" /></p>
+
+<h3 id="behavior-configurations-1">Behavior configurations</h3>
+
+<p>The parameters in this section control how things behave when users interact with the component.</p>
+
+<h4 id="show-when-parameter-1">Show when parameter</h4>
+
+<p>Use the <strong>Show When</strong> parameter to show or hide a wizard step.</p>
+
+<h4 id="validations-parameter">Validations parameter</h4>
+
+<p>Use the <strong>Validations</strong> parameter to display one or more messages using the <a href="../Validation_Message.html">Validation Message</a> component.</p>
+
+<p>You can use validations to alert users about problems that aren't specific to one component in the wizard step. For more information about using validations for forms in wizards, see the <a href="ux-form-layout.html#validations-parameter">Validation configurations</a> for forms.</p>
+
+<h4 id="validation-group-parameter">Validation group parameter</h4>
+
+<p>Use the validation group parameter to specify which fields to validate when a user clicks a certain button.</p>
+
+<p>See the following recipes for more information about using validation groups:</p>
+
+<ul>
+  <li><a href="../recipe-configure-buttons-with-conditional-requiredness.html">Configure Buttons with Conditional Requiredness</a></li>
+  <li><a href="../recipe-use-validation-group-for-buttons-with-multiple-validation-rules.html">Validation Groups for Buttons with Multiple Validation Rules</a></li>
+</ul>
+
+<h4 id="disable-next-button-parameter">Disable next button parameter</h4>
+
+<p>Use the <strong>Disable next button</strong> parameter to specify when the Next button is disabled for users.</p>
+
+<p>For example, if you want to make sure the user has filled out all fields or made a specific selection before trying to click Next, you could disable the button until those requirements are met.</p>
+
+<h2 id="style-guidelines">Style guidelines</h2>
+
+<p>This section highlights specific design guidelines and recommendations.</p>
+
+<p>In addition to these guidelines, review <a href="ux-form-layout.html#style-guidelines---form-and-wizard-layouts">Form Layout: Style guidelines</a> for general form best practices that apply to wizards.</p>
+
+<h3 id="selecting-a-wizard-style">Selecting a wizard style</h3>
+
+<p>When you select a wizard <a href="#style-parameter">style</a>, you choose the appearance and location of the milestone. Vertical styles display a milestone to the left of the wizard step contents, and horizontal styles display a milestone above the wizard step contents. The "Minimal" style shows the step number above the contents instead of showing a milestone (for example, "Step 1 of 2").</p>
+
+<p>In general, you should use a vertical style if your wizard has more than five steps, or any time your step labels might be too long for a horizontal style. Otherwise, the horizontal milestone can appear crowded and difficult to read.</p>
+
+<p>If your wizard only has one or two steps, use the "Minimal" style to give your wizard a more compact appearance. If you use a minimal style or you expect users will use the wizard on small screens, make sure to <a href="#show-step-headings-to-give-users-context">show step headings</a> to give users context about their current step.</p>
+
+<div class="zoomimage" style=""><a href="ds-images/wizard-layout-step-indicators.png" data-lightbox="image-101"><img src="ds-images/wizard-layout-step-indicators.png" alt="three versions of a wizard showing a vertical, horizontal, and minimal style" standalone="" /></a></div>
+
+<h3 id="avoid-using-vertical-tab-patterns-with-vertical-milestone-styles">Avoid using vertical tab patterns with vertical milestone styles</h3>
+
+<p>If your wizard contents include a vertical tab pattern (for example), don't select a vertical milestone <a href="#style-parameter">style</a> for your wizard. Vertical milestones with a vertical tab pattern will look crowded and will be difficult for users to navigate.</p>
+
+<p>Instead, if you need to include tabs in a wizard step, use a horizontal or minimal milestone style to avoid competing vertical navigation elements.</p>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/wizard-layout-with-vertical-tabs.png" data-lightbox="image-102"><img src="ds-images/wizard-layout-with-vertical-tabs.png" alt="wizard layout with vertical tabs in a step" standalone="" /></a></div>
+  <p>Avoid combining vertical milestones with step contents that include vertical tab navigcation.</p></div>
+
+<h3 id="avoid-using-auto-height-in-dialogs">Avoid using "Auto" height in dialogs</h3>
+
+<p>Avoid using "Auto" height in dialogs, since the height will change from step to step depending on the step contents.</p>
+
+<h3 id="button-guidelines">Button guidelines</h3>
+
+<h4 id="make-sure-buttons-fit-without-stacking">Make sure buttons fit without stacking</h4>
+
+<p>When you're configuring the <a href="#step-contents-width-parameter">width</a> of your wizard step contents, or the width of the dialog that displays your wizard, make sure the width accommodates all of the buttons in your wizard. If the wizard isn't wide enough for the buttons, they will stack up vertically instead of displaying in a single horizontal row, which can make them difficult to use.</p>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/wizard-layout-stacked-buttons.png" data-lightbox="image-103"><img src="ds-images/wizard-layout-stacked-buttons.png" alt="wizard layout with stacked buttons" standalone="" /></a></div>
+  <p>Don't choose a width that would force your buttons to stack.</p></div>
+
+<h4 id="use-consistent-button-sizes">Use consistent button sizes</h4>
+
+<p>Since the Next and Back buttons can't be customized, make sure any additional <a href="#primary-buttons-parameter">primary</a> or <a href="#secondary-buttons-parameter">secondary</a> buttons you add have their <strong>Size</strong> set to "Standard" to keep all buttons a consistent size.</p>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/wizard-layout-button-sizes.png" data-lightbox="image-104"><img src="ds-images/wizard-layout-button-sizes.png" alt="wizard layout with various button sizes" standalone="" /></a></div>
+  <p>Don't use different sizes for different buttons in your wizard. Instead, choose one size for all buttons.</p></div>
+
+<h4 id="make-buttons-visually-distinct">Make buttons visually distinct</h4>
+
+<p>Use consistent styles to clarify the purpose of the different buttons in your wizard. For example, the main button used to progress through the wizard should use the primary style, secondary buttons should all have a similar style, and the Cancel button should have a unique appearance.</p>
+
+<p>Use the solid accent style only for the “Next” button and any Submit buttons on the last step of your wizard. For all other custom primary buttons, use a different style.</p>
+
+<h3 id="show-step-headings-to-give-users-context">Show step headings to give users context</h3>
+
+<p><a href="#label-parameter">Step headings</a> help users understand which step they're on in the wizard. If you expect users will be viewing your wizard on smaller screens, or if your wizard uses the minimal style, make sure to <a href="#show-step-headings-to-give-users-context">show step headings</a> so viewers have context.</p>
+
+<h3 id="choose-an-appropriate-section-heading-size">Choose an appropriate section heading size</h3>
+
+<p>If you have section headings in the contents of a step, make sure they are smaller than the <a href="#label-parameter">wizard step heading</a>. Otherwise, users might have trouble understanding the hierarchy of elements on the page.</p>
+
+<div class="do">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/wizard-section-headings-small.png" data-lightbox="image-105"><img src="ds-images/wizard-section-headings-small.png" alt="wizard layout with small section heading labels" standalone="" /></a></div>
+  <p>Choose a section heading size that is smaller than the wizard step heading to make the page hierarchy easy to understand.</p></div>
+
+<div class="dont">
+<p></p>
+  <div class="zoomimage" style=""><a href="ds-images/wizard-section-headings-large.png" data-lightbox="image-106"><img src="ds-images/wizard-section-headings-large.png" alt="wizard layout with large section heading labels" standalone="" /></a></div>
+  <p>Avoid using section headings that are the same size or larger than the wizard step heading.</p></div>
+
+        </div>
+        <!-- add in tocbot page nav -->
+        <div
+          class="col-3 d-none d-xl-block"
+          data-ignore="true"
+          sup>
+          <div id="toc" class="sticky-top bs-docs-sidebar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- if coming to the page from a search result, this script will cause the page to jump to that result -->
+      <script src="/suite/help/26.7/js/jumptosearchresult.js"></script>
+
+      
+
+
+
+
+
+<div id="frontmatter" hidden data-title='Wizard Layout' data-topic='ds-components' data-searchCategory='saildesignsystem'></div>
+
+      <script>
+        // TODO: Couldn't get Ryan's to work, so using different one until he can fix.
+        const codeBlocks = document.querySelectorAll(
+          ".code-box-toolbar + div.highlighter-rouge td.rouge-code, table.rouge-table td.code"
+        );
+        const copyCodeButtons = document.querySelectorAll(".copy-code-button");
+
+        copyCodeButtons.forEach((copyCodeButton, index) => {
+          const code = codeBlocks[index].innerText;
+
+          copyCodeButton.addEventListener("click", () => {
+            // Copy the code to the user's clipboard
+            window.navigator.clipboard.writeText(code);
+
+            // Update the button text visually
+            const { innerText: originalText } = copyCodeButton;
+            copyCodeButton.innerText = "Copied!";
+
+            // (Optional) Toggle a class for styling the button
+            copyCodeButton.classList.add("copied");
+
+            // After 2 seconds, reset the button to its initial UI
+            setTimeout(() => {
+              copyCodeButton.innerText = originalText;
+              copyCodeButton.classList.remove("copied");
+            }, 2000);
+          });
+        });
+      </script>
+
+      <div
+        class="container-fluid py-5"
+        id="footer"
+        data-ignore="true">
+        <div class="container-xxxl px-4">
+          <div class="row mb-4">
+            <img
+              src="../images/design-sys/logo-appian-white-rebrand.svg"
+              alt="Appian logo"
+              class="footer-logo" />
+          </div>
+          <div class="row mb-4">
+            <a href="https://www.appian.com/" target="_blank">Appian.com
+            </a>
+            <a href="/suite/help/26.7/" target="_blank">Appian Documentation
+            </a>
+            <a href="https://community.appian.com" target="_blank">Appian Community
+            </a>
+            <a href="https://appian.com/legal/privacy-information.html">Privacy
+            </a>
+            <a href="#" id="open_preferences_center">Update Cookie Preferences
+            </a>
+            <br/>
+            &nbsp;
+            <br/>
+          </div>
+          &copy;2026 Appian. All rights reserved.
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- page toc on right side using tocbot -->
+<script src="/suite/help/26.7/js/design-sys/tocbot.min.js"></script>
+<script>
+      tocbot.init({
+    // Where to render the table of contents.
+    tocSelector: "#toc",
+    // Where to grab the headings to build the table of contents.
+    contentSelector: ".page_content",
+    // Which headings to grab inside of the contentSelector element.
+    headingSelector: "h2,h3,h4,h5",
+    // For headings inside relative or absolute positioned containers within content.
+    hasInnerContainers: true,
+    // orderedList can be set to false to generate unordered lists (ul)
+    // instead of ordered lists (ol)
+    orderedList: false,
+    // Smooth scrolling enabled.
+    scrollSmooth: true,
+    // Smooth scroll duration.
+    scrollSmoothDuration: 420,
+    // Smooth scroll offset.
+    scrollSmoothOffset: -17,
+    // Headings offset between the headings and the top of the document (this is meant for minor adjustments).
+    headingsOffset: 17,
+      });
+</script>
+
+<!-- script for left nav to expand or collapse on click -->
+<script type="text/javascript" src="/suite/help/26.7/js/initialize_nav.js"></script>
+
+<!-- typeahead scripts -->
+<script src="/suite/help/26.7/js/typeahead.bundle.min.js"></script>
+
+<script>
+      // hides searchbox until it loads with typeahead
+      $("#search").css("visibility", "visible");
+</script>
+
+<script>
+
+
+  if(Object.keys(localStorage).length > 10) {
+    Object.keys(localStorage).forEach(
+      function(currentValue){
+        if(currentValue.indexOf("search-typeahead-data")>0){
+          localStorage.removeItem(currentValue)
+        }
+      }
+    );
+  }
+  var typeaheadSuggestions = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.obj.nonword('name'),
+    queryTokenizer: Bloodhound.tokenizers.nonword,
+    limit: 20,
+    sorter: function compare(a, b) {
+      var input_regex = new RegExp($('input[type="text"]:focus').val(), "i");
+      var a_indexof = a.name.search(input_regex); 
+      var b_indexof = b.name.search(input_regex); 
+      if (a_indexof > -1  && b_indexof == -1) {
+      return -1;
+      }
+      if (a_indexof == -1  && b_indexof > -1) {
+        return 1;
+      }
+      if (a_indexof < b_indexof) {
+        return -1;
+      }
+      if (a_indexof > b_indexof) {
+        return 1;
+      }
+      return 0;
+    },
+    prefetch: {
+      url: "/suite/help/26.7/search-typeahead-ds-data.json?Appian 26.7-2026-08-02 03:41:03 +0000",
+    }
+  });typeaheadSuggestions.initialize();
+
+  typeaheads = ['input#search-query-splash', 'input#search-query-sp', 'input#search-query-ds', 'input#search-query-mobile', 'input#search-query-nav']
+
+// For the typeaheads in the navmenu and mobile navmenu, they need to be loaded first (see megamenu.js and megamenu-mobile.js) 
+// so we are setting a timeout here just for those so that there are no errors
+  typeaheads.forEach((t, idx) => {
+      if (t === 'input#search-query-nav' || t === 'input#search-query-mobile') {
+          setTimeout(() => {
+            if(document.querySelector(t)) {
+              initializeTypeahead(t, idx);
+            }
+          }, 1000);
+      } else {
+        initializeTypeahead(t, idx);
+      }
+  });
+
+  function initializeTypeahead(t, idx) {
+      $(t).typeahead({ highlight: true, hint: true }, {
+        name: `typeaheadSuggestions-${idx}`,
+        displayKey: 'name',source: typeaheadSuggestions.ttAdapter()
+      });
+
+      $(t).bind(
+        'typeahead:selected',
+        function(obj, datum, name){
+          targetURL = "/suite/help/26.7" + datum.path;
+          if (window.dataLayer) {
+            window.dataLayer.push({
+              'event': 'dsTypeAheadClicked',
+              'link_URL': targetURL, 
+              'link_text': datum.name
+            });
+          }  
+          window.top.location = targetURL;
+        }
+      );
+
+      $(t).on('focus', (e) => {
+        e.stopPropagation();
+        $(this).typeahead('open');
+      })
+  }
+
+
+</script>
+
+<!-- prospect tracking -->
+<script type="text/plain" data-cookie-consent="tracking">
+  piAId = '11342';
+  piCId = '1671';
+
+  (function() {
+  function async_load(){
+    var s = document.createElement('script'); s.type = 'text/javascript';
+    s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+    var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+  }
+  
+  if(window.attachEvent) { window.attachEvent('onload', async_load); }
+  else { window.addEventListener('load', async_load, false); }
+  })();
+</script>
+
+<!-- Scrape page for sail components and adds hyperlinks to all functions -->
+<style>
+    .functions-anchor {
+        text-decoration: none;
+    }
+
+    .functions-anchor:hover {
+        text-decoration: underline;
+    }
+</style>
+<script>
+    const linkFunctions = async () => {
+        let functions = document.querySelectorAll('span.nf');
+
+        if (functions.length > 0) {
+        const response = await fetch("/suite/help/26.7/functions.json");
+            const functionsJson = await response.json();
+
+            functions.forEach((func) => {
+                if (func) {
+                    func.addEventListener("mouseover", () => {
+                    let originalText = func.innerText.trim();
+                    let parts = originalText.split('(');  
+                    
+                    func.innerHTML = '';  
+
+                    parts.forEach((part, index) => {
+                        if (index > 0) {
+                            func.appendChild(document.createTextNode('('));
+                        }
+
+                        let subParts = part.split(/(fn!)/).filter(Boolean);
+                        
+                        subParts.forEach(subPart => {
+                            let cleanedSubPart = subPart.replace('fn!', '').trim().toLowerCase();
+                            const currentPage = "/suite/help/26.7/sail/ux-wizard-layout.html";
+                            if (functionsJson[cleanedSubPart] && currentPage.toLowerCase() !== functionsJson[cleanedSubPart].toLowerCase()) {
+                                const link = document.createElement('a');
+                                link.href = functionsJson[cleanedSubPart];
+                                link.textContent = subPart;
+                                link.setAttribute('target', '_blank');
+                                link.setAttribute('class', 'nf functions-anchor');
+                                func.appendChild(link);
+                            } else {
+                                func.appendChild(document.createTextNode(subPart));
+                            }
+                        });
+                    });
+                }, {once: true});
+                }
+            });
+        }
+    }
+
+    linkFunctions();
+</script>
+
+<script type="text/javascript">
+  $('a').filter(function() {
+    return this.hostname && this.hostname !== location.hostname;
+  }).attr("target","_blank");
+</script>
+
+<script src="/suite/help/26.7/js/headinganchorlinks.js"></script>
